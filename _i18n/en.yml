@@ -1,0 +1,86 @@
+
+header:
+  title: Kites' n Kula
+  text: Kitesurf - KiteCamp - KiteFun
+  button: Travel with us!
+  buttonlink: "#services"
+services:
+  title: "What are you waiting for?"
+  text: "What we offer"
+  section: services
+  list:
+    - title: "KiteSurf"
+      desc: "The wind, the sea, and you. No stress, just the feeling of gliding on the water and flying in the sky."
+      icon: fas fa-wind
+    - title: "KiteCamp"
+      desc: "Not just lessons, but experiences. Days of kite, sunset beers, discovering spots, and making new friends who become community."
+      icon: fas fa-umbrella-beach
+    - title: "Kitefun"
+      desc: "Because kite is above all fun. Sea, salt, and lightness — KITES’N KULA style."
+      icon: fas as fa-glass-cheers
+timeline:
+  title: "When do you join us?"
+  text: "Your upcoming camps"
+  section: timeline
+  events:
+    - title: "Beginner South Sardinia"
+      year: "April-May"
+      desc: "Five days immersed in the wind and sun of Sardinia. Perfect for beginners. Among crystal lagoons, white dunes, and pink flamingos, you’ll learn to glide on water, fall, laugh, and get up again, KITES’N KULA style."
+      image: assets/img/camp/sardegna.jpg
+      alt: "Sardinia Beginner Kite Camp"
+    - title: "Sardinia & Sicily, start your season"
+      year: "June"
+      desc: "Kick off your kite season in the flat and crystal-clear waters of Stagnone. Perfect for beginners taking their first steps with kite and discovering one of Italy’s best spots, with postcard sunsets and lots of laughter."
+      image: assets/img/camp/sicilia1.jpg
+      alt: "Sicily Beginner Kite Camp"
+    - title: "Stagnone Sicily Party Mood"
+      year: "August"
+      desc: "Summer, constant wind, and the right mood! Learn and perfect your skills between water sessions and sunset aperitifs. Kite is fun, and here you’ll enjoy it fully, with laughter, new friends, and a touch of KITES’N KULA madness."
+      image: assets/img/camp/sicilia2.jpg
+      alt: "Sicily Beginner Kite Camp"
+    - title: "Kitesurf Maracana Brazil"
+      year: "October-November"
+      desc: "Ten days with perfect wind in Brazil. This camp is designed for those with experience wanting to go beyond the first tricks. Lots of kite, cocktails, fiery sunsets, and unforgettable sessions: kite here is a true adventure! Jericoacoara is our base, Prea, Tatajuba, and Guriu are our spots. Plenty of downwinds and dedicated sessions to improve."
+      image: assets/img/camp/jericoara.jpg
+      alt:
+      align: right
+  end: "Join us, or else <br> KITES'N KULA <br>"
+team:
+  title: "Our Team"
+  text: "You can always count on us; we are certified instructors and know the places we take you to."
+  subtext: "The KITES'N KULA team consists of IKO-certified instructors and passionate kite surfers with years of experience. We are here to guide, support, and share our passion for kitesurfing in a safe and fun environment."
+  section: team
+  people:
+    - name: "Filippo Gaudenzi"
+      role: "Founder & Instructor"
+      image: assets/img/team/filippo.jpg
+      social:
+        - url: https://instagram.com/filowg
+          icon: fab fa-instagram
+    - name: "Simone Giacomini"
+      role: "Founder & Instructor"
+      image: assets/img/team/simone.jpg
+      social:
+        - url: https://instagram.com/simogneiaco88
+          icon: fab fa-instagram
+contact:
+  title: "Contact Us"
+  text: "Write to us to know more about our camps or just to say hi :)"
+  section: contact
+  name: "Name*"
+  name-validation: "Enter your name here."
+  email: "Email*"
+  email-validation: "Your email goes here."
+  phone: "Phone number (we won’t abuse it)"
+  phone-validation: "Enter your number here!"
+  message: "Your message*"
+  message-validation: "Write everything you want to know and more."
+  subject: "Contact Form Submission"
+  submit: "SEND IT!"
+footer:
+  legal: "Privacy Policy"
+  social:
+    - url: https://instagram.com/kiteskula
+      icon: "fab fa-instagram"
+    - url: https://facebook.com/kitesnkula
+      icon: "fab fa-facebook-f"

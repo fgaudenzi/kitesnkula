@@ -1,37 +1,48 @@
 ---
 layout: page
 title: Privacy Policy
+background: grey
 ---
+
 <div class="col-lg-12 text-center">
 	<h2 class="section-heading text-uppercase">Privacy Policy</h2>
 </div>
 
-This Privacy Policy describes how your personal information is collected, used, and shared when you visit {{ site.title }} (the “Site”).
 
-**PERSONAL INFORMATION WE COLLECT**
 
-{% if site.analytics.google %}
+Privacy Policy
 
-Automatically Collected (Google Analytics):
+Titolare del trattamento
+Il titolare dei dati personali raccolti su questo sito è:
+Nome: Filippo Gaudenzi
+Email: kitesnkula@gmail.com
 
-When you visit the Site, we automatically receive information about your device from your browser, such as your IP address. As you browse the Site, we also collect information about how you interact with the Site. We refer to this automatically-collected information as “Device Information”.
+Dati raccolti
+Su questo sito potrei raccogliere:
 
-We collect Device Information using cookies. “Cookies” are data files that are placed on your device. For more information about cookies and how to disable them, visit http://www.allaboutcookies.org.
+Dati di navigazione anonimi (es. pagine visitate, durata della visita, tipo di browser) tramite Google Analytics;
 
-We do this using Google Analytics: <https://www.google.com/intl/en/policies/privacy/>.
+Eventuali dati che mi fornisci volontariamente, ad esempio tramite form di contatto (nome, email).
 
-You can opt-out of Google Analytics here: <https://tools.google.com/dlpage/gaoptout>.
+Finalità del trattamento
+I dati raccolti servono a:
 
-{% else %}
+Analizzare le visite al sito per migliorarne i contenuti e le funzionalità;
 
-We do not collect any data about you or use any cookies.
+Rispondere a eventuali messaggi inviati tramite il form di contatto.
 
-{% endif %}
+Google Analytics
+Il sito utilizza Google Analytics per raccogliere dati anonimi sul traffico. Gli indirizzi IP sono parzialmente anonimizzati. Puoi disattivare il tracciamento di Google Analytics qui: Opt-out link di Google
+.
 
-**CHANGES**
+Conservazione dei dati
+I dati di navigazione anonimi vengono conservati fino a 14 mesi. I dati forniti volontariamente tramite form vengono conservati solo per rispondere alle richieste.
 
-We may update this privacy policy from time to time for personal, operational, legal, or regulatory reasons.
+Diritti dell’utente
+Puoi richiedere in qualsiasi momento: accesso, rettifica, cancellazione dei tuoi dati, limitazione o opposizione al trattamento, revoca del consenso.
+Per esercitare questi diritti contattami via email.
 
-**CONTACT US**
+Aggiornamenti
+Questa privacy policy può essere aggiornata. Ogni modifica sarà pubblicata sul sito.
 
-For more information about our privacy practices or if you have questions, please contact us by email at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+Ultimo aggiornamento: 22 ottobre 2025
