@@ -1,0 +1,91 @@
+fr:
+  header:
+    title: Kites' n Kula
+    text: Kitesurf - KiteCamp - KiteFun
+    button: Voyage avec nous !
+    buttonlink: "#services"
+
+  services:
+    title: "Qu’est-ce que tu attends encore ?"
+    text: "Ce que nous offrons"
+    section: services
+    list:
+      - title: "KiteSurf"
+        desc: "Le vent, la mer et toi. Pas de stress, juste la sensation de glisser sur l’eau, le sourire aux lèvres et la tête dans les nuages."
+        icon: fas fa-wind
+      - title: "KiteCamp"
+        desc: "Pas seulement des cours, mais de vraies expériences. Des journées de kite, des bières au coucher du soleil, la découverte des spots et des amis qui deviennent une communauté."
+        icon: fas fa-umbrella-beach
+      - title: "KiteFun"
+        desc: "Parce que le kite, c’est avant tout du fun. Mer, sel et légèreté — à la manière KITES’N KULA."
+        icon: fas fa-glass-cheers
+
+  timeline:
+    title: "Quand pars-tu avec nous ?"
+    text: "Tes prochains camps"
+    section: timeline
+    events:
+      - title: "Débutant Sud Sardaigne"
+        year: "Avril–Mai"
+        desc: "Cinq jours plongés dans le vent et le soleil de la Sardaigne. Parfait pour débuter. Lagunes cristallines, dunes blanches et flamants roses : tu apprendras à glisser, tomber, rire et te relever — à la KITES’N KULA !"
+        image: assets/img/camp/sardegna.jpg
+        alt: "Camp de Kite Débutants en Sardaigne"
+      - title: "Sicile, commence ta saison"
+        year: "Juin"
+        desc: "Commence ta saison kite sur les eaux plates et cristallines du Stagnone. Parfait pour ceux qui veulent faire leurs premiers pas dans un spot de rêve, entre couchers de soleil et fous rires."
+        image: assets/img/camp/sicilia1.jpg
+        alt: "Camp de Kite Débutants en Sicile"
+      - title: "Stagnone Party Mood"
+        year: "Août"
+        desc: "L’été, du vent constant et la bonne ambiance ! Apprends, progresse et profite entre sessions sur l’eau et apéros au coucher du soleil. Le kite ici, c’est du plaisir pur — avec un brin de folie KITES’N KULA."
+        image: assets/img/camp/sicilia2.jpg
+        alt: "Camp de Kite en Sicile"
+      - title: "Kitesurf Paradise Brésil"
+        year: "Octobre–Novembre"
+        desc: "Dix jours avec le vent parfait au Brésil. Pour les riders expérimentés qui veulent repousser leurs limites. Du kite, des cocktails, des couchers de soleil en feu et des sessions inoubliables : Jericoacoara sera notre base, avec Prea, Tatajuba et Guriu comme spots. Downwinds, progression et pur bonheur."
+        image: assets/img/camp/jericoara.jpg
+        alt: "Camp de Kite au Brésil"
+        align: right
+    end: "Pars avec nous, sinon... <br> KITES'N KULA <br>"
+
+  team:
+    title: "Notre Équipe"
+    text: "Tu pourras toujours compter sur nous — nous sommes des instructeurs certifiés et connaissons chaque spot par cœur."
+    subtext: "L’équipe de KITES’N KULA est composée d’instructeurs IKO certifiés et de passionnés de kite avec des années d’expérience. Nous sommes là pour te guider, te soutenir et partager notre passion du kitesurf dans une ambiance sûre et décontractée."
+    section: team
+    people:
+      - name: "Filippo Gaudenzi"
+        role: "Fondateur et Instructeur"
+        image: assets/img/team/filippo.jpg
+        social:
+          - url: https://instagram.com/filowg
+            icon: fab fa-instagram
+      - name: "Simone Giacomini"
+        role: "Fondateur et Instructeur"
+        image: assets/img/team/simone.jpg
+        social:
+          - url: https://instagram.com/simogneiaco88
+            icon: fab fa-instagram
+
+  contact:
+    title: "Contacte-nous"
+    text: "Écris-nous pour en savoir plus sur nos camps… ou juste pour nous taquiner 😄"
+    section: contact
+    name: "Nom*"
+    name-validation: "Entre ton nom ici."
+    email: "Email*"
+    email-validation: "Ton adresse email ici."
+    phone: "Numéro de téléphone (promis, on n’en abusera pas)"
+    phone-validation: "Ton numéro va ici !"
+    message: "Que veux-tu savoir ?*"
+    message-validation: "Dis-nous tout ce que tu veux savoir, et plus encore."
+    subject: "Soumission du formulaire de contact"
+    submit: "ENVOIE-NOUS ÇA !"
+
+  footer:
+    legal: "Politique de Confidentialité"
+    social:
+      - url: https://instagram.com/kiteskula
+        icon: "fab fa-instagram"
+      - url: https://facebook.com/kitesnkula
+        icon: "fab fa-facebook-f"

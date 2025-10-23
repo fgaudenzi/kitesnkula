@@ -19,7 +19,7 @@ collections:
 
 markdown: kramdown
 
-languages: ["it", "en", "de"]
+languages: ["it", "en", "de", "fr"]
 default_lang: it
 lang: it
 plugins:
