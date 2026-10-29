@@ -212,9 +212,9 @@
     },
     "merch": {
       "kicker": "KITESNKULA MERCH",
-      "heading_first": "WEAR YOUR",
-      "heading_second": "OWN RULES.",
-      "intro": "La nostra idea di kite finisce anche su una felpa. Stesso spirito, colori diversi, nessuna uniforme.",
+      "heading_first": "BE PROUD.",
+      "heading_second": "WEAR KITESNKULA.",
+      "intro": "Felpe per quando c'è vento. E anche per tutte le altre volte. Nessuna uniforme, solo KITESNKULA.",
       "black_title": "BLACK CREWNECK",
       "black_description": "Nero, stampa fucsia. My session, my kite, my rules.",
       "purple_title": "PURPLE HOODIE",
@@ -224,11 +224,17 @@
       "sticker_one": "INDEPENDENT RIDER",
       "sticker_two": "MY RULES",
       "sticker_three": "SAME WIND",
-      "black_alt": "Felpa nera girocollo KITESNKULA con grafica fucsia sulla schiena, indossata al tramonto",
-      "purple_alt": "Felpa viola con cappuccio KITESNKULA con grafica fucsia sulla schiena, indossata al tramonto",
-      "group_alt": "Gruppo di amici in spiaggia con felpe KITESNKULA di colori diversi",
+      "black_alt": "Ragazzo con felpa nera girocollo KITESNKULA, grafica fucsia stampata sulla schiena",
+      "purple_alt": "Felpa viola KITESNKULA con cappuccio, stampa fucsia sulla schiena",
+      "group_alt": "Amici di spalle in spiaggia con felpe KITESNKULA colorate",
       "note": "Le immagini mostrano idee di merchandising della community, non un catalogo con disponibilità o prezzi confermati.",
-      "cta": "CHIEDICI SU INSTAGRAM"
+      "cta": "CHIEDICI SU INSTAGRAM",
+      "concept_kicker": "DIETRO LE FELPE",
+      "concept_heading": "NON È UNA DIVISA.",
+      "concept_paragraphs": [
+        "Le felpe non servono a dire quanto salti o da quanto tempo fai kite. Sono per chi si riconosce nel nostro modo di vivere questo sport: una mano a lanciare l'ala, un consiglio senza fare il professore, una session insieme e poi una birra quando il vento è finito.",
+        "Le grafiche raccontano proprio questo: persone diverse, stessi valori, zero bisogno di fare i fenomeni. Indossale in spiaggia, in città o all'aperitivo ancora in poncho. La sabbia è facoltativa."
+      ]
     }
   }
 }

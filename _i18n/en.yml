@@ -212,9 +212,9 @@
     },
     "merch": {
       "kicker": "KITESNKULA MERCH",
-      "heading_first": "WEAR YOUR",
-      "heading_second": "OWN RULES.",
-      "intro": "Our take on kitesurfing looks good on a sweatshirt too. Same spirit, different colors, no uniform.",
+      "heading_first": "BE PROUD.",
+      "heading_second": "WEAR KITESNKULA.",
+      "intro": "Hoodies for windy days. And all the other ones too. No uniform, just KITESNKULA.",
       "black_title": "BLACK CREWNECK",
       "black_description": "Black with a hot-pink print. My session, my kite, my rules.",
       "purple_title": "PURPLE HOODIE",
@@ -224,11 +224,17 @@
       "sticker_one": "INDEPENDENT RIDER",
       "sticker_two": "MY RULES",
       "sticker_three": "SAME WIND",
-      "black_alt": "Black KITESNKULA crewneck with a pink back graphic, worn by the sea at sunset",
-      "purple_alt": "Purple KITESNKULA hoodie with a pink back graphic, worn by the sea at sunset",
-      "group_alt": "Friends on the beach wearing KITESNKULA hoodies in different colors",
+      "black_alt": "Rider in a black KITESNKULA crewneck with a pink graphic printed on the back",
+      "purple_alt": "Purple KITESNKULA hoodie with a pink graphic printed on the back",
+      "group_alt": "Friends wearing colorful KITESNKULA hoodies on the beach",
       "note": "These images show community merch concepts, not confirmed stock or retail prices.",
-      "cta": "ASK US ON INSTAGRAM"
+      "cta": "ASK US ON INSTAGRAM",
+      "concept_kicker": "BEHIND THE HOODIES",
+      "concept_heading": "NOT A UNIFORM.",
+      "concept_paragraphs": [
+        "These hoodies aren't about how high you jump or how long you've been kiting. They're for people who see the sport the way we do: helping launch a kite, sharing a tip without showing off, riding together and grabbing a beer when the wind drops.",
+        "That's what the designs stand for: different riders, the same values, no need to act like a superstar. Wear them on the beach, in town or to aperitivo while you're still in a poncho. Sand is optional."
+      ]
     }
   }
 }
