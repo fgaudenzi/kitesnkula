@@ -124,6 +124,19 @@
       "join_body": "Für kommende Reisen, Geschichten und alles Weitere.",
       "legal": "Datenschutz",
       "ending": "FAHR DEINEN STIL."
+    },
+    "legal": {
+      "heading": "Datenschutz und personenbezogene Daten",
+      "intro": "Hier erfährst du kurz, wie Daten beim Besuch der Website oder bei der Kontaktaufnahme behandelt werden.",
+      "owner": "Kontakt",
+      "owner_text": "Bei Fragen zu personenbezogenen Daten schreibe an",
+      "data": "Welche Daten",
+      "data_text": "Die Website enthält keine Anmelde- oder Newsletterformulare und setzt keine eigenen Analysedienste ein. Wenn du uns per E-Mail kontaktierst, erhalten wir die von dir übermittelten Informationen. Der Hosting-Anbieter kann technische Daten und Zugriffsprotokolle nach seinen Bedingungen verarbeiten.",
+      "purpose": "Wofür wir sie verwenden",
+      "purpose_text": "Wir verwenden Nachrichten nur zur Beantwortung von Anfragen und zur Kommunikation über Community und Reisen.",
+      "rights": "Deine Rechte",
+      "rights_text": "Du kannst Auskunft, Zugriff, Berichtigung oder Löschung über die angegebene E-Mail-Adresse anfordern. Dieser Text sollte vor der Veröffentlichung an das tatsächliche Hosting und verwendete Dienste angepasst werden.",
+      "updated": "Stand: 29. Oktober 2026."
     }
   }
 }

@@ -44,7 +44,7 @@ layout: default
     {% assign translated = copy.destinations[trip.id] %}
     <article class="trip-card">
       <a class="trip-picture" href="{{ '/trips/' | relative_url }}#{{ trip.id }}" aria-label="{{ translated.title }}">
-        <img src="{{ trip.image | relative_url }}" alt="{{ translated.image_alt }}" loading="lazy">
+        <img src="{{ trip.image | prepend: site.baseurl_root }}" alt="{{ translated.image_alt }}" loading="lazy">
         {% if forloop.first %}<span class="trip-tag">{{ copy.trips.featured }}</span>{% endif %}
       </a>
       <div class="trip-body">
@@ -68,12 +68,12 @@ layout: default
     </div>
     <div class="crew-grid">
       <article class="crew-person">
-        <div class="crew-photo"><img src="{{ '/assets/img/team/filippo.jpg' | relative_url }}" alt="Filippo Gaudenzi" loading="lazy"><span class="hand crew-note">{{ copy.crew.filippo_note }}</span></div>
+        <div class="crew-photo"><img src="{{ '/assets/img/team/filippo.jpg' | prepend: site.baseurl_root }}" alt="Filippo Gaudenzi" loading="lazy"><span class="hand crew-note">{{ copy.crew.filippo_note }}</span></div>
         <div class="crew-caption"><h3>Filippo</h3><span>{{ copy.crew.filippo_role }}</span></div>
         <p>{{ copy.crew.filippo_bio }}</p>
       </article>
       <article class="crew-person">
-        <div class="crew-photo"><img src="{{ '/assets/img/team/simone.jpg' | relative_url }}" alt="Simone Giacomini" loading="lazy"><span class="hand crew-note">{{ copy.crew.simone_note }}</span></div>
+        <div class="crew-photo"><img src="{{ '/assets/img/team/simone.jpg' | prepend: site.baseurl_root }}" alt="Simone Giacomini" loading="lazy"><span class="hand crew-note">{{ copy.crew.simone_note }}</span></div>
         <div class="crew-caption"><h3>Simone</h3><span>{{ copy.crew.simone_role }}</span></div>
         <p>{{ copy.crew.simone_bio }}</p>
       </article>
@@ -94,10 +94,10 @@ layout: default
       <p>{{ copy.stories.intro }}</p>
     </div>
     <div class="photo-strip">
-      <div class="photo-tile tall"><img src="{{ '/assets/img/mattia.jpg' | relative_url }}" alt="{{ copy.stories.alt1 }}" loading="lazy"></div>
-      <div class="photo-tile"><img src="{{ '/assets/img/camp/sicilia2.jpg' | relative_url }}" alt="{{ copy.stories.alt2 }}" loading="lazy"></div>
-      <div class="photo-tile"><img src="{{ '/assets/img/camp/jericoara.jpg' | relative_url }}" alt="{{ copy.stories.alt3 }}" loading="lazy"></div>
-      <div class="photo-tile tall"><img src="{{ '/assets/img/camp/sardegna.jpg' | relative_url }}" alt="{{ copy.stories.alt4 }}" loading="lazy"></div>
+      <div class="photo-tile tall"><img src="{{ '/assets/img/mattia.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt1 }}" loading="lazy"></div>
+      <div class="photo-tile"><img src="{{ '/assets/img/camp/sicilia2.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt2 }}" loading="lazy"></div>
+      <div class="photo-tile"><img src="{{ '/assets/img/camp/jericoara.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt3 }}" loading="lazy"></div>
+      <div class="photo-tile tall"><img src="{{ '/assets/img/camp/sardegna.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt4 }}" loading="lazy"></div>
       <div class="photo-note hand">{{ copy.stories.sticker }}</div>
     </div>
   </div>

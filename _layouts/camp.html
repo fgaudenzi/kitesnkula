@@ -8,7 +8,7 @@ layout: default
     {% for trip in site.data.trips %}
       {% assign translated = copy.destinations[trip.id] %}
       <article class="trip-card" id="{{ trip.id }}">
-        <div class="trip-picture"><img src="{{ trip.image | relative_url }}" alt="{{ translated.image_alt }}" loading="lazy"></div>
+        <div class="trip-picture"><img src="{{ trip.image | prepend: site.baseurl_root }}" alt="{{ translated.image_alt }}" loading="lazy"></div>
         <div class="trip-body"><p class="trip-type">{{ copy.trips.type }}</p><h2>{{ translated.title }}</h2><p>{{ translated.long_description }}</p><div class="trip-meta"><span>◉ {{ translated.level }}</span><span>◷ {{ copy.trips.dates_soon }}</span></div><a class="trip-link" href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20{{ trip.id }}">{{ copy.trips.ask }} <span aria-hidden="true">↗</span></a></div>
       </article>
     {% endfor %}

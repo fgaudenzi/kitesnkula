@@ -1,6 +1,5 @@
 {% assign copy = site.translations[site.lang].kula %}
-{% assign prefix = '' %}{% unless site.lang == site.default_lang %}{% assign prefix = site.lang | prepend: '/' %}{% endunless %}
-{% assign home_url = prefix | append: '/' | relative_url %}
+{% assign home_url = '/' | relative_url %}
 <header class="site-header">
   <div class="nav-wrap">
     <a class="brand" href="{{ home_url }}" aria-label="KITESNKULA home">
@@ -16,8 +15,7 @@
     <div class="nav-actions">
       <div class="lang-switch" aria-label="{{ copy.nav.language }}">
         {% for lang in site.languages %}
-          {% assign switchprefix = '' %}{% unless lang == site.default_lang %}{% assign switchprefix = lang | prepend: '/' %}{% endunless %}
-          <a href="{{ switchprefix | append: '/' | relative_url }}" lang="{{ lang }}" hreflang="{{ lang }}" {% if lang == site.lang %}aria-current="true" class="active"{% endif %}>{{ lang | upcase }}</a>
+          <a href="{{ site.baseurl_root }}/{% unless lang == site.default_lang %}{{ lang }}/{% endunless %}" lang="{{ lang }}" hreflang="{{ lang }}" {% if lang == site.lang %}aria-current="true" class="active"{% endif %}>{{ lang | upcase }}</a>
         {% endfor %}
       </div>
       <a class="button button-purple nav-join" href="{{ home_url }}#join">{{ copy.nav.join }} <span aria-hidden="true">↗</span></a>

@@ -124,6 +124,19 @@
       "join_body": "Pour les prochains voyages, les histoires et le reste.",
       "legal": "Confidentialité",
       "ending": "RIDE À TA FAÇON."
+    },
+    "legal": {
+      "heading": "Confidentialité et données personnelles",
+      "intro": "Cette page explique brièvement comment les données sont traitées lors de ta visite ou lorsque tu nous écris.",
+      "owner": "Contact",
+      "owner_text": "Pour toute question relative aux données personnelles, écris à",
+      "data": "Données reçues",
+      "data_text": "Le site ne propose ni inscription ni formulaire de newsletter et n'active aucun outil d'analyse propre. Si tu nous écris par e-mail, nous recevons les informations que tu choisis de transmettre. L'hébergeur peut traiter des données techniques et des journaux d'accès selon ses conditions.",
+      "purpose": "Pourquoi nous les utilisons",
+      "purpose_text": "Nous utilisons les messages uniquement pour répondre aux demandes et échanger au sujet de la communauté et des voyages.",
+      "rights": "Tes droits",
+      "rights_text": "Tu peux demander des informations, l'accès, la correction ou la suppression de tes données à l'adresse indiquée. Ce texte doit être revu et adapté avant mise en ligne selon l'hébergement et les outils réellement utilisés.",
+      "updated": "Informations mises à jour le 29 octobre 2026."
     }
   }
 }

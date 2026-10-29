@@ -6,17 +6,16 @@
   <meta name="description" content="{{ copy.meta_description | default: site.description | escape }}">
   <meta name="theme-color" content="#f5f0e7">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ site.title }} — {{ copy.hero.title | escape }}">
+  <meta property="og:title" content="{{ site.title }} — {{ copy.hero.title_line1 | escape }}">
   <meta property="og:description" content="{{ copy.meta_description | escape }}">
-  <meta property="og:image" content="{{ '/assets/img/header.jpg' | relative_url }}">
+  <meta property="og:image" content="{{ '/assets/img/header.jpg' | prepend: site.baseurl_root }}">
   {% if site.url != empty %}<link rel="canonical" href="{{ page.url | absolute_url }}">{% endif %}
-  {% for lang in site.languages %}
-    {% assign prefix = '' %}{% unless lang == site.default_lang %}{% assign prefix = lang | prepend: '/' %}{% endunless %}
-    <link rel="alternate" hreflang="{{ lang }}" href="{{ prefix }}{{ page.url | relative_url }}">
-  {% endfor %}
+  {% if site.url != empty %}{% for lang in site.languages %}
+    <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ site.baseurl_root }}{% unless lang == site.default_lang %}/{{ lang }}{% endunless %}{{ page.url }}">
+  {% endfor %}{% endif %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
-  <link href="{{ '/assets/css/kula.css' | relative_url }}" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/kula-mascot.svg' | relative_url }}">
+  <link href="{{ '/assets/css/kula.css' | prepend: site.baseurl_root }}" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/kula-mascot.svg' | prepend: site.baseurl_root }}">
 </head>

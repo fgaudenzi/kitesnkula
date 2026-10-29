@@ -124,6 +124,19 @@
       "join_body": "Per i prossimi viaggi, le storie e quello che bolle in pentola.",
       "legal": "Privacy",
       "ending": "FATTI IL TUO KITE."
+    },
+    "legal": {
+      "heading": "Privacy e dati personali",
+      "intro": "Questa pagina descrive in modo sintetico come vengono gestiti i dati quando visiti il sito o ci scrivi.",
+      "owner": "Contatti",
+      "owner_text": "Per richieste relative ai dati personali scrivi a",
+      "data": "Quali dati",
+      "data_text": "Il sito non contiene moduli di registrazione o newsletter e non attiva strumenti di analisi proprietari. Se ci contatti via email, riceviamo le informazioni che scegli di inviarci. Il servizio di hosting può trattare dati tecnici e log di accesso secondo le proprie condizioni.",
+      "purpose": "Perché li usiamo",
+      "purpose_text": "Utilizziamo i messaggi ricevuti esclusivamente per rispondere alle richieste e organizzare le comunicazioni relative alla community e ai viaggi.",
+      "rights": "I tuoi diritti",
+      "rights_text": "Puoi richiedere informazioni, accesso, correzione o cancellazione dei dati scrivendo al contatto indicato. Il testo va verificato e adattato prima della pubblicazione definitiva in base al servizio di hosting e agli strumenti effettivamente usati.",
+      "updated": "Informazioni aggiornate al 29 ottobre 2026."
     }
   }
 }

@@ -124,6 +124,19 @@
       "join_body": "For the next trips, stories and whatever comes next.",
       "legal": "Privacy",
       "ending": "RIDE YOUR WAY."
+    },
+    "legal": {
+      "heading": "Privacy and personal data",
+      "intro": "This page briefly explains how information is handled when you visit the website or contact us.",
+      "owner": "Contact",
+      "owner_text": "For questions about personal data, email",
+      "data": "Data we receive",
+      "data_text": "The website has no registration or newsletter forms and does not enable its own analytics tools. If you email us, we receive the information you choose to send. The hosting provider may process technical data and access logs under its own terms.",
+      "purpose": "Why we use it",
+      "purpose_text": "We use messages only to respond to enquiries and communicate about the community and trips.",
+      "rights": "Your rights",
+      "rights_text": "You can request information, access, correction or deletion by writing to the address above. This text should be reviewed and adapted before launch to reflect the actual hosting service and any tools used.",
+      "updated": "Information updated 29 October 2026."
     }
   }
 }
