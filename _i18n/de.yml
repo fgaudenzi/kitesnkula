@@ -10,7 +10,8 @@
       "crew": "TEAM",
       "stories": "GALERIE",
       "join": "JOIN KITESNKULA",
-      "home": "HOME"
+      "home": "HOME",
+      "merch": "MERCH"
     },
     "hero": {
       "eyebrow": "",
@@ -197,6 +198,26 @@
       "whatsapp_cta": "WHATSAPP-NACHRICHT",
       "email_cta": "Oder schreib uns eine E-Mail",
       "whatsapp_message": "Hallo KITESNKULA! Ich möchte mehr über die nächsten Reisen und die Community erfahren."
+    },
+    "merch": {
+      "kicker": "KITESNKULA MERCH",
+      "heading_first": "WEAR YOUR",
+      "heading_second": "OWN RULES.",
+      "intro": "Unsere Art zu kiten gibt es auch auf einem Sweatshirt. Gleicher Spirit, unterschiedliche Farben, keine Uniform.",
+      "black_title": "BLACK CREWNECK",
+      "black_description": "Schwarz mit pinkem Print. My session, my kite, my rules.",
+      "purple_title": "PURPLE HOODIE",
+      "purple_description": "Tiefes Violett mit pinkem Print. Gleiche Einstellung, andere Farbe.",
+      "group_title": "KITESNKULA TOGETHER",
+      "group_description": "Verschiedene Farben, verschiedene Menschen, gleicher Wind.",
+      "sticker_one": "INDEPENDENT RIDER",
+      "sticker_two": "MY RULES",
+      "sticker_three": "SAME WIND",
+      "black_alt": "Schwarzer KITESNKULA Pullover mit pinkem Rückenprint am Meer bei Sonnenuntergang",
+      "purple_alt": "Violetter KITESNKULA Hoodie mit pinkem Rückenprint am Meer bei Sonnenuntergang",
+      "group_alt": "Freunde am Strand mit KITESNKULA Hoodies in verschiedenen Farben",
+      "note": "Die Bilder zeigen Merch-Ideen der Community, keine bestätigten Bestände oder Verkaufspreise.",
+      "cta": "FRAG UNS AUF INSTAGRAM"
     }
   }
 }

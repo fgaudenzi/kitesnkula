@@ -10,7 +10,8 @@
       "crew": "TEAM",
       "stories": "GALLERY",
       "join": "JOIN KITESNKULA",
-      "home": "HOME"
+      "home": "HOME",
+      "merch": "MERCH"
     },
     "hero": {
       "eyebrow": "",
@@ -197,6 +198,26 @@
       "whatsapp_cta": "SCRIVICI SU WHATSAPP",
       "email_cta": "Oppure mandaci una mail",
       "whatsapp_message": "Ciao KITESNKULA! Vorrei avere informazioni sui prossimi viaggi e sulla community."
+    },
+    "merch": {
+      "kicker": "KITESNKULA MERCH",
+      "heading_first": "WEAR YOUR",
+      "heading_second": "OWN RULES.",
+      "intro": "La nostra idea di kite finisce anche su una felpa. Stesso spirito, colori diversi, nessuna uniforme.",
+      "black_title": "BLACK CREWNECK",
+      "black_description": "Nero, stampa fucsia. My session, my kite, my rules.",
+      "purple_title": "PURPLE HOODIE",
+      "purple_description": "Viola profondo e stampa fucsia: stessa attitudine, un altro colore.",
+      "group_title": "KITESNKULA TOGETHER",
+      "group_description": "Diversi colori, persone diverse, stesso vento.",
+      "sticker_one": "INDEPENDENT RIDER",
+      "sticker_two": "MY RULES",
+      "sticker_three": "SAME WIND",
+      "black_alt": "Felpa nera girocollo KITESNKULA con grafica fucsia sulla schiena, indossata al tramonto",
+      "purple_alt": "Felpa viola con cappuccio KITESNKULA con grafica fucsia sulla schiena, indossata al tramonto",
+      "group_alt": "Gruppo di amici in spiaggia con felpe KITESNKULA di colori diversi",
+      "note": "Le immagini mostrano idee di merchandising della community, non un catalogo con disponibilità o prezzi confermati.",
+      "cta": "CHIEDICI SU INSTAGRAM"
     }
   }
 }

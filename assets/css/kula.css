@@ -407,3 +407,86 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
  .crew-member{grid-template-columns:43% 1fr;gap:12px}
  .stories-header h2{font-size:2.7rem}
 }
+
+
+/* Merchandising — editorial lookbook, not an unverified checkout. */
+.nav-logo.marker{
+  font-family:var(--claim,'Oswald','Arial Narrow',sans-serif);
+  font-weight:500;
+  font-style:normal;
+  font-size:clamp(1.43rem,2.1vw,1.95rem);
+  line-height:1;
+  letter-spacing:-.045em;
+  text-transform:uppercase;
+  transform:none;
+  text-shadow:none;
+  border-bottom:3px solid var(--purple);
+  padding-bottom:4px;
+}
+.merch-section{
+  background:#eae2d7;
+  padding:78px 0 86px;
+  position:relative;
+  isolation:isolate;
+}
+.merch-section::before{
+  content:"";
+  position:absolute;inset:0;pointer-events:none;opacity:.2;
+  background:repeating-linear-gradient(110deg,transparent 0 14px,rgba(64,44,36,.035) 15px 17px);
+  z-index:-1;
+}
+.merch-heading-row{
+  display:flex;justify-content:space-between;align-items:end;gap:36px;
+  margin-bottom:34px;
+}
+.merch-heading{
+  font:500 clamp(3.3rem,5vw,6rem)/1.04 var(--claim,'Oswald',sans-serif);
+  letter-spacing:.005em;text-transform:uppercase;margin:13px 0 0;
+}
+.merch-heading span{color:var(--purple);}
+.merch-intro{max-width:365px;font:400 .92rem/1.75 var(--body);}
+.merch-grid{display:grid;grid-template-columns:1fr 1fr 1.16fr;gap:20px;align-items:start}
+.merch-card{min-width:0;}
+.merch-image{position:relative;aspect-ratio:4/5;background:#252027;overflow:hidden;isolation:isolate}
+.merch-image img{height:100%;width:100%;object-fit:cover;object-position:center;transition:transform .3s ease}
+.merch-image:hover img{transform:scale(1.045)}
+.merch-purple{background:#3b2248}
+.merch-friends{background:#c9b3a2}
+.merch-friends img{object-fit:cover;object-position:center}
+.merch-sticker{position:absolute;bottom:14px;left:12px;background:var(--lime);padding:6px 10px;
+  color:var(--ink);font:700 .69rem/1 var(--body);transform:rotate(-3deg);text-transform:uppercase}
+.merch-card-copy{padding:17px 3px 0}
+.merch-card-copy h3{font:500 clamp(1.6rem,2vw,2.2rem)/1.03 var(--claim,'Oswald',sans-serif);letter-spacing:.015em;margin:0 0 8px}
+.merch-card-copy p{font:400 .81rem/1.6 var(--body);max-width:330px}
+.merch-bottom{display:flex;align-items:center;justify-content:space-between;gap:28px;
+  border-top:1px solid #cfc3b3;padding-top:25px;margin-top:31px}
+.merch-bottom p{font:400 .78rem/1.65 var(--body);max-width:650px}
+.merch-bottom .brush-button{flex-shrink:0}
+@media(max-width:1000px){
+  .nav-links{gap:13px}
+  .merch-grid{gap:14px}
+  .merch-card-copy h3{font-size:1.7rem}
+}
+@media(max-width:700px){
+  .nav-logo.marker{font-size:1.5rem}
+  .merch-section{padding:62px 0 70px}
+  .merch-heading-row{display:block;margin-bottom:26px}
+  .merch-heading{font-size:clamp(3rem,11vw,5rem)}
+  .merch-intro{margin-top:18px;max-width:530px}
+  .merch-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 13px}
+  .merch-card:last-child{grid-column:1/-1}
+  .merch-card:last-child .merch-image{aspect-ratio:16/10}
+  .merch-image{aspect-ratio:3/4}
+  .merch-card-copy h3{font-size:1.52rem}
+  .merch-card-copy p{font-size:.76rem}
+  .merch-bottom{display:block}
+  .merch-bottom .brush-button{margin-top:20px}
+}
+@media(max-width:390px){
+  .nav-logo.marker{font-size:1.33rem}
+  .merch-card-copy h3{font-size:1.3rem}
+}
+
+/* Keep the entire group photo visible in the lookbook. */
+.merch-friends img{object-fit:contain;background:#d7c9bb}
+@media(max-width:700px){.merch-friends img{object-fit:cover}}
