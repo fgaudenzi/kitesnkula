@@ -183,12 +183,20 @@
       "owner": "Kontakt",
       "owner_text": "Bei Fragen zu personenbezogenen Daten schreibe an",
       "data": "Welche Daten",
-      "data_text": "Die Website enthält keine Anmelde- oder Newsletterformulare und setzt keine eigenen Analysedienste ein. Wenn du uns per E-Mail kontaktierst, erhalten wir die von dir übermittelten Informationen. Der Hosting-Anbieter kann technische Daten und Zugriffsprotokolle nach seinen Bedingungen verarbeiten.",
+      "data_text": "Die Website hat keine Anmelde- oder Newsletterformulare und nutzt keine eigenen Analysedienste. Wenn du uns per E-Mail, Instagram oder WhatsApp kontaktierst, erhalten wir die Informationen, die du uns sendest. Unterhaltungen über Instagram und WhatsApp unterliegen außerdem den Nutzungsbedingungen und Datenschutzhinweisen der jeweiligen Dienste. Der Hosting-Anbieter kann technische Daten und Zugriffsprotokolle nach seinen Bedingungen verarbeiten.",
       "purpose": "Wofür wir sie verwenden",
-      "purpose_text": "Wir verwenden Nachrichten nur zur Beantwortung von Anfragen und zur Kommunikation über Community und Reisen.",
+      "purpose_text": "Wir nutzen Nachrichten per E-Mail, Instagram oder WhatsApp, um Anfragen zu beantworten und über Community und Reisen zu informieren.",
       "rights": "Deine Rechte",
       "rights_text": "Du kannst Auskunft, Zugriff, Berichtigung oder Löschung über die angegebene E-Mail-Adresse anfordern. Dieser Text sollte vor der Veröffentlichung an das tatsächliche Hosting und verwendete Dienste angepasst werden.",
       "updated": "Stand: 29. Oktober 2026."
+    },
+    "contact_links": {
+      "group_label": "KITESNKULA kontaktieren",
+      "instagram_cta": "SCHREIB UNS AUF INSTAGRAM",
+      "instagram_label": "KITESNKULA auf Instagram, @kitesnkula",
+      "whatsapp_cta": "WHATSAPP-NACHRICHT",
+      "email_cta": "Oder schreib uns eine E-Mail",
+      "whatsapp_message": "Hallo KITESNKULA! Ich möchte mehr über die nächsten Reisen und die Community erfahren."
     }
   }
 }

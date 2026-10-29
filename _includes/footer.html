@@ -5,8 +5,26 @@
     <nav class="footer-navigation" aria-label="{{ c.footer.links_label }}">
       <div><span>{{ c.footer.about }}</span><a href="{{ '/' | relative_url }}#kula">{{ c.nav.kula }}</a><a href="{{ '/' | relative_url }}#crew">{{ c.nav.crew }}</a><a href="{{ '/' | relative_url }}#rules">{{ c.footer.rules }}</a></div>
       <div><span>{{ c.footer.trips }}</span><a href="{{ '/trips/' | relative_url }}">{{ c.footer.upcoming }}</a><a href="{{ '/' | relative_url }}#stories">{{ c.nav.stories }}</a></div>
-      <div><span>{{ c.footer.follow }}</span><a href="https://www.instagram.com/kiteskula/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></div>
-      <div><span>{{ c.footer.contact }}</span><a href="mailto:{{ site.email }}">{{ c.footer.write }} ↗</a><a href="{{ '/privacy/' | relative_url }}">{{ c.footer.legal }}</a></div>
+      <div>
+        <span>{{ c.footer.follow }}</span>
+        <a class="footer-social-link" href="{{ site.social.instagram_url }}" rel="noopener noreferrer" target="_blank" aria-label="{{ c.contact_links.instagram_label }}">
+          {% include social-icon.html kind="instagram" %}
+          <span>{{ site.social.instagram_handle }}</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div>
+        <span>{{ c.footer.contact }}</span>
+        {% if site.social.whatsapp_number != blank %}
+          <a class="footer-social-link" href="https://wa.me/{{ site.social.whatsapp_number }}?text={{ c.contact_links.whatsapp_message | url_encode }}" rel="noopener noreferrer" target="_blank" aria-label="{{ c.contact_links.whatsapp_cta }}">
+            {% include social-icon.html kind="whatsapp" %}
+            <span>WhatsApp</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        {% endif %}
+        <a href="mailto:{{ site.email }}">{{ c.footer.write }} ↗</a>
+        <a href="{{ '/privacy/' | relative_url }}">{{ c.footer.legal }}</a>
+      </div>
     </nav>
   </div>
   <div class="footer-bottom container-wide"><span>© {{ 'now' | date: '%Y' }} KITESNKULA</span><span>STAY SALTY OR STAY A CASA.</span></div>

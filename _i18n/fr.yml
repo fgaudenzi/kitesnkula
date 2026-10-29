@@ -183,12 +183,20 @@
       "owner": "Contact",
       "owner_text": "Pour toute question relative aux données personnelles, écris à",
       "data": "Données reçues",
-      "data_text": "Le site ne propose ni inscription ni formulaire de newsletter et n'active aucun outil d'analyse propre. Si tu nous écris par e-mail, nous recevons les informations que tu choisis de transmettre. L'hébergeur peut traiter des données techniques et des journaux d'accès selon ses conditions.",
+      "data_text": "Le site ne contient ni formulaire d'inscription ni newsletter et n'active aucun outil d'analyse propre. Si tu nous contactes par e-mail, Instagram ou WhatsApp, nous recevons les informations que tu choisis d'envoyer. Les conversations via Instagram et WhatsApp sont également soumises aux conditions et politiques de confidentialité de ces services. L'hébergeur peut traiter les données techniques et journaux d'accès selon ses conditions.",
       "purpose": "Pourquoi nous les utilisons",
-      "purpose_text": "Nous utilisons les messages uniquement pour répondre aux demandes et échanger au sujet de la communauté et des voyages.",
+      "purpose_text": "Nous utilisons les messages reçus par e-mail, Instagram ou WhatsApp pour répondre aux demandes et échanger au sujet de la communauté et des voyages.",
       "rights": "Tes droits",
       "rights_text": "Tu peux demander des informations, l'accès, la correction ou la suppression de tes données à l'adresse indiquée. Ce texte doit être revu et adapté avant mise en ligne selon l'hébergement et les outils réellement utilisés.",
       "updated": "Informations mises à jour le 29 octobre 2026."
+    },
+    "contact_links": {
+      "group_label": "Contacter KITESNKULA",
+      "instagram_cta": "ÉCRIS-NOUS SUR INSTAGRAM",
+      "instagram_label": "KITESNKULA sur Instagram, @kitesnkula",
+      "whatsapp_cta": "ÉCRIS-NOUS SUR WHATSAPP",
+      "email_cta": "Ou envoie-nous un e-mail",
+      "whatsapp_message": "Salut KITESNKULA ! J'aimerais en savoir plus sur les prochains voyages et la communauté."
     }
   }
 }
