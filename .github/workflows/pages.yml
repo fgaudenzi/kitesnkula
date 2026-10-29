@@ -1,0 +1,88 @@
+name: Deploy KITESNKULA to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build multilingual Jekyll site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby and Jekyll dependencies
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build website
+        env:
+          JEKYLL_ENV: production
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          bundle exec jekyll build \
+            --destination _site \
+            --baseurl "$PAGES_BASE_PATH" \
+            --url "$PAGES_ORIGIN"
+
+      - name: Verify four languages and site assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          for page in \
+            _site/index.html \
+            _site/en/index.html \
+            _site/de/index.html \
+            _site/fr/index.html \
+            _site/trips/index.html \
+            _site/assets/css/kula.css \
+            _site/assets/js/kula.js \
+            _site/assets/img/kula-mascot.svg; do
+            test -s "$page" || { echo "::error::Missing or empty: $page"; exit 1; }
+          done
+          for lang in '' en de fr; do
+            if [[ -z "$lang" ]]; then page="_site/index.html"; else page="_site/$lang/index.html"; fi
+            grep -q 'class="hero-title' "$page" || { echo "::error::Missing accessible hero text in $page"; exit 1; }
+            grep -q 'class="trip-card' "$page" || { echo "::error::Missing trips in $page"; exit 1; }
+          done
+
+      - name: Mark generated site as static
+        run: touch _site/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish site
+        id: deployment
+        uses: actions/deploy-pages@v4
