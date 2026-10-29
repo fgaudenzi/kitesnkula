@@ -1,117 +1,129 @@
-#
-# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
-#
-# Configuration: Add to _config.yml
-# locale: "en-US"  [YOUR PREFERRED LOCALE]
-#
-# How to use:
-# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
-
-# English [default] (https://localizely.com/language-code/en/)
-# -----------------
-
-#    - title: "Team"
-#      section: team
-#    - title: "Contact"
-#      section: portafolio
-#    - title: "Theme Source"
-#      url: https://github.com/raviriley/agency-jekyll-theme/
-#
-# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
-#
-# Configuration: Add to _config.yml
-# locale: "en-US"  [YOUR PREFERRED LOCALE]
-#
-# How to use:
-# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
-
-# English [default] (https://localizely.com/language-code/en/)
-# -----------------
-header:
-  title: Kites' n Kula
-  text: Kitesurf - KiteCamp - KiteFun
-  button: Viaggia con noi!
-  buttonlink: "#services"
-services:
-  title: "Che fai ancora ci pensi?"
-  text: "Cosa offriamo"
-  section: services
-  list:
-    - title: "KiteSurf"
-      desc: "Il vento, il mare e tu. Niente stress, solo la sensazione di planare sull’acqua e stapponi nel cielo."
-      icon: fas fa-wind #find more at https://fontawesome.com/icons
-    - title: "KiteCamp"
-      desc: "Non solo corsi, ma esperienze. Giornate di kite, birre al tramonto, scoprire gli spot e nuovi amici che diventano community."
-      icon: fas fa-umbrella-beach
-    - title: "Kitefun"
-      desc: "Perché il kite è prima di tutto divertimento. Mare, salsedine, e tanta leggerezza — KITES’N KULA style."
-      icon: fas as fa-glass-cheers
-timeline:
-  title: "Quando parti con noi?"
-  text: "I tuoi prossimi camp"
-  section: timeline
-  # left is the default
-  #start_align: "left"
-  events:
-    - title: "Begineer Sud Sardegna"
-      year: "Aprile-Maggio"
-      desc: "Cinque giorni immersi nel vento e nel sole della Sardegna. Perfetto per chi inizia da zero. Tra lagune cristalline, dune bianche e fenicotteri rosa, imparerai a planare sull’acqua ridendo, cadendo e rialzandoti fottendone di tutti in stile KITES’N KULA."
-      image: assets/img/camp/sardegna.jpg
-      alt: "Sardegna Kite Camp Principianti"
-    - title: "Sicilia, inizia la tua stagione"
-      year: "Giugno"
-      desc: "Apri la tua stagione kite tra le acque piatte e cristalline dello Stagnone. Perfetto per principianti che vogliono muovere i primi passi con il kite e scoprire uno dei migliori spot italiani, tra tramonti da cartolina e risate a volontà."
-      image: assets/img/camp/sicilia1.jpg
-      alt: "Sicilia Kite Camp Principianti"
-    - title: "Stagnone Party Mood"
-      year: "Agosto"
-      desc: "Estate, vento costante e il mood giusto! Impara e perfeziona le tue skills tra sessioni in acqua e aperitivi al tramonto. Il kite è divertimento, e qui lo vivrai alla grande, con risate, amici nuovi e un pizzico di follia KITES’N KULA."
-      image: assets/img/camp/sicilia2.jpg
-      alt: "Sicilia Kite Camp Principianti"
-    - title: "Kitesuf Paradise Brasile"
-      year: "Ottobre-Novembre"
-      desc: "Dieci giorni con vento il vento perfetto in Brasile. Questo camp è pensato per chi ha già esperienza e vuole spingersi oltre i primi trick. Tanto kite, cocktail, tramonti infuocati e sessioni indimenticabili: il kite qui è una vera avventura! jericoara la nostra base, Prea, Tatajuba e Guriu i nostri spot. Tanti downwind e sessioni dedicate per migliorarsi"
-      image: assets/img/camp/jericoara.jpg
-      alt:
-      # you can enforce the alignment
-      align: right
-  end: "Parti con noi, altrimenti <br> KITES'N KULA <br>"
-team:
-  title: "Il nostro Team"
-  text: "Potrai sempre contare su di Noi, siamo istruttori certificati e conosciamo i luoghi dove vi portiamo"
-  subtext: Il team di KITES'N KULA è formato da istruttori certificati IKO e da appassionati di kite con anni di esperienza. Siamo qui per guidarti, supportarti e condividere con te la nostra passione per il kitesurf in un ambiente sicuro e divertente.
-  section: team
-  people:
-    - name: "Filippo Gaudenzi"
-      role: "Founder e Istruttore"
-      image: assets/img/team/filippo.jpg
-      social:
-        - url: https://instagram.com/filowg
-          icon: fab fa-instagram
-    - name: "Simone Giacomini"
-      role: "Founder e Istruttore"
-      image: assets/img/team/simone.jpg
-      social:
-        - url: https://instagram.com/simogneiaco88
-          icon: fab fa-instagram
-contact:
-  title: "Contattaci"
-  text: "Scrivici per sapere di più sui nostri camp o anche solo per insultarci :)"
-  section: contact
-  name: "Nome*"
-  name-validation: "Metti qua il tuo nome."
-  email: "Email*"
-  email-validation: "Qua va la tua email."
-  phone: "Numero di telefono (non ne abuseremo)"
-  phone-validation: "Il tuo numero va qui!"
-  message: "Cosa vuoi?*"
-  message-validation: "Scrivici tutto quello che vuoi sapere e di piu'."
-  subject: "Contact Form Submission"
-  submit: "MANDACELO!"
-footer:
-  legal: "Privacy Policy"
-  social:
-    - url: https://instagram.com/kiteskula
-      icon: "fab fa-instagram"
-    - url: https://facebook.com/kitesnkula
-      icon: "fab fa-facebook-f"
+{
+  "kula": {
+    "meta_description": "KITESNKULA: una community di kiter, senza giudizi. Pochi viaggi, tanto vento, persone vere.",
+    "nav": {
+      "menu": "Apri il menu",
+      "navigation": "Navigazione principale",
+      "language": "Lingua",
+      "kula": "La Kula",
+      "trips": "Viaggi",
+      "crew": "Il team",
+      "stories": "Storie",
+      "join": "Entra nella Kula"
+    },
+    "hero": {
+      "eyebrow": "UNA COMMUNITY, NON UNA CLASSIFICA.",
+      "title_line1": "STESSO VENTO.",
+      "title_line2": "TESTE DIVERSE.",
+      "hand": "Fatti il tuo kite.",
+      "description": "C'è chi salta alto e chi cerca ancora la bolina. A noi importa con chi condividi il vento.",
+      "cta": "SCOPRI LA KULA",
+      "sticker": "STAY SALTY\nOR STAY A CASA.",
+      "image_alt": "Kiter e amici al mare dopo una sessione"
+    },
+    "manifesto": {
+      "kicker": "THE KULA",
+      "heading_line1": "STESSO VENTO.",
+      "heading_line2": "TESTE DIVERSE.",
+      "body": "Qui non importa quanto salti, quale kite usi o da quanti anni navighi. Importa che hai voglia di condividere il vento, aiutarti e stare bene insieme.",
+      "cta": "COME LA PENSIAMO"
+    },
+    "trips": {
+      "kicker": "PROSSIMI VIAGGI",
+      "heading_line1": "SOMEWHERE.",
+      "heading_line2": "TOGETHER.",
+      "intro": "Pochi viaggi all'anno. Non per collezionare destinazioni, ma per condividere sessioni, tavolate e nuove amicizie.",
+      "all": "TUTTE LE DESTINAZIONI",
+      "featured": "NEL RADAR",
+      "type": "KITE TRIP · KULA STYLE",
+      "dates_soon": "Date da annunciare",
+      "discover": "SCOPRI IL VIAGGIO",
+      "ask": "CHIEDICI INFORMAZIONI",
+      "disclaimer": "Le destinazioni sono in programma; date, prezzi e disponibilità non sono ancora confermati."
+    },
+    "destinations": {
+      "sicily": {
+        "title": "SICILIA — LO STAGNONE",
+        "description": "Acqua piatta, primi bordi, tramonti lunghi.",
+        "long_description": "Un posto dove imparare, migliorare e fare gruppo, senza fretta. Il vento è solo una parte del viaggio.",
+        "level": "Da beginner in su",
+        "image_alt": "Laguna dello Stagnone in Sicilia"
+      },
+      "brazil": {
+        "title": "BRASILE — JERICOACOARA",
+        "description": "Vento, downwind e giornate senza orologio.",
+        "long_description": "Una base a Jeri, sessioni tra Preá, Guriú e altri spot secondo le condizioni. Per rider autonomi con voglia di condividere l'avventura.",
+        "level": "Rider autonomi",
+        "image_alt": "Spiaggia tropicale e spot di kitesurf in Brasile"
+      },
+      "sardinia": {
+        "title": "SARDEGNA — SUD",
+        "description": "Mare, lagune e il tempo di conoscersi.",
+        "long_description": "Spot diversi, acqua e terra da esplorare insieme. Un'idea di viaggio per chi vuole godersi il kite a modo suo.",
+        "level": "Livelli da definire",
+        "image_alt": "Costa e spiaggia in Sardegna"
+      }
+    },
+    "crew": {
+      "kicker": "MEET THE CREW",
+      "title": "I SOLITI SOGGETTI.",
+      "intro": "Non un team in giacca e cravatta. Le persone con cui partire, montare il kite e aspettare il vento.",
+      "filippo_note": "CERCA IL VENTO ↗",
+      "filippo_role": "Co-founder · Kiter",
+      "filippo_bio": "Uno di quelli che controllano le previsioni più spesso dei messaggi.",
+      "simone_note": "ANCORA UN BORDO ↗",
+      "simone_role": "Co-founder · Kiter",
+      "simone_bio": "Convinto che l'ultimo bordo sia sempre quello dopo.",
+      "sticker": "NO EGO, JUST KITE.",
+      "statement_line1": "NIENTE FENOMENI.",
+      "statement_line2": "SOLO PERSONE.",
+      "statement": "La Kula la costruisce chi parte con noi. Tutti diversi, tutti parte della stessa storia."
+    },
+    "stories": {
+      "kicker": "LIFE IN THE KULA",
+      "heading": "NON SI VIVE DI SOLO VENTO.",
+      "intro": "Le sessioni contano. Ma anche i lanci, le attese, le cene e le persone che trovi lungo la strada.",
+      "alt1": "Sessione di kitesurf",
+      "alt2": "Momento di un kitecamp in Sicilia",
+      "alt3": "Viaggio di kitesurf in Brasile",
+      "alt4": "Paesaggio del mare in Sardegna",
+      "sticker": "REAL PEOPLE.\nREAL STORIES."
+    },
+    "values": {
+      "kicker": "THE KULA RULES",
+      "heading": "BOLINA E LASCIA BOLINARE.",
+      "items": [
+        {
+          "title": "Ognuno col suo stile.",
+          "description": "Niente gare a chi è più kiter."
+        },
+        {
+          "title": "Una mano si dà sempre.",
+          "description": "A terra, in acqua, anche quando non conviene."
+        },
+        {
+          "title": "Il vento è di tutti.",
+          "description": "E il rispetto non è facoltativo."
+        },
+        {
+          "title": "Stare insieme conta.",
+          "description": "Anche quando il forecast sbaglia."
+        }
+      ]
+    },
+    "join": {
+      "kicker": "JOIN THE KULA",
+      "heading_line1": "CI VEDIAMO",
+      "heading_line2": "QUANDO C'È VENTO.",
+      "body": "Vuoi sapere quando partiremo di nuovo? Scrivici. Nessuna tessera, nessuna posa: solo persone e kite.",
+      "cta": "SCRIVICI"
+    },
+    "footer": {
+      "line": "Stesso vento. Teste diverse.",
+      "join_title": "JOIN THE KULA",
+      "join_body": "Per i prossimi viaggi, le storie e quello che bolle in pentola.",
+      "legal": "Privacy",
+      "ending": "FATTI IL TUO KITE."
+    }
+  }
+}
