@@ -8,21 +8,21 @@ layout: default
   <div class="hero-content container-wide">
     <div class="hero-message">
       <span class="eyebrow">{{ c.hero.eyebrow }}</span>
-      <h1 class="hero-title marker" id="hero-heading">
+      <h1 class="hero-title claim-type" id="hero-heading">
         <span>{{ c.hero.first }}</span><span>{{ c.hero.second }}</span><span class="purple-swipe">{{ c.hero.third }}</span>
       </h1>
       <p class="hero-copy">{{ c.hero.description }}</p>
       <a class="brush-button lime-button" href="#kula">{{ c.hero.cta }} <span aria-hidden="true">↗</span></a>
     </div>
-    <div class="hero-side marker" aria-hidden="true"><span>{{ c.hero.side_line1 }}</span><span>{{ c.hero.side_line2 }}</span><span>{{ c.hero.side_line3 }}</span><svg class="mini-crown" viewBox="0 0 68 54"><path d="M6 41 4 13 20 29 32 5 43 29 62 10 58 43Z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></svg></div>
+    <div class="hero-side claim-type" aria-hidden="true"><span>{{ c.hero.side_line1 }}</span><span>{{ c.hero.side_line2 }}</span><span>{{ c.hero.side_line3 }}</span><svg class="mini-crown" viewBox="0 0 68 54"><path d="M6 41 4 13 20 29 32 5 43 29 62 10 58 43Z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></svg></div>
   </div>
-  <span class="hero-mini-note marker">{{ c.hero.note }}</span>
+  <span class="hero-mini-note claim-type">{{ c.hero.note }}</span>
 </section>
 
 <section class="kula-band" id="kula" aria-labelledby="kula-heading">
   <div class="kula-band-inner container-wide">
-    <div class="kula-animal"><img src="{{ '/assets/img/kula-mascot.svg' | prepend: site.baseurl_root }}" alt="{{ c.manifesto.mascot_alt }}" width="390" height="300"><span class="kula-crown marker" aria-hidden="true">✳</span></div>
-    <div class="kula-band-title"><span class="section-label">{{ c.manifesto.kicker }}</span><h2 id="kula-heading" class="marker">{{ c.manifesto.first }}<br>{{ c.manifesto.second }}</h2><span class="paint-underline lime-underline" aria-hidden="true"></span></div>
+    <div class="kula-animal"><img src="{{ '/assets/img/kula-mascot.svg' | prepend: site.baseurl_root }}" alt="{{ c.manifesto.mascot_alt }}" width="390" height="300"><span class="kula-crown claim-type" aria-hidden="true">✳</span></div>
+    <div class="kula-band-title"><span class="section-label">{{ c.manifesto.kicker }}</span><h2 id="kula-heading" class="claim-type">{{ c.manifesto.first }}<br>{{ c.manifesto.second }}</h2><span class="paint-underline lime-underline" aria-hidden="true"></span></div>
     <div class="kula-band-message"><p>{{ c.manifesto.body }}</p><a class="brush-button cream-button" href="#rules">{{ c.manifesto.cta }} <span aria-hidden="true">↗</span></a></div>
   </div>
 </section>
@@ -39,7 +39,7 @@ layout: default
       <article class="trip-card">
         <a class="trip-cover" href="{{ '/trips/' | relative_url }}#{{ trip.id }}" aria-label="{{ t.title }}">
           <img src="{{ trip.image | prepend: site.baseurl_root }}" alt="{{ t.image_alt }}" width="640" height="400" loading="lazy">
-          {% if forloop.first %}<span class="trip-ribbon marker">{{ c.trips.featured }}</span>{% endif %}
+          {% if forloop.first %}<span class="trip-ribbon claim-type">{{ c.trips.featured }}</span>{% endif %}
         </a>
         <div class="trip-content">
           <h3>{{ t.title }}</h3>
@@ -61,9 +61,9 @@ layout: default
   <div class="container-wide crew-layout">
     <div class="crew-lead">
       <span class="section-label purple-mark">{{ c.crew.kicker }}</span>
-      <h2 id="crew-heading" class="marker">{{ c.crew.first }}<br>{{ c.crew.second }}</h2>
+      <h2 id="crew-heading" class="claim-type">{{ c.crew.first }}<br>{{ c.crew.second }}</h2>
       <p>{{ c.crew.intro }}</p>
-      <span class="sketch-arrow marker" aria-hidden="true">↗</span>
+      <span class="sketch-arrow claim-type" aria-hidden="true">↗</span>
     </div>
     <article class="crew-member orange-paper">
       <div class="crew-image"><img src="{{ '/assets/img/team/filippo.jpg' | prepend: site.baseurl_root }}" alt="{{ c.crew.filippo_alt }}" width="620" height="620" loading="lazy"></div>
@@ -78,14 +78,14 @@ layout: default
 
 <section id="stories" class="stories-block paper-block" aria-labelledby="stories-heading">
   <div class="container-wide">
-    <div class="stories-header"><div><span class="section-label purple-mark">{{ c.stories.kicker }}</span><h2 id="stories-heading" class="marker">{{ c.stories.first }}<br>{{ c.stories.second }}<br><span class="purple-swipe">{{ c.stories.third }}</span></h2></div><p>{{ c.stories.intro }}</p></div>
+    <div class="stories-header"><div><span class="section-label purple-mark">{{ c.stories.kicker }}</span><h2 id="stories-heading" class="claim-type">{{ c.stories.first }}<br>{{ c.stories.second }}<br><span class="purple-swipe">{{ c.stories.third }}</span></h2></div><p>{{ c.stories.intro }}</p></div>
     <div class="stories-gallery">
       <figure class="photo-cut tilt-left"><img src="{{ '/assets/img/camp/sicilia2.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt1 }}" loading="lazy"></figure>
       <figure class="photo-cut tilt-right"><img src="{{ '/assets/img/camp/sardegna.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt2 }}" loading="lazy"></figure>
       <figure class="photo-cut tall-cut"><img src="{{ '/assets/img/header.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt3 }}" loading="lazy"></figure>
       <figure class="photo-cut tilt-left"><img src="{{ '/assets/img/mattia.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt4 }}" loading="lazy"></figure>
       <figure class="photo-cut tilt-right"><img src="{{ '/assets/img/camp/jericoara.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt5 }}" loading="lazy"></figure>
-      <span class="gallery-note marker">{{ c.stories.sticker }}</span>
+      <span class="gallery-note claim-type">{{ c.stories.sticker }}</span>
     </div>
   </div>
 </section>
@@ -162,7 +162,7 @@ layout: default
 
 <section id="join" class="join-banner" aria-labelledby="join-heading">
   <div class="container-wide join-banner-inner">
-    <div><span class="section-label">{{ c.join.kicker }}</span><h2 id="join-heading" class="marker">{{ c.join.first }}<br>{{ c.join.second }}</h2><p>{{ c.join.body }}</p></div>
+    <div><span class="section-label">{{ c.join.kicker }}</span><h2 id="join-heading" class="claim-type">{{ c.join.first }}<br>{{ c.join.second }}</h2><p>{{ c.join.body }}</p></div>
     <div class="join-actions" aria-label="{{ c.contact_links.group_label }}">
       {% if site.social.whatsapp_number != blank %}
         <a class="brush-button lime-button join-social-button" href="https://wa.me/{{ site.social.whatsapp_number }}?text={{ c.contact_links.whatsapp_message | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="{{ c.contact_links.whatsapp_cta }}">
@@ -178,6 +178,6 @@ layout: default
       </a>
       <a class="join-email-link" href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20Join%20KITESNKULA">{{ c.contact_links.email_cta }} <span aria-hidden="true">↗</span></a>
     </div>
-    <p class="marker join-aside">{{ c.join.aside }}</p>
+    <p class="claim-type join-aside">{{ c.join.aside }}</p>
   </div>
 </section>
