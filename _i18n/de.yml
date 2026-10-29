@@ -32,13 +32,21 @@
     },
     "manifesto": {
       "kicker": "KITESNKULA",
-      "heading_line1": "GLEICHER WIND.",
-      "heading_line2": "ANDERE KÖPFE.",
-      "body": "Wie hoch du springst, welchen Kite du fährst oder wie lange du schon dabei bist, spielt keine Rolle. Den Wind teilen, einander helfen und gemeinsam Spaß haben schon.",
-      "cta": "ENTDECKE KITESNKULA",
-      "first": "GLEICHER WIND.",
-      "second": "ANDERE KÖPFE.",
-      "mascot_alt": "KITESNKULA Opossum mit Kitesurfbar"
+      "heading_line1": "NO HEROES.",
+      "heading_line2": "JUST KITERS.",
+      "body": [
+        "Wir lieben Kitesurfen. Und alles, was davor, danach und bei Flaute passiert.",
+        "Spontane Sessions, Tipps am Strand, Reisen, die wir in letzter Minute nach den Windvorhersagen planen. Oder 200 Kilometer fahren, um mit einem Freund einen gebrauchten Kite anzuschauen. Ja, wirklich passiert.",
+        "Wir sind zertifizierte Kitelehrer und seit Jahren auf dem Wasser. Kitesurfen nehmen wir ernst. Uns selbst eher weniger.",
+        "Egal, ob du gerade Höhe laufen lernst oder Megaloops stehst: Hier ist Platz für dich. Du musst niemanden beeindrucken.",
+        "Wir helfen uns, reisen zusammen und lachen viel. Und wenn du zum Aperitivo im Poncho auftauchst, noch voller Sand, passt du bestens dazu."
+      ],
+      "cta": "LERNE DAS TEAM KENNEN",
+      "first": "NO HEROES.",
+      "second": "JUST KITERS.",
+      "mascot_alt": "KITESNKULA Opossum mit Kitesurfbar",
+      "strapline": "Nichts zu beweisen. Niemanden zu beurteilen.",
+      "closing": "SAME WIND. DIFFERENT WEIRDOS."
     },
     "trips": {
       "kicker": "NÄCHSTE REISEN",
