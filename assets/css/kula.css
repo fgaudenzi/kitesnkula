@@ -254,6 +254,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
   --body:'Courier Prime','Courier New','Liberation Mono',monospace;
   --display:'Anton','Barlow Condensed','Arial Narrow','Noto Sans Display',sans-serif;
   --marker:'Kalam','Comic Neue','Comic Sans MS',cursive;
+  --claim:'Oswald','Arial Narrow','Helvetica Neue',sans-serif;
 }
 body{font-family:var(--body);font-size:14px;line-height:1.65}
 .marker{font-family:var(--marker);font-style:normal;font-weight:400;letter-spacing:-.025em;line-height:1.16;text-shadow:none}
@@ -272,12 +273,12 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 .hero-shade{background:linear-gradient(90deg,rgba(247,240,225,.99) 0%,rgba(247,240,225,.92) 27%,rgba(247,240,225,.5) 42%,rgba(247,240,225,0) 67%),linear-gradient(0deg,rgba(24,18,15,.22),transparent 45%)}
 .hero-content{padding-top:57px}
 .hero-message{width:58%;max-width:740px}
-.hero-title{font-family:var(--marker);font-style:normal;font-weight:400;font-size:clamp(3.05rem,4.85vw,5.35rem);line-height:1.13;letter-spacing:-.042em;text-transform:uppercase;max-width:720px;margin:14px 0 33px;transform:rotate(-1.5deg);transform-origin:left center;text-shadow:none}
+.hero-title{font-family:var(--claim);font-style:normal;font-weight:500;font-size:clamp(3.75rem,5.65vw,6.1rem);line-height:1.08;letter-spacing:.012em;text-transform:uppercase;max-width:720px;margin:14px 0 33px;transform:none;text-shadow:none}
 .hero-title span{display:block;max-width:100%;white-space:nowrap;width:max-content}
 .hero-title .purple-swipe::after{height:4px;bottom:-9px;left:-1%;right:1.5%;transform:rotate(-1.5deg)}
 .hero-copy{font:400 .96rem/1.75 var(--body);max-width:345px;margin:0 0 22px}
-.hero-side{font-family:var(--marker);font-style:normal;font-weight:400;font-size:clamp(1.05rem,1.55vw,1.55rem);line-height:1.15;letter-spacing:-.025em;transform:rotate(4deg)}
-.hero-mini-note{font-family:var(--marker);font-weight:400;font-size:1rem;line-height:1.25;left:43%;top:64%;transform:rotate(-5deg)}
+.hero-side{font-family:var(--claim);font-style:normal;font-weight:500;font-size:clamp(1.15rem,1.7vw,1.7rem);line-height:1.18;letter-spacing:.025em;transform:rotate(3deg)}
+.hero-mini-note{font-family:var(--claim);font-weight:500;font-size:1.1rem;line-height:1.2;letter-spacing:.02em;left:43%;top:64%;transform:rotate(-3deg)}
 .brush-button,.paint-link{font-family:var(--body);font-size:.74rem;font-weight:700;letter-spacing:0}
 /* Rough torn purple manifesto, tighter collage rhythm. */
 .kula-band{margin-top:-20px;clip-path:polygon(0 3.8%,5% 2%,12% 3%,19% 1%,28% 3.3%,37% 1%,47% 2.9%,56% 1.3%,66% 3.7%,75% 2%,83% 3.5%,93% 1.3%,100% 3%,100% 96%,92% 98.5%,84% 96%,73% 98%,61% 96.2%,51% 99%,42% 96%,31% 98%,18% 96%,7% 98%,0 96%)}
@@ -285,7 +286,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 .kula-band-inner{min-height:295px;grid-template-columns:27% minmax(0,42%) minmax(0,25%);gap:3%;padding:35px 0 41px}
 .kula-animal{margin-left:-52px;margin-bottom:-20px}
 .kula-animal img{max-width:350px;transform:rotate(-7deg)}
-.kula-band-title h2{font-family:var(--marker);font-weight:400;font-size:clamp(2.4rem,3.45vw,3.8rem);font-style:normal;line-height:1.14;letter-spacing:-.035em;transform:rotate(-2deg);margin:11px 0 16px;text-shadow:none}
+.kula-band-title h2{font-family:var(--claim);font-weight:500;font-size:clamp(3.05rem,4vw,4.55rem);font-style:normal;line-height:1.1;letter-spacing:.01em;transform:none;margin:11px 0 16px;text-shadow:none}
 .kula-band-message p{font:400 .9rem/1.75 var(--body);margin-bottom:21px}
 .paint-underline{height:5px;transform:rotate(-2deg)}
 /* Destination cards: more photographic, less whitespace, typewriter facts. */
@@ -306,7 +307,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 /* Team: collage row, larger portraits and handwritten intro. */
 .crew-block{padding:64px 0 66px;clip-path:polygon(0 1%,10% 0,23% 1%,34% 0,52% 1%,67% 0,84% 1%,100% 0,100% 99%,90% 100%,73% 99%,53% 100%,33% 99%,14% 100%,0 99%)}
 .crew-layout{grid-template-columns:.75fr 1.15fr 1.15fr;gap:25px}
-.crew-lead h2{font-family:var(--marker);font-style:normal;font-weight:400;font-size:clamp(2.55rem,3.15vw,4.1rem);line-height:1.16;transform:rotate(-2deg);margin:15px 0 24px;letter-spacing:-.033em;text-shadow:none}
+.crew-lead h2{font-family:var(--claim);font-style:normal;font-weight:500;font-size:clamp(2.95rem,3.55vw,4.4rem);line-height:1.1;transform:none;margin:15px 0 24px;letter-spacing:.012em;text-shadow:none}
 .crew-lead>p,.crew-bio,.crew-role{font:400 .8rem/1.54 var(--body)}
 .crew-member{grid-template-columns:52% 1fr;gap:15px;align-items:center}
 .crew-image{aspect-ratio:.85;transform:rotate(-2deg);clip-path:polygon(0 5%,100% 0,96% 94%,3% 100%)}
@@ -317,7 +318,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 /* Photo-wall collage with staggered overlapping editorial prints. */
 .stories-block{padding:62px 0 80px}
 .stories-header{margin-bottom:18px;gap:28px}
-.stories-header h2{font-family:var(--marker);font-style:normal;font-weight:400;font-size:clamp(2.75rem,3.45vw,4.45rem);line-height:1.16;letter-spacing:-.037em;transform:rotate(-2deg);margin:10px 0 5px;text-shadow:none}
+.stories-header h2{font-family:var(--claim);font-style:normal;font-weight:500;font-size:clamp(3rem,3.95vw,4.7rem);line-height:1.1;letter-spacing:.01em;transform:none;margin:10px 0 5px;text-shadow:none}
 .stories-header>p{font-family:var(--body);font-size:.82rem;max-width:320px}
 .stories-gallery{grid-template-columns:1.1fr .8fr 1fr .93fr 1.25fr;gap:0;align-items:end;min-height:290px}
 .photo-cut{height:248px;border:5px solid #f7f2e9;box-shadow:0 3px 11px rgba(22,14,11,.19);position:relative;z-index:1}
@@ -340,9 +341,9 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 .join-banner{padding:64px 0 60px;clip-path:polygon(0 5%,8% 2%,17% 4%,27% 1%,39% 3%,49% 1%,61% 4%,71% 1%,82% 3%,93% 1%,100% 3%,100% 100%,0 100%)}
 .join-banner::before{background:linear-gradient(0deg,rgba(10,9,10,.91),rgba(15,14,14,.78)),repeating-linear-gradient(110deg,transparent 0 16px,rgba(255,255,255,.06) 17px 19px),radial-gradient(ellipse at 60% 80%,#515253 0,transparent 65%)}
 .join-banner-inner{grid-template-columns:1.2fr .9fr .65fr;gap:6%}
-.join-banner h2{font-family:var(--marker);font-style:normal;font-weight:400;letter-spacing:-.035em;font-size:clamp(2.75rem,3.35vw,4.4rem);line-height:1.17;transform:rotate(-2deg);text-shadow:none}
+.join-banner h2{font-family:var(--claim);font-style:normal;font-weight:500;letter-spacing:.01em;font-size:clamp(3.05rem,3.75vw,4.6rem);line-height:1.1;transform:none;text-shadow:none}
 .join-banner p:not(.join-aside){font-family:var(--body);font-size:.82rem;line-height:1.56}
-.join-aside{font-family:var(--marker);font-style:normal;font-weight:400;font-size:clamp(1.5rem,2.1vw,2.3rem);line-height:1.2;transform:rotate(-3deg);text-shadow:none}
+.join-aside{font-family:var(--claim);font-style:normal;font-weight:500;font-size:clamp(1.7rem,2.25vw,2.5rem);line-height:1.18;letter-spacing:.02em;transform:rotate(-2deg);text-shadow:none}
 .join-aside::after{content:"";display:block;height:4px;background:var(--purple);width:80%;margin:9px auto 0;transform:rotate(-2deg)}
 .join-actions{width:min(300px,100%)}
 .site-footer{padding-top:41px;background:#121011}
@@ -351,7 +352,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 .footer-navigation>div>span{font-family:var(--body);font-weight:700;font-size:.74rem}
 .footer-navigation a,.footer-bottom{font-family:var(--body)}
 @media(max-width:1100px){
- .hero-title{font-size:clamp(2.8rem,4.8vw,4.1rem)}
+ .hero-title{font-size:clamp(3.15rem,5.3vw,4.75rem)}
  .hero-message{width:61%}
  .trip-title-row{grid-template-columns:1.1fr 1fr}
  .trip-title-row .inline-link{grid-column:2}
@@ -359,19 +360,19 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
  .crew-lead{grid-column:1/-1}
  .crew-lead h2{font-size:3.4rem}
  .crew-member{grid-template-columns:45% 1fr}
- .kula-band-title h2{font-size:clamp(2.3rem,3.8vw,3.45rem)}
+ .kula-band-title h2{font-size:clamp(2.75rem,4.25vw,4rem)}
 }
 @media(max-width:700px){
  .site-nav{min-height:68px}
  .hero{height:auto;min-height:620px}
  .hero-content{min-height:620px;padding-top:65px}
  .hero-message{width:100%;max-width:100%}
- .hero-title{font-size:clamp(2.35rem,8.8vw,4.2rem);line-height:1.12;letter-spacing:-.04em;transform:rotate(-1deg);margin:14px 0 33px}
+ .hero-title{font-size:clamp(2.65rem,10vw,4.65rem);line-height:1.09;letter-spacing:.005em;transform:none;margin:14px 0 33px}
  .hero-title span{max-width:100%;white-space:normal}
  .hero-copy{font-size:.87rem;max-width:280px}
  .hero-side{bottom:47px;right:12px;font-size:1.12rem;line-height:1.04;color:white;text-shadow:2px 2px 5px #292018}
  .kula-band-inner{grid-template-columns:34% 1fr;gap:4%;padding:36px 0 45px}
- .kula-band-title h2{font-size:clamp(1.7rem,6.3vw,2.85rem);line-height:1.17}
+ .kula-band-title h2{font-size:clamp(2rem,7.15vw,3.2rem);line-height:1.12}
  .kula-animal{margin-left:-19px;margin-bottom:0}
  .kula-band-message{grid-column:1/-1}
  .trips-block{padding:62px 0}
@@ -381,11 +382,11 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
  .trip-cover{height:245px}
  .trip-content h3{font-size:2.2rem}
  .crew-block{padding:55px 0}
- .crew-lead h2{font-size:3.05rem}
+ .crew-lead h2{font-size:3.25rem}
  .crew-member{grid-template-columns:42% 1fr}
  .crew-image{aspect-ratio:.94}
  .stories-block{padding:54px 0 74px}
- .stories-header h2{font-size:clamp(2.45rem,8vw,3.5rem)}
+ .stories-header h2{font-size:clamp(2.85rem,9vw,3.9rem)}
  .stories-gallery{grid-template-columns:repeat(3,1fr);min-height:200px}
  .photo-cut:nth-child(1){height:190px}
  .photo-cut:nth-child(2){height:156px}
@@ -396,13 +397,13 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
  .rule h3{font-size:1.4rem;min-height:auto}
  .join-banner-inner{display:block}
  .join-banner{padding:60px 0}
- .join-banner h2{font-size:2.7rem}
+ .join-banner h2{font-size:3.1rem}
  .join-actions{margin-top:26px}
  .join-aside{display:none}
 }
 @media(max-width:420px){
- .hero-title{font-size:clamp(2.12rem,9.3vw,2.55rem)}
- .kula-band-title h2{font-size:clamp(1.58rem,6.4vw,2.1rem)}
+ .hero-title{font-size:clamp(2.45rem,10.9vw,3rem)}
+ .kula-band-title h2{font-size:clamp(1.9rem,7.2vw,2.55rem)}
  .crew-member{grid-template-columns:43% 1fr;gap:12px}
- .stories-header h2{font-size:2.35rem}
+ .stories-header h2{font-size:2.7rem}
 }
