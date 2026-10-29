@@ -5,11 +5,11 @@
       "menu": "Ouvrir le menu",
       "navigation": "Navigation principale",
       "language": "Langue",
-      "kula": "LA KULA",
+      "kula": "KITESNKULA",
       "trips": "VOYAGES",
       "crew": "ÉQUIPE",
       "stories": "GALERIE",
-      "join": "REJOINS LA KULA",
+      "join": "REJOINS KITESNKULA",
       "home": "ACCUEIL"
     },
     "hero": {
@@ -18,7 +18,7 @@
       "title_line2": "TÊTES DIFFÉRENTES.",
       "hand": "Ride à ta façon.",
       "description": "Une communauté de riders qui vivent le kite à leur manière. Voyages, rencontres, histoires et bien plus.",
-      "cta": "DÉCOUVRE LA KULA",
+      "cta": "DÉCOUVRE KITESNKULA",
       "sticker": "STAY SALTY\nOR STAY A CASA.",
       "image_alt": "Des kitesurfeurs réunis sur la plage",
       "first": "TON KITE.",
@@ -30,11 +30,11 @@
       "note": "RIDERS DIFFÉRENTS. MÊME VENT."
     },
     "manifesto": {
-      "kicker": "THE KULA",
+      "kicker": "KITESNKULA",
       "heading_line1": "MÊME VENT.",
       "heading_line2": "TÊTES DIFFÉRENTES.",
       "body": "Peu importe tes sauts, ton aile ou tes années de pratique. Ce qui compte, c'est de partager le vent, de s'entraider et d'être bien ensemble.",
-      "cta": "DÉCOUVRE LA KULA",
+      "cta": "DÉCOUVRE KITESNKULA",
       "first": "MÊME VENT.",
       "second": "TÊTES DIFFÉRENTES.",
       "mascot_alt": "Opossum KITESNKULA avec une barre de kitesurf"
@@ -103,7 +103,7 @@
       "sticker": "NO EGO, JUST KITE.",
       "statement_line1": "PAS DE STARS.",
       "statement_line2": "JUSTE DES GENS.",
-      "statement": "La Kula se construit avec celles et ceux qui nous rejoignent. Différents, mais ensemble.",
+      "statement": "KITESNKULA se construit avec celles et ceux qui nous rejoignent. Différents, mais ensemble.",
       "first": "MEET",
       "second": "THE CREW.",
       "filippo_alt": "Filippo de l'équipe KITESNKULA",
@@ -117,14 +117,14 @@
       "alt2": "Paysage de voyage kite",
       "alt3": "Vie autour du kitesurf",
       "alt4": "Kitesurfeur avec son matériel",
-      "sticker": "KULA LIFE",
+      "sticker": "KITESNKULA LIFE",
       "first": "REAL PEOPLE.",
       "second": "REAL SESSIONS.",
       "third": "REAL STORIES.",
       "alt5": "Plage de Jericoacoara au Brésil"
     },
     "values": {
-      "kicker": "THE KULA RULES",
+      "kicker": "KITESNKULA RULES",
       "heading": "RIDE ET LAISSE RIDER.",
       "items": [
         {
@@ -159,17 +159,17 @@
       "body": "Envie de connaître nos prochains voyages ou simplement l'équipe ? Écris-nous. Sans carte de membre ni posture.",
       "cta": "ÉCRIS-NOUS",
       "first": "JOIN",
-      "second": "THE KULA.",
+      "second": "KITESNKULA.",
       "aside": "SEE YOU WHEN IT'S WINDY."
     },
     "footer": {
       "line": "MÊME VENT. TÊTES DIFFÉRENTES.",
-      "join_title": "JOIN THE KULA",
+      "join_title": "JOIN KITESNKULA",
       "join_body": "Pour les prochains voyages, les histoires et le reste.",
       "legal": "Confidentialité",
       "ending": "RIDE À TA FAÇON.",
       "links_label": "Navigation du pied de page",
-      "about": "LA KULA",
+      "about": "KITESNKULA",
       "rules": "Les règles",
       "trips": "VOYAGES",
       "upcoming": "Prochains voyages",

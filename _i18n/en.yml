@@ -5,11 +5,11 @@
       "menu": "Open menu",
       "navigation": "Main navigation",
       "language": "Language",
-      "kula": "THE KULA",
+      "kula": "KITESNKULA",
       "trips": "TRIPS",
       "crew": "CREW",
       "stories": "GALLERY",
-      "join": "JOIN THE KULA",
+      "join": "JOIN KITESNKULA",
       "home": "HOME"
     },
     "hero": {
@@ -18,7 +18,7 @@
       "title_line2": "DIFFERENT WEIRDOS.",
       "hand": "Ride your way.",
       "description": "A community of real riders doing kite their own way. Trips, people, stories. And plenty more.",
-      "cta": "MEET THE KULA",
+      "cta": "MEET KITESNKULA",
       "sticker": "STAY SALTY\nOR STAY A CASA.",
       "image_alt": "A group of kiters together on the beach",
       "first": "YOUR KITE.",
@@ -30,11 +30,11 @@
       "note": "DIFFERENT RIDERS. SAME WIND."
     },
     "manifesto": {
-      "kicker": "THE KULA",
+      "kicker": "KITESNKULA",
       "heading_line1": "SAME WIND.",
       "heading_line2": "DIFFERENT WEIRDOS.",
       "body": "How high you jump, what kite you ride or how long you've been at it doesn't matter. Sharing the wind, helping each other and having a good time does.",
-      "cta": "MEET THE KULA",
+      "cta": "MEET KITESNKULA",
       "first": "SAME WIND.",
       "second": "DIFFERENT WEIRDOS.",
       "mascot_alt": "Rebel KITESNKULA opossum holding a kite bar"
@@ -103,7 +103,7 @@
       "sticker": "NO EGO, JUST KITE.",
       "statement_line1": "NO SUPERSTARS.",
       "statement_line2": "JUST PEOPLE.",
-      "statement": "The Kula belongs to everyone who joins us. Different people, one shared story.",
+      "statement": "KITESNKULA belongs to everyone who joins us. Different people, one shared story.",
       "first": "MEET",
       "second": "THE CREW.",
       "filippo_alt": "Filippo from the KITESNKULA team",
@@ -117,14 +117,14 @@
       "alt2": "Kite trip beach and landscape",
       "alt3": "Everyday life around kitesurfing",
       "alt4": "Kiter with equipment",
-      "sticker": "KULA LIFE",
+      "sticker": "KITESNKULA LIFE",
       "first": "REAL PEOPLE.",
       "second": "REAL SESSIONS.",
       "third": "REAL STORIES.",
       "alt5": "Beach at Jericoacoara in Brazil"
     },
     "values": {
-      "kicker": "THE KULA RULES",
+      "kicker": "KITESNKULA RULES",
       "heading": "RIDE AND LET RIDE.",
       "items": [
         {
@@ -159,17 +159,17 @@
       "body": "Want to hear about our next trips or just meet the crew? Write to us. No membership cards, no showing off.",
       "cta": "SAY HELLO",
       "first": "JOIN",
-      "second": "THE KULA.",
+      "second": "KITESNKULA.",
       "aside": "SEE YOU WHEN IT'S WINDY."
     },
     "footer": {
       "line": "SAME WIND. DIFFERENT WEIRDOS.",
-      "join_title": "JOIN THE KULA",
+      "join_title": "JOIN KITESNKULA",
       "join_body": "For the next trips, stories and whatever comes next.",
       "legal": "Privacy",
       "ending": "RIDE YOUR WAY.",
       "links_label": "Footer navigation",
-      "about": "THE KULA",
+      "about": "KITESNKULA",
       "rules": "The rules",
       "trips": "TRIPS",
       "upcoming": "Upcoming trips",
