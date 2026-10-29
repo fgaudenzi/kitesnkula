@@ -1,58 +1,21 @@
 <head>
-  {% if site.analytics.google %}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "{{ site.analytics.google }}");
-  </script>
-  <!-- End Google Analytics -->
-  {% endif %}
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.author }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-  <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Custom fonts for this template -->
-  <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
-  {% if site.data.style.fonts_urls %}
-    {% for font_url in site.data.style.fonts_urls %}
-      <link href="{{font_url}}" rel="stylesheet" type="text/css">
-    {% endfor %}
-  {% else %}
-    <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-  {% endif %}
-  <!-- Custom styles for this theme -->
-  <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
-  <link href="assets/css/agency.css" rel="stylesheet" />
-
-  <!-- Page container change top padding when nav shrinks -->
-  {% if page.layout == "page" %}
-  <style>
-    #pagecontainer {
-      padding-top: 150px;
-    }
-    @media only screen and (max-width: 991px) {
-      #pagecontainer {
-        padding-top: 100px;
-      }
-    }
-  </style>
-  {% endif %}
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {% assign copy = site.translations[site.lang].kula %}
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ copy.meta_description | default: site.description | escape }}">
+  <meta name="theme-color" content="#f5f0e7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }} — {{ copy.hero.title_line1 | escape }}">
+  <meta property="og:description" content="{{ copy.meta_description | escape }}">
+  <meta property="og:image" content="{{ '/assets/img/header.jpg' | prepend: site.baseurl_root }}">
+  {% if site.url != empty %}<link rel="canonical" href="{{ page.url | absolute_url }}">{% endif %}
+  {% if site.url != empty %}{% for lang in site.languages %}
+    <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ site.baseurl_root }}{% unless lang == site.default_lang %}/{{ lang }}{% endunless %}{{ page.url }}">
+  {% endfor %}{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="{{ '/assets/css/kula.css' | prepend: site.baseurl_root }}" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/kula-mascot.svg' | prepend: site.baseurl_root }}">
 </head>

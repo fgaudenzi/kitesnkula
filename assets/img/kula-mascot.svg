@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" role="img" aria-labelledby="title"><title id="title">KITESNKULA opossum</title>
+<g stroke="#171717" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+<path d="M56 82 38 25 95 55Q146 27 185 54L238 25 226 99Q257 129 234 170Q205 213 137 213Q62 216 36 169Q18 121 56 82Z" fill="#f5f0e7"/>
+<path d="M42 44 63 67 82 57ZM202 57 230 42 220 80Z" fill="#eebdba" stroke-width="5"/>
+<path d="M69 100Q92 73 136 96Q158 64 214 99L191 151 140 181 85 152Z" fill="#171717"/>
+<path d="M67 130Q101 147 137 133Q172 145 216 123Q202 187 142 196Q83 195 67 130Z" fill="#f5f0e7" stroke="none"/>
+<path d="M78 109Q103 94 124 115M156 115Q178 96 202 108" fill="none"/>
+<ellipse cx="101" cy="118" rx="8" ry="9" fill="#f5f0e7" stroke="none"/><ellipse cx="179" cy="118" rx="8" ry="9" fill="#f5f0e7" stroke="none"/>
+<path d="M123 153Q142 140 159 153L142 167Z" fill="#e9a2a2"/>
+<path d="M135 172Q142 180 150 171M62 158 16 151M62 166 9 170M216 158 263 150M219 168 272 171" fill="none" stroke-width="4"/>
+</g>
+<path d="M132 10 141 28 153 11 161 30 175 19 168 43 130 43 121 20Z" fill="#d9f25a" stroke="#171717" stroke-width="5" stroke-linejoin="round"/>
+</svg>

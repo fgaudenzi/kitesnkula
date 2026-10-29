@@ -1,9 +1,122 @@
 ---
 layout: default
 ---
-{% include navheader.html %}
+{% assign copy = site.translations[site.lang].kula %}
+{% assign trips = site.data.trips %}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-background" role="img" aria-label="{{ copy.hero.image_alt }}"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner container-wide">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ copy.hero.eyebrow }}</p>
+      <h1 id="hero-title">{{ copy.hero.title_line1 }}<br>{{ copy.hero.title_line2 }}</h1>
+      <p class="hand hero-hand">{{ copy.hero.hand }}</p>
+      <p class="hero-description">{{ copy.hero.description }}</p>
+      <a class="button button-lime" href="#kula">{{ copy.hero.cta }} <span aria-hidden="true">↗</span></a>
+    </div>
+    <p class="hero-sticker hand">{{ copy.hero.sticker }}</p>
+  </div>
+</section>
 
-{% include services.html %}
-{% include timeline.html %}
-{% include team.html %}
-{% include contact.html %}
+<section id="kula" class="manifesto" aria-labelledby="manifesto-heading">
+  <div class="manifesto-inner container-wide">
+    <div class="manifesto-mascot">{% include mascot.html alt="Opossum, la mascotte KITESNKULA" %}<span class="sketch-star" aria-hidden="true">✳</span></div>
+    <div class="manifesto-words">
+      <span class="section-kicker">{{ copy.manifesto.kicker }}</span>
+      <h2 id="manifesto-heading">{{ copy.manifesto.heading_line1 }}<br>{{ copy.manifesto.heading_line2 }}</h2>
+      <span class="brush-underline brush-lime" aria-hidden="true"></span>
+    </div>
+    <div class="manifesto-side">
+      <p>{{ copy.manifesto.body }}</p>
+      <a class="button button-cream" href="#values">{{ copy.manifesto.cta }} <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="trips" class="trips-section container-wide" aria-labelledby="trips-heading">
+  <div class="section-topline">
+    <div><span class="section-kicker underlined">{{ copy.trips.kicker }}</span><h2 id="trips-heading">{{ copy.trips.heading_line1 }}<br>{{ copy.trips.heading_line2 }}</h2></div>
+    <p class="section-intro">{{ copy.trips.intro }}</p>
+    <a class="text-link" href="{{ '/trips/' | relative_url }}">{{ copy.trips.all }} <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="trip-grid">
+    {% for trip in trips %}
+    {% assign translated = copy.destinations[trip.id] %}
+    <article class="trip-card">
+      <a class="trip-picture" href="{{ '/trips/' | relative_url }}#{{ trip.id }}" aria-label="{{ translated.title }}">
+        <img src="{{ trip.image | prepend: site.baseurl_root }}" alt="{{ translated.image_alt }}" loading="lazy">
+        {% if forloop.first %}<span class="trip-tag">{{ copy.trips.featured }}</span>{% endif %}
+      </a>
+      <div class="trip-body">
+        <p class="trip-type">{{ copy.trips.type }}</p>
+        <h3>{{ translated.title }}</h3>
+        <p>{{ translated.description }}</p>
+        <div class="trip-meta"><span>◉ {{ translated.level }}</span><span>◷ {{ copy.trips.dates_soon }}</span></div>
+        <a class="trip-link" href="{{ '/trips/' | relative_url }}#{{ trip.id }}">{{ copy.trips.discover }} <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="trip-disclaimer">{{ copy.trips.disclaimer }}</p>
+</section>
+
+<section id="crew" class="crew-section" aria-labelledby="crew-heading">
+  <div class="container-wide">
+    <div class="section-heading-row">
+      <div><span class="section-kicker">{{ copy.crew.kicker }}</span><h2 id="crew-heading">{{ copy.crew.title }}</h2></div>
+      <p>{{ copy.crew.intro }}</p>
+    </div>
+    <div class="crew-grid">
+      <article class="crew-person">
+        <div class="crew-photo"><img src="{{ '/assets/img/team/filippo.jpg' | prepend: site.baseurl_root }}" alt="Filippo Gaudenzi" loading="lazy"><span class="hand crew-note">{{ copy.crew.filippo_note }}</span></div>
+        <div class="crew-caption"><h3>Filippo</h3><span>{{ copy.crew.filippo_role }}</span></div>
+        <p>{{ copy.crew.filippo_bio }}</p>
+      </article>
+      <article class="crew-person">
+        <div class="crew-photo"><img src="{{ '/assets/img/team/simone.jpg' | prepend: site.baseurl_root }}" alt="Simone Giacomini" loading="lazy"><span class="hand crew-note">{{ copy.crew.simone_note }}</span></div>
+        <div class="crew-caption"><h3>Simone</h3><span>{{ copy.crew.simone_role }}</span></div>
+        <p>{{ copy.crew.simone_bio }}</p>
+      </article>
+      <div class="crew-statement">
+        <span class="hand">{{ copy.crew.sticker }}</span>
+        <h3>{{ copy.crew.statement_line1 }}<br>{{ copy.crew.statement_line2 }}</h3>
+        <p>{{ copy.crew.statement }}</p>
+        <span class="crew-spark" aria-hidden="true">✳</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stories" class="stories-section" aria-labelledby="stories-heading">
+  <div class="container-wide">
+    <div class="section-heading-row">
+      <div><span class="section-kicker">{{ copy.stories.kicker }}</span><h2 id="stories-heading">{{ copy.stories.heading }}</h2></div>
+      <p>{{ copy.stories.intro }}</p>
+    </div>
+    <div class="photo-strip">
+      <div class="photo-tile tall"><img src="{{ '/assets/img/mattia.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt1 }}" loading="lazy"></div>
+      <div class="photo-tile"><img src="{{ '/assets/img/camp/sicilia2.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt2 }}" loading="lazy"></div>
+      <div class="photo-tile"><img src="{{ '/assets/img/camp/jericoara.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt3 }}" loading="lazy"></div>
+      <div class="photo-tile tall"><img src="{{ '/assets/img/camp/sardegna.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt4 }}" loading="lazy"></div>
+      <div class="photo-note hand">{{ copy.stories.sticker }}</div>
+    </div>
+  </div>
+</section>
+
+<section id="values" class="values-section">
+  <div class="container-wide values-inner">
+    <div><span class="section-kicker">{{ copy.values.kicker }}</span><h2>{{ copy.values.heading }}</h2></div>
+    <div class="values-list">
+      {% for value in copy.values.items %}
+      <div class="value-row"><span class="value-number">0{{ forloop.index }}</span><div><h3>{{ value.title }}</h3><p>{{ value.description }}</p></div><span class="value-mark" aria-hidden="true">↗</span></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="join" class="join-section">
+  <div class="container-wide join-inner">
+    <div><span class="section-kicker">{{ copy.join.kicker }}</span><h2>{{ copy.join.heading_line1 }}<br>{{ copy.join.heading_line2 }}</h2><p>{{ copy.join.body }}</p></div>
+    <a class="button button-dark" href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20Join%20the%20Kula">{{ copy.join.cta }} <span aria-hidden="true">↗</span></a>
+  </div>
+</section>

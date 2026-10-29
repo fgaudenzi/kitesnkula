@@ -1,86 +1,142 @@
-
-header:
-  title: Kites' n Kula
-  text: Kitesurf - KiteCamp - KiteFun
-  button: Travel with us!
-  buttonlink: "#services"
-services:
-  title: "What are you waiting for?"
-  text: "What we offer"
-  section: services
-  list:
-    - title: "KiteSurf"
-      desc: "The wind, the sea, and you. No stress, just the feeling of gliding on the water and flying in the sky."
-      icon: fas fa-wind
-    - title: "KiteCamp"
-      desc: "Not just lessons, but experiences. Days of kite, sunset beers, discovering spots, and making new friends who become community."
-      icon: fas fa-umbrella-beach
-    - title: "Kitefun"
-      desc: "Because kite is above all fun. Sea, salt, and lightness — KITES’N KULA style."
-      icon: fas as fa-glass-cheers
-timeline:
-  title: "When do you join us?"
-  text: "Your upcoming camps"
-  section: timeline
-  events:
-    - title: "Beginner South Sardinia"
-      year: "April-May"
-      desc: "Five days immersed in the wind and sun of Sardinia. Perfect for beginners. Among crystal lagoons, white dunes, and pink flamingos, you’ll learn to glide on water, fall, laugh, and get up again, KITES’N KULA style."
-      image: assets/img/camp/sardegna.jpg
-      alt: "Sardinia Beginner Kite Camp"
-    - title: "Sicily, start your season"
-      year: "June"
-      desc: "Kick off your kite season in the flat and crystal-clear waters of Stagnone. Perfect for beginners taking their first steps with kite and discovering one of Italy’s best spots, with postcard sunsets and lots of laughter."
-      image: assets/img/camp/sicilia1.jpg
-      alt: "Sicily Beginner Kite Camp"
-    - title: "Stagnone Party Mood"
-      year: "August"
-      desc: "Summer, constant wind, and the right mood! Learn and perfect your skills between water sessions and sunset aperitifs. Kite is fun, and here you’ll enjoy it fully, with laughter, new friends, and a touch of KITES’N KULA madness."
-      image: assets/img/camp/sicilia2.jpg
-      alt: "Sicily Beginner Kite Camp"
-    - title: "Kitesurf Dream Brazil"
-      year: "October-November"
-      desc: "Ten days with perfect wind in Brazil. This camp is designed for those with experience wanting to go beyond the first tricks. Lots of kite, cocktails, fiery sunsets, and unforgettable sessions: kite here is a true adventure! Jericoacoara is our base, Prea, Tatajuba, and Guriu are our spots. Plenty of downwinds and dedicated sessions to improve."
-      image: assets/img/camp/jericoara.jpg
-      alt:
-      align: right
-  end: "Join us, or else <br> KITES'N KULA <br>"
-team:
-  title: "Our Team"
-  text: "You can always count on us; we are certified instructors and know the places we take you to."
-  subtext: "The KITES'N KULA team consists of IKO-certified instructors and passionate kite surfers with years of experience. We are here to guide, support, and share our passion for kitesurfing in a safe and fun environment."
-  section: team
-  people:
-    - name: "Filippo Gaudenzi"
-      role: "Founder & Instructor"
-      image: assets/img/team/filippo.jpg
-      social:
-        - url: https://instagram.com/filowg
-          icon: fab fa-instagram
-    - name: "Simone Giacomini"
-      role: "Founder & Instructor"
-      image: assets/img/team/simone.jpg
-      social:
-        - url: https://instagram.com/simogneiaco88
-          icon: fab fa-instagram
-contact:
-  title: "Contact Us"
-  text: "Write to us to know more about our camps or just to say hi :)"
-  section: contact
-  name: "Name*"
-  name-validation: "Enter your name here."
-  email: "Email*"
-  email-validation: "Your email goes here."
-  phone: "Phone number (we won’t abuse it)"
-  phone-validation: "Enter your number here!"
-  message: "Your message*"
-  message-validation: "Write everything you want to know and more."
-  subject: "Contact Form Submission"
-  submit: "SEND IT!"
-footer:
-  legal: "Privacy Policy"
-  social:
-    - url: https://instagram.com/kiteskula
-      icon: "fab fa-instagram"
-    - url: https://facebook.com/kitesnkula
-      icon: "fab fa-facebook-f"
+{
+  "kula": {
+    "meta_description": "KITESNKULA: a kite community without judgment. A few trips a year, shared wind and real people.",
+    "nav": {
+      "menu": "Open menu",
+      "navigation": "Main navigation",
+      "language": "Language",
+      "kula": "The Kula",
+      "trips": "Trips",
+      "crew": "The crew",
+      "stories": "Stories",
+      "join": "Join the Kula"
+    },
+    "hero": {
+      "eyebrow": "A COMMUNITY, NOT A LEADERBOARD.",
+      "title_line1": "SAME WIND.",
+      "title_line2": "DIFFERENT WEIRDOS.",
+      "hand": "Ride your way.",
+      "description": "Some jump high. Some are still learning to ride upwind. What matters is who you share the wind with.",
+      "cta": "MEET THE KULA",
+      "sticker": "STAY SALTY\nOR STAY A CASA.",
+      "image_alt": "Kitesurfers and friends at the beach after a session"
+    },
+    "manifesto": {
+      "kicker": "THE KULA",
+      "heading_line1": "SAME WIND.",
+      "heading_line2": "DIFFERENT WEIRDOS.",
+      "body": "How high you jump, what kite you fly, or how long you've been riding doesn't matter. Sharing the wind, helping each other and having a good time does.",
+      "cta": "WHAT WE BELIEVE"
+    },
+    "trips": {
+      "kicker": "OUR NEXT TRIPS",
+      "heading_line1": "SOMEWHERE.",
+      "heading_line2": "TOGETHER.",
+      "intro": "Just a few trips a year. Not to tick places off a list, but to share sessions, long dinners and new friendships.",
+      "all": "ALL DESTINATIONS",
+      "featured": "ON OUR RADAR",
+      "type": "KITE TRIP · KULA STYLE",
+      "dates_soon": "Dates to be announced",
+      "discover": "EXPLORE THE TRIP",
+      "ask": "ASK US ABOUT IT",
+      "disclaimer": "These are destinations we're considering; dates, prices and availability have not been confirmed."
+    },
+    "destinations": {
+      "sicily": {
+        "title": "SICILY — LO STAGNONE",
+        "description": "Flat water, first rides and long sunsets.",
+        "long_description": "A place to learn, progress and find your people at your own pace. The wind is only part of the trip.",
+        "level": "Beginners welcome",
+        "image_alt": "The Lo Stagnone lagoon in Sicily"
+      },
+      "brazil": {
+        "title": "BRAZIL — JERICOACOARA",
+        "description": "Wind, downwinders and days without a clock.",
+        "long_description": "Based in Jeri, riding around Preá, Guriú and other spots as conditions allow. For independent riders who want to share the adventure.",
+        "level": "Independent riders",
+        "image_alt": "Tropical kitesurfing beach in Brazil"
+      },
+      "sardinia": {
+        "title": "SARDINIA — SOUTH",
+        "description": "The sea, lagoons and time to connect.",
+        "long_description": "Different spots and places to explore together. A trip idea for people who want to enjoy kitesurfing their own way.",
+        "level": "Levels to be confirmed",
+        "image_alt": "The Sardinian coast"
+      }
+    },
+    "crew": {
+      "kicker": "MEET THE CREW",
+      "title": "THE USUAL SUSPECTS.",
+      "intro": "Not a corporate team. The people you'll travel with, rig a kite with and wait for the wind with.",
+      "filippo_note": "WIND CHECK ↗",
+      "filippo_role": "Co-founder · Kiter",
+      "filippo_bio": "Checks the forecast more often than his messages.",
+      "simone_note": "ONE MORE RIDE ↗",
+      "simone_role": "Co-founder · Kiter",
+      "simone_bio": "Certain that the last ride is always the next one.",
+      "sticker": "NO EGO, JUST KITE.",
+      "statement_line1": "NO SUPERSTARS.",
+      "statement_line2": "JUST PEOPLE.",
+      "statement": "The Kula belongs to everyone who joins us. Different people, one shared story."
+    },
+    "stories": {
+      "kicker": "LIFE IN THE KULA",
+      "heading": "IT'S NOT ALL ABOUT THE WIND.",
+      "intro": "The sessions matter. So do launches, long waits, shared meals and the people along the way.",
+      "alt1": "A kitesurfing session",
+      "alt2": "A moment at a Sicily kitecamp",
+      "alt3": "Kitesurfing trip in Brazil",
+      "alt4": "A beach in Sardinia",
+      "sticker": "REAL PEOPLE.\nREAL STORIES."
+    },
+    "values": {
+      "kicker": "THE KULA RULES",
+      "heading": "RIDE AND LET RIDE.",
+      "items": [
+        {
+          "title": "Your style is yours.",
+          "description": "No competition for who's the better kiter."
+        },
+        {
+          "title": "Always lend a hand.",
+          "description": "On land, on the water, whenever it matters."
+        },
+        {
+          "title": "The wind belongs to everyone.",
+          "description": "Respect is non-negotiable."
+        },
+        {
+          "title": "Being together counts.",
+          "description": "Even when the forecast gets it wrong."
+        }
+      ]
+    },
+    "join": {
+      "kicker": "JOIN THE KULA",
+      "heading_line1": "SEE YOU",
+      "heading_line2": "WHEN IT'S WINDY.",
+      "body": "Want to know when we're heading out again? Drop us a line. No membership card, no posturing. Just people and kites.",
+      "cta": "SAY HELLO"
+    },
+    "footer": {
+      "line": "Same wind. Different weirdos.",
+      "join_title": "JOIN THE KULA",
+      "join_body": "For the next trips, stories and whatever comes next.",
+      "legal": "Privacy",
+      "ending": "RIDE YOUR WAY."
+    },
+    "legal": {
+      "heading": "Privacy and personal data",
+      "intro": "This page briefly explains how information is handled when you visit the website or contact us.",
+      "owner": "Contact",
+      "owner_text": "For questions about personal data, email",
+      "data": "Data we receive",
+      "data_text": "The website has no registration or newsletter forms and does not enable its own analytics tools. If you email us, we receive the information you choose to send. The hosting provider may process technical data and access logs under its own terms.",
+      "purpose": "Why we use it",
+      "purpose_text": "We use messages only to respond to enquiries and communicate about the community and trips.",
+      "rights": "Your rights",
+      "rights_text": "You can request information, access, correction or deletion by writing to the address above. This text should be reviewed and adapted before launch to reflect the actual hosting service and any tools used.",
+      "updated": "Information updated 29 October 2026."
+    }
+  }
+}

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign copy = site.translations[site.lang].kula.legal %}
+<div class="inner-page container-wide">
+  <div class="inner-page-heading"><span class="section-kicker">KITESNKULA</span><h1>{{ copy.heading }}</h1><p>{{ copy.intro }}</p></div>
+  <div class="prose">
+    <h2>{{ copy.owner }}</h2><p>{{ copy.owner_text }} <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    <h2>{{ copy.data }}</h2><p>{{ copy.data_text }}</p>
+    <h2>{{ copy.purpose }}</h2><p>{{ copy.purpose_text }}</p>
+    <h2>{{ copy.rights }}</h2><p>{{ copy.rights_text }}</p>
+    <p><small>{{ copy.updated }}</small></p>
+  </div>
+</div>

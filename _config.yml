@@ -1,34 +1,24 @@
-
-
-url: "https://fgaudenz.github.io/kitesenkula"
-baseurl: ""
-
-title: "KITES'N KULA"
+title: "KITESNKULA"
+description: "Una community di kiter. Stesso vento, teste diverse."
 email: "info@kitesnkula.com"
-description: "Kitesurf community — not a school, not a course. An attitude."
-author: "Filippo Gaudenzi & Simone Giacomini"
-
-locale: "en-US"
-
-
-analytics:
-  google: ""
-
-collections:
-  portfolio:
-
+author: "KITESNKULA"
+url: ""
+baseurl: ""
 markdown: kramdown
-
+permalink: pretty
 languages: ["it", "en", "de", "fr"]
 default_lang: it
 lang: it
+exclude_from_localizations:
+  - assets
+  - .gitlab-ci.yml
 plugins:
   - jekyll-multiple-languages-plugin
-
-
-exclude_from_localizations:
-  - "assets/"
-  - "css/"
-  - "js/"
-  - "images/"
-  - "favicon.ico"
+exclude:
+  - README.md
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - .gitlab-ci.yml
+  - .gitignore
+  - jekyll-agency.gemspec
