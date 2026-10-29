@@ -41,10 +41,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          # Jekyll 4 does not accept --url on the CLI: pass runtime URL settings as YAML.
+          printf 'url: "%s"\nbaseurl: "%s"\n' "$PAGES_ORIGIN" "$PAGES_BASE_PATH" > "$RUNNER_TEMP/pages-config.yml"
           bundle exec jekyll build \
-            --destination _site \
-            --baseurl "$PAGES_BASE_PATH" \
-            --url "$PAGES_ORIGIN"
+            --config "_config.yml,$RUNNER_TEMP/pages-config.yml" \
+            --destination _site
 
       - name: Verify four languages and site assets
         shell: bash
