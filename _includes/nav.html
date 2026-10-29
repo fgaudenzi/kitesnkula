@@ -1,24 +1,23 @@
-{% assign copy = site.translations[site.lang].kula %}
-{% assign home_url = '/' | relative_url %}
+{% assign c = site.translations[site.lang].kula %}
+{% assign home = '/' | relative_url %}
 <header class="site-header">
-  <div class="nav-wrap">
-    <a class="brand" href="{{ home_url }}" aria-label="KITESNKULA home">
-      <span class="brand-word">KITESNKULA</span>
-    </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="{{ copy.nav.menu }}"><span></span><span></span><span></span></button>
-    <nav id="primary-nav" class="primary-nav" aria-label="{{ copy.nav.navigation }}">
-      <a href="{{ home_url }}#kula">{{ copy.nav.kula }}</a>
-      <a href="{{ home_url }}#trips">{{ copy.nav.trips }}</a>
-      <a href="{{ home_url }}#crew">{{ copy.nav.crew }}</a>
-      <a href="{{ home_url }}#stories">{{ copy.nav.stories }}</a>
+  <div class="site-nav container-wide">
+    <a class="nav-logo marker" href="{{ home }}" aria-label="KITESNKULA, home">KITESNKULA</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="{{ c.nav.menu }}"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="primary-links" aria-label="{{ c.nav.navigation }}">
+      <a href="{{ home }}#top">{{ c.nav.home }}</a>
+      <a href="{{ home }}#kula">{{ c.nav.kula }}</a>
+      <a href="{{ home }}#trips">{{ c.nav.trips }}</a>
+      <a href="{{ home }}#crew">{{ c.nav.crew }}</a>
+      <a href="{{ home }}#stories">{{ c.nav.stories }}</a>
     </nav>
-    <div class="nav-actions">
-      <div class="lang-switch" aria-label="{{ copy.nav.language }}">
+    <div class="nav-tools">
+      <nav class="lang-switch" aria-label="{{ c.nav.language }}">
         {% for lang in site.languages %}
-          <a href="{{ site.baseurl_root }}/{% unless lang == site.default_lang %}{{ lang }}/{% endunless %}" lang="{{ lang }}" hreflang="{{ lang }}" {% if lang == site.lang %}aria-current="true" class="active"{% endif %}>{{ lang | upcase }}</a>
+          <a href="{{ site.baseurl_root }}/{% unless lang == site.default_lang %}{{ lang }}/{% endunless %}" hreflang="{{ lang }}" lang="{{ lang }}" {% if lang == site.lang %}aria-current="page" class="active"{% endif %}>{{ lang | upcase }}</a>
         {% endfor %}
-      </div>
-      <a class="button button-purple nav-join" href="{{ home_url }}#join">{{ copy.nav.join }} <span aria-hidden="true">↗</span></a>
+      </nav>
+      <a class="brush-button purple-button nav-join" href="{{ home }}#join">{{ c.nav.join }} <span aria-hidden="true">↗</span></a>
     </div>
   </div>
 </header>

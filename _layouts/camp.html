@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
-{% assign copy = site.translations[site.lang].kula %}
+{% assign c = site.translations[site.lang].kula %}
 <div class="inner-page container-wide">
-  <div class="inner-page-heading"><span class="section-kicker">{{ copy.trips.kicker }}</span><h1>{{ copy.trips.heading_line1 }} {{ copy.trips.heading_line2 }}</h1><p>{{ copy.trips.intro }}</p></div>
-  <div class="trip-grid detail-trip-grid">
+  <div class="inner-page-heading"><span class="section-label purple-mark">{{ c.trips.kicker }}</span><h1 class="display-title">{{ c.trips.first }} {{ c.trips.second }}</h1><p>{{ c.trips.intro }}</p></div>
+  <div class="trip-cards trip-page-cards">
     {% for trip in site.data.trips %}
-      {% assign translated = copy.destinations[trip.id] %}
+      {% assign t = c.destinations[trip.id] %}
       <article class="trip-card" id="{{ trip.id }}">
-        <div class="trip-picture"><img src="{{ trip.image | prepend: site.baseurl_root }}" alt="{{ translated.image_alt }}" loading="lazy"></div>
-        <div class="trip-body"><p class="trip-type">{{ copy.trips.type }}</p><h2>{{ translated.title }}</h2><p>{{ translated.long_description }}</p><div class="trip-meta"><span>◉ {{ translated.level }}</span><span>◷ {{ copy.trips.dates_soon }}</span></div><a class="trip-link" href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20{{ trip.id }}">{{ copy.trips.ask }} <span aria-hidden="true">↗</span></a></div>
+        <div class="trip-cover"><img src="{{ trip.image | prepend: site.baseurl_root }}" alt="{{ t.image_alt }}" loading="lazy"></div>
+        <div class="trip-content"><h2>{{ t.title }}</h2><p class="trip-subtitle">{{ t.subtitle }}</p><p>{{ t.long_description }}</p>
+        <ul class="trip-facts"><li>▦ {{ t.when }}</li><li>♧ {{ t.group }}</li><li>≋ {{ t.level }}</li></ul>
+        <a class="paint-link" href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20{{ trip.id }}">{{ c.trips.ask }} <span aria-hidden="true">↗</span></a></div>
       </article>
     {% endfor %}
   </div>
-  <p class="trip-disclaimer">{{ copy.trips.disclaimer }}</p>
+  <p class="trip-disclaimer">{{ c.trips.disclaimer }}</p>
 </div>

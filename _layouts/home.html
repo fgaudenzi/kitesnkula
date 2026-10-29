@@ -1,122 +1,121 @@
 ---
 layout: default
 ---
-{% assign copy = site.translations[site.lang].kula %}
-{% assign trips = site.data.trips %}
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-background" role="img" aria-label="{{ copy.hero.image_alt }}"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-inner container-wide">
-    <div class="hero-copy">
-      <p class="eyebrow">{{ copy.hero.eyebrow }}</p>
-      <h1 id="hero-title">{{ copy.hero.title_line1 }}<br>{{ copy.hero.title_line2 }}</h1>
-      <p class="hand hero-hand">{{ copy.hero.hand }}</p>
-      <p class="hero-description">{{ copy.hero.description }}</p>
-      <a class="button button-lime" href="#kula">{{ copy.hero.cta }} <span aria-hidden="true">↗</span></a>
+{% assign c = site.translations[site.lang].kula %}
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-image" role="img" aria-label="{{ c.hero.image_alt }}"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-content container-wide">
+    <div class="hero-message">
+      <span class="eyebrow">{{ c.hero.eyebrow }}</span>
+      <h1 class="hero-title marker" id="hero-heading">
+        <span>{{ c.hero.first }}</span><span>{{ c.hero.second }}</span><span class="purple-swipe">{{ c.hero.third }}</span>
+      </h1>
+      <p class="hero-copy">{{ c.hero.description }}</p>
+      <a class="brush-button lime-button" href="#kula">{{ c.hero.cta }} <span aria-hidden="true">↗</span></a>
     </div>
-    <p class="hero-sticker hand">{{ copy.hero.sticker }}</p>
+    <div class="hero-side marker" aria-hidden="true"><span>{{ c.hero.side_line1 }}</span><span>{{ c.hero.side_line2 }}</span><span>{{ c.hero.side_line3 }}</span><svg class="mini-crown" viewBox="0 0 68 54"><path d="M6 41 4 13 20 29 32 5 43 29 62 10 58 43Z" fill="none" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></svg></div>
+  </div>
+  <span class="hero-mini-note marker">{{ c.hero.note }}</span>
+</section>
+
+<section class="kula-band" id="kula" aria-labelledby="kula-heading">
+  <div class="kula-band-inner container-wide">
+    <div class="kula-animal"><img src="{{ '/assets/img/kula-mascot.svg' | prepend: site.baseurl_root }}" alt="{{ c.manifesto.mascot_alt }}" width="390" height="300"><span class="kula-crown marker" aria-hidden="true">✳</span></div>
+    <div class="kula-band-title"><span class="section-label">{{ c.manifesto.kicker }}</span><h2 id="kula-heading" class="marker">{{ c.manifesto.first }}<br>{{ c.manifesto.second }}</h2><span class="paint-underline lime-underline" aria-hidden="true"></span></div>
+    <div class="kula-band-message"><p>{{ c.manifesto.body }}</p><a class="brush-button cream-button" href="#rules">{{ c.manifesto.cta }} <span aria-hidden="true">↗</span></a></div>
   </div>
 </section>
 
-<section id="kula" class="manifesto" aria-labelledby="manifesto-heading">
-  <div class="manifesto-inner container-wide">
-    <div class="manifesto-mascot">{% include mascot.html alt="Opossum, la mascotte KITESNKULA" %}<span class="sketch-star" aria-hidden="true">✳</span></div>
-    <div class="manifesto-words">
-      <span class="section-kicker">{{ copy.manifesto.kicker }}</span>
-      <h2 id="manifesto-heading">{{ copy.manifesto.heading_line1 }}<br>{{ copy.manifesto.heading_line2 }}</h2>
-      <span class="brush-underline brush-lime" aria-hidden="true"></span>
-    </div>
-    <div class="manifesto-side">
-      <p>{{ copy.manifesto.body }}</p>
-      <a class="button button-cream" href="#values">{{ copy.manifesto.cta }} <span aria-hidden="true">↗</span></a>
-    </div>
+<section id="trips" class="trips-block paper-block container-wide" aria-labelledby="trip-heading">
+  <div class="trip-title-row">
+    <div><span class="section-label purple-mark">{{ c.trips.kicker }}</span><h2 id="trip-heading" class="display-title">{{ c.trips.first }}<br>{{ c.trips.second }}</h2></div>
+    <p>{{ c.trips.intro }}</p>
+    <a class="inline-link" href="{{ '/trips/' | relative_url }}">{{ c.trips.all }} <span aria-hidden="true">↗</span></a>
   </div>
-</section>
-
-<section id="trips" class="trips-section container-wide" aria-labelledby="trips-heading">
-  <div class="section-topline">
-    <div><span class="section-kicker underlined">{{ copy.trips.kicker }}</span><h2 id="trips-heading">{{ copy.trips.heading_line1 }}<br>{{ copy.trips.heading_line2 }}</h2></div>
-    <p class="section-intro">{{ copy.trips.intro }}</p>
-    <a class="text-link" href="{{ '/trips/' | relative_url }}">{{ copy.trips.all }} <span aria-hidden="true">↗</span></a>
-  </div>
-  <div class="trip-grid">
-    {% for trip in trips %}
-    {% assign translated = copy.destinations[trip.id] %}
-    <article class="trip-card">
-      <a class="trip-picture" href="{{ '/trips/' | relative_url }}#{{ trip.id }}" aria-label="{{ translated.title }}">
-        <img src="{{ trip.image | prepend: site.baseurl_root }}" alt="{{ translated.image_alt }}" loading="lazy">
-        {% if forloop.first %}<span class="trip-tag">{{ copy.trips.featured }}</span>{% endif %}
-      </a>
-      <div class="trip-body">
-        <p class="trip-type">{{ copy.trips.type }}</p>
-        <h3>{{ translated.title }}</h3>
-        <p>{{ translated.description }}</p>
-        <div class="trip-meta"><span>◉ {{ translated.level }}</span><span>◷ {{ copy.trips.dates_soon }}</span></div>
-        <a class="trip-link" href="{{ '/trips/' | relative_url }}#{{ trip.id }}">{{ copy.trips.discover }} <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
+  <div class="trip-cards">
+    {% for trip in site.data.trips %}
+      {% assign t = c.destinations[trip.id] %}
+      <article class="trip-card">
+        <a class="trip-cover" href="{{ '/trips/' | relative_url }}#{{ trip.id }}" aria-label="{{ t.title }}">
+          <img src="{{ trip.image | prepend: site.baseurl_root }}" alt="{{ t.image_alt }}" width="640" height="400" loading="lazy">
+          {% if forloop.first %}<span class="trip-ribbon marker">{{ c.trips.featured }}</span>{% endif %}
+        </a>
+        <div class="trip-content">
+          <h3>{{ t.title }}</h3>
+          <p class="trip-subtitle">{{ t.subtitle }}</p>
+          <ul class="trip-facts">
+            <li><span aria-hidden="true">▦</span>{{ t.when }}</li>
+            <li><span aria-hidden="true">♧</span>{{ t.group }}</li>
+            <li><span aria-hidden="true">≋</span>{{ t.level }}</li>
+          </ul>
+          <a class="paint-link" href="{{ '/trips/' | relative_url }}#{{ trip.id }}">{{ c.trips.discover }} <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
     {% endfor %}
   </div>
-  <p class="trip-disclaimer">{{ copy.trips.disclaimer }}</p>
+  <p class="trip-disclaimer">{{ c.trips.disclaimer }}</p>
 </section>
 
-<section id="crew" class="crew-section" aria-labelledby="crew-heading">
-  <div class="container-wide">
-    <div class="section-heading-row">
-      <div><span class="section-kicker">{{ copy.crew.kicker }}</span><h2 id="crew-heading">{{ copy.crew.title }}</h2></div>
-      <p>{{ copy.crew.intro }}</p>
+<section id="crew" class="crew-block paper-block" aria-labelledby="crew-heading">
+  <div class="container-wide crew-layout">
+    <div class="crew-lead">
+      <span class="section-label purple-mark">{{ c.crew.kicker }}</span>
+      <h2 id="crew-heading" class="marker">{{ c.crew.first }}<br>{{ c.crew.second }}</h2>
+      <p>{{ c.crew.intro }}</p>
+      <span class="sketch-arrow marker" aria-hidden="true">↗</span>
     </div>
-    <div class="crew-grid">
-      <article class="crew-person">
-        <div class="crew-photo"><img src="{{ '/assets/img/team/filippo.jpg' | prepend: site.baseurl_root }}" alt="Filippo Gaudenzi" loading="lazy"><span class="hand crew-note">{{ copy.crew.filippo_note }}</span></div>
-        <div class="crew-caption"><h3>Filippo</h3><span>{{ copy.crew.filippo_role }}</span></div>
-        <p>{{ copy.crew.filippo_bio }}</p>
-      </article>
-      <article class="crew-person">
-        <div class="crew-photo"><img src="{{ '/assets/img/team/simone.jpg' | prepend: site.baseurl_root }}" alt="Simone Giacomini" loading="lazy"><span class="hand crew-note">{{ copy.crew.simone_note }}</span></div>
-        <div class="crew-caption"><h3>Simone</h3><span>{{ copy.crew.simone_role }}</span></div>
-        <p>{{ copy.crew.simone_bio }}</p>
-      </article>
-      <div class="crew-statement">
-        <span class="hand">{{ copy.crew.sticker }}</span>
-        <h3>{{ copy.crew.statement_line1 }}<br>{{ copy.crew.statement_line2 }}</h3>
-        <p>{{ copy.crew.statement }}</p>
-        <span class="crew-spark" aria-hidden="true">✳</span>
-      </div>
+    <article class="crew-member orange-paper">
+      <div class="crew-image"><img src="{{ '/assets/img/team/filippo.jpg' | prepend: site.baseurl_root }}" alt="{{ c.crew.filippo_alt }}" width="620" height="620" loading="lazy"></div>
+      <div class="crew-details"><h3>FILIPPO</h3><p class="crew-role">{{ c.crew.filippo_role }}</p><p class="crew-bio">{{ c.crew.filippo_bio }}</p></div>
+    </article>
+    <article class="crew-member purple-paper">
+      <div class="crew-image"><img src="{{ '/assets/img/team/simone.jpg' | prepend: site.baseurl_root }}" alt="{{ c.crew.simone_alt }}" width="620" height="620" loading="lazy"></div>
+      <div class="crew-details"><h3>SIMONE</h3><p class="crew-role">{{ c.crew.simone_role }}</p><p class="crew-bio">{{ c.crew.simone_bio }}</p></div>
+    </article>
+  </div>
+</section>
+
+<section id="stories" class="stories-block paper-block" aria-labelledby="stories-heading">
+  <div class="container-wide">
+    <div class="stories-header"><div><span class="section-label purple-mark">{{ c.stories.kicker }}</span><h2 id="stories-heading" class="marker">{{ c.stories.first }}<br>{{ c.stories.second }}<br><span class="purple-swipe">{{ c.stories.third }}</span></h2></div><p>{{ c.stories.intro }}</p></div>
+    <div class="stories-gallery">
+      <figure class="photo-cut tilt-left"><img src="{{ '/assets/img/camp/sicilia2.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt1 }}" loading="lazy"></figure>
+      <figure class="photo-cut tilt-right"><img src="{{ '/assets/img/camp/sardegna.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt2 }}" loading="lazy"></figure>
+      <figure class="photo-cut tall-cut"><img src="{{ '/assets/img/header.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt3 }}" loading="lazy"></figure>
+      <figure class="photo-cut tilt-left"><img src="{{ '/assets/img/mattia.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt4 }}" loading="lazy"></figure>
+      <figure class="photo-cut tilt-right"><img src="{{ '/assets/img/camp/jericoara.jpg' | prepend: site.baseurl_root }}" alt="{{ c.stories.alt5 }}" loading="lazy"></figure>
+      <span class="gallery-note marker">{{ c.stories.sticker }}</span>
     </div>
   </div>
 </section>
 
-<section id="stories" class="stories-section" aria-labelledby="stories-heading">
+<section id="rules" class="rules-block paper-block" aria-labelledby="rules-heading">
   <div class="container-wide">
-    <div class="section-heading-row">
-      <div><span class="section-kicker">{{ copy.stories.kicker }}</span><h2 id="stories-heading">{{ copy.stories.heading }}</h2></div>
-      <p>{{ copy.stories.intro }}</p>
-    </div>
-    <div class="photo-strip">
-      <div class="photo-tile tall"><img src="{{ '/assets/img/mattia.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt1 }}" loading="lazy"></div>
-      <div class="photo-tile"><img src="{{ '/assets/img/camp/sicilia2.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt2 }}" loading="lazy"></div>
-      <div class="photo-tile"><img src="{{ '/assets/img/camp/jericoara.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt3 }}" loading="lazy"></div>
-      <div class="photo-tile tall"><img src="{{ '/assets/img/camp/sardegna.jpg' | prepend: site.baseurl_root }}" alt="{{ copy.stories.alt4 }}" loading="lazy"></div>
-      <div class="photo-note hand">{{ copy.stories.sticker }}</div>
-    </div>
-  </div>
-</section>
-
-<section id="values" class="values-section">
-  <div class="container-wide values-inner">
-    <div><span class="section-kicker">{{ copy.values.kicker }}</span><h2>{{ copy.values.heading }}</h2></div>
-    <div class="values-list">
-      {% for value in copy.values.items %}
-      <div class="value-row"><span class="value-number">0{{ forloop.index }}</span><div><h3>{{ value.title }}</h3><p>{{ value.description }}</p></div><span class="value-mark" aria-hidden="true">↗</span></div>
+    <div class="rules-heading"><span class="section-label">{{ c.values.kicker }}</span><h2 id="rules-heading" class="display-title">{{ c.values.first }}<br>{{ c.values.second }}</h2><p>{{ c.values.intro }}</p></div>
+    <div class="rule-grid">
+      {% for value in c.values.items %}
+        <article class="rule">
+          <div class="rule-icon" aria-hidden="true">
+            {% case forloop.index %}
+              {% when 1 %}<svg viewBox="0 0 80 60"><path d="M6 41C18 13 32 20 40 31s21 14 34-18M11 51c13-12 25-13 37-1" /></svg>
+              {% when 2 %}<svg viewBox="0 0 80 60"><path d="m9 25 17-11 17 14 14-10 15 9-17 21-13-5-10 5-23-23Zm22 5 10-7m-11 14 19 11m-12-17 18 12" /></svg>
+              {% when 3 %}<svg viewBox="0 0 80 60"><circle cx="40" cy="28" r="22"/><path d="M29 23v5m21-5v5M28 35q12 15 24 0" /></svg>
+              {% when 4 %}<svg viewBox="0 0 80 60"><path d="M40 4v52M14 30h52M22 12l36 36M58 12 22 48"/><circle cx="40" cy="30" r="5"/></svg>
+              {% else %}<svg viewBox="0 0 80 60"><path d="M40 50C21 38 8 25 12 14s22-10 28 4c8-15 26-16 29-3 4 13-12 26-29 35Z"/></svg>
+            {% endcase %}
+          </div>
+          <h3>{{ value.title }}</h3><p>{{ value.description }}</p>
+        </article>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section id="join" class="join-section">
-  <div class="container-wide join-inner">
-    <div><span class="section-kicker">{{ copy.join.kicker }}</span><h2>{{ copy.join.heading_line1 }}<br>{{ copy.join.heading_line2 }}</h2><p>{{ copy.join.body }}</p></div>
-    <a class="button button-dark" href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20Join%20the%20Kula">{{ copy.join.cta }} <span aria-hidden="true">↗</span></a>
+<section id="join" class="join-banner" aria-labelledby="join-heading">
+  <div class="container-wide join-banner-inner">
+    <div><span class="section-label">{{ c.join.kicker }}</span><h2 id="join-heading" class="marker">{{ c.join.first }}<br>{{ c.join.second }}</h2><p>{{ c.join.body }}</p></div>
+    <a href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20Join%20the%20Kula" class="brush-button purple-button">{{ c.join.cta }} <span aria-hidden="true">↗</span></a>
+    <p class="marker join-aside">{{ c.join.aside }}</p>
   </div>
 </section>
