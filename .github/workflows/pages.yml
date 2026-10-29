@@ -77,6 +77,15 @@ jobs:
               exit 1
             fi
           done
+          # Ensure the retired handwritten fonts are absent from published assets.
+          if grep -Eiq 'Permanent Marker|Kalam|Comic Neue|Comic Sans' _site/assets/css/kula.css _site/index.html; then
+            echo "::error::Deprecated handwritten font still referenced"
+            exit 1
+          fi
+          for lang in '' en de fr; do
+            if [[ -z "$lang" ]]; then page="_site/index.html"; else page="_site/$lang/index.html"; fi
+            grep -q 'footer-wordmark claim-type' "$page" || { echo "::error::Footer wordmark missing in $page"; exit 1; }
+          done
 
       - name: Mark generated site as static
         run: touch _site/.nojekyll

@@ -1,6 +1,6 @@
 /* KITESNKULA · hand-made editorial web identity
    All headings, labels and controls are selectable HTML text.  */
-:root{--paper:#f5f0e7;--paper-deep:#e9e3d8;--ink:#171416;--soft:#554c47;--purple:#743df2;--purple-shadow:#5728be;--lime:#dffd61;--marker:"Permanent Marker","Arial Black",Impact,sans-serif;--display:"Barlow Condensed",Impact,sans-serif;--body:"DM Sans",Arial,sans-serif}
+:root{--paper:#f5f0e7;--paper-deep:#e9e3d8;--ink:#171416;--soft:#554c47;--purple:#743df2;--purple-shadow:#5728be;--lime:#dffd61;--claim:"Oswald","Arial Narrow","Helvetica Neue",sans-serif;--display:"Barlow Condensed",Impact,sans-serif;--body:"DM Sans",Arial,sans-serif}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:86px}
 body{margin:0;color:var(--ink);background:var(--paper);font:400 15px/1.6 var(--body);-webkit-font-smoothing:antialiased}
@@ -8,7 +8,7 @@ body::before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;op
 img{max-width:100%;display:block}a{color:inherit;text-decoration:none}p,h1,h2,h3,h4{margin:0}button{font:inherit}
 a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offset:5px}
 .container-wide{width:min(1330px,calc(100% - 90px));margin:0 auto}
-.marker{font-family:var(--marker);font-weight:400;letter-spacing:-.035em}
+.claim-type{font-family:var(--claim);font-weight:500;letter-spacing:.005em}
 .display-title{font-family:var(--display);font-weight:900;font-size:clamp(3.1rem,5.4vw,6rem);line-height:.87;letter-spacing:-.025em;text-transform:uppercase}
 .section-label{font-family:var(--body);font-weight:900;font-size:.73rem;letter-spacing:.075em;text-transform:uppercase}
 .purple-mark{border-bottom:4px solid var(--purple);padding-bottom:4px}
@@ -117,8 +117,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
 .join-aside{font-size:clamp(1.5rem,2.7vw,2.6rem);transform:rotate(-10deg);max-width:240px;line-height:1.16;text-align:center}
 .site-footer{background:#111;color:#f4efea;padding:40px 0 24px}
 .footer-columns{display:grid;grid-template-columns:.95fr 2fr;gap:8%}
-.footer-wordmark{font-size:2.2rem;transform:rotate(-4deg);line-height:1;margin-bottom:12px}
-.footer-identity p{font-size:1rem;transform:rotate(-5deg)}
+.footer-wordmark{font-size:2.2rem;transform:none;line-height:1.1;margin-bottom:12px}
+.footer-identity p{font-size:1rem;transform:none}
 .footer-navigation{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .footer-navigation>div{display:flex;flex-direction:column;gap:10px}
 .footer-navigation span{font-size:.75rem;font-weight:900;margin-bottom:5px}
@@ -253,11 +253,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
   --lime:#e4f76b;
   --body:'Courier Prime','Courier New','Liberation Mono',monospace;
   --display:'Anton','Barlow Condensed','Arial Narrow','Noto Sans Display',sans-serif;
-  --marker:'Kalam','Comic Neue','Comic Sans MS',cursive;
-  --claim:'Oswald','Arial Narrow','Helvetica Neue',sans-serif;
 }
 body{font-family:var(--body);font-size:14px;line-height:1.65}
-.marker{font-family:var(--marker);font-style:normal;font-weight:400;letter-spacing:-.025em;line-height:1.16;text-shadow:none}
+.claim-type{font-family:var(--claim);font-style:normal;font-weight:500;letter-spacing:.005em;line-height:1.14;text-shadow:none}
 .display-title{font-family:var(--display);font-weight:900;letter-spacing:-.037em;line-height:.92}
 .section-label,.eyebrow{font-family:var(--body);font-weight:700;font-size:.76rem;letter-spacing:0}
 .section-label.purple-mark{border-bottom:4px solid var(--purple);padding-bottom:3px}
@@ -302,7 +300,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 .trip-subtitle{font-family:var(--body);font-size:.8rem;margin-bottom:15px}
 .trip-facts{gap:5px;margin-bottom:18px}
 .trip-facts li{font-family:var(--body);font-size:.71rem;line-height:1.45}
-.trip-ribbon{font-family:var(--marker);font-style:normal;font-weight:400;letter-spacing:-.02em}
+.trip-ribbon{font-family:var(--claim);font-style:normal;font-weight:500;letter-spacing:.005em}
 .trip-disclaimer{font-family:var(--body);font-size:.7rem}
 /* Team: collage row, larger portraits and handwritten intro. */
 .crew-block{padding:64px 0 66px;clip-path:polygon(0 1%,10% 0,23% 1%,34% 0,52% 1%,67% 0,84% 1%,100% 0,100% 99%,90% 100%,73% 99%,53% 100%,33% 99%,14% 100%,0 99%)}
@@ -327,7 +325,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 .photo-cut:nth-child(3){height:295px;transform:rotate(-2deg) translateX(-6%);z-index:2}
 .photo-cut:nth-child(4){height:229px;transform:rotate(2deg) translate(-8%,7px);z-index:4}
 .photo-cut:nth-child(5){height:252px;transform:rotate(3deg) translateX(-9%);z-index:1}
-.gallery-note{font-family:var(--marker);font-size:1.25rem;top:-12px;right:4%;z-index:7}
+.gallery-note{font-family:var(--claim);font-weight:500;font-size:1.25rem;top:-12px;right:4%;z-index:7}
 /* Five icon-and-copy rules like the magazine reference. */
 .rules-block{padding:66px 0 74px}
 .rules-heading .display-title{font-size:clamp(3.2rem,4.2vw,5rem);line-height:.91}
@@ -347,8 +345,8 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 .join-aside::after{content:"";display:block;height:4px;background:var(--purple);width:80%;margin:9px auto 0;transform:rotate(-2deg)}
 .join-actions{width:min(300px,100%)}
 .site-footer{padding-top:41px;background:#121011}
-.footer-wordmark{font-family:var(--marker);font-style:normal;font-size:2.08rem;font-weight:400;text-shadow:none}
-.footer-identity p{font-family:var(--marker);font-style:normal;font-size:.9rem}
+.footer-wordmark{font-family:var(--claim);font-style:normal;font-size:2.08rem;font-weight:500;letter-spacing:-.025em;text-transform:uppercase;transform:none;text-shadow:none}
+.footer-identity p{font-family:var(--body);font-style:normal;font-weight:400;font-size:.9rem;letter-spacing:0;transform:none}
 .footer-navigation>div>span{font-family:var(--body);font-weight:700;font-size:.74rem}
 .footer-navigation a,.footer-bottom{font-family:var(--body)}
 @media(max-width:1100px){
@@ -410,7 +408,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 
 
 /* Merchandising — editorial lookbook, not an unverified checkout. */
-.nav-logo.marker{
+.nav-logo.claim-type{
   font-family:var(--claim,'Oswald','Arial Narrow',sans-serif);
   font-weight:500;
   font-style:normal;
@@ -468,7 +466,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
   .merch-card-copy h3{font-size:1.7rem}
 }
 @media(max-width:700px){
-  .nav-logo.marker{font-size:1.5rem}
+  .nav-logo.claim-type{font-size:1.5rem}
   .merch-section{padding:62px 0 70px}
   .merch-heading-row{display:block;margin-bottom:26px}
   .merch-heading{font-size:clamp(3rem,11vw,5rem)}
@@ -483,7 +481,7 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
   .merch-bottom .brush-button{margin-top:20px}
 }
 @media(max-width:390px){
-  .nav-logo.marker{font-size:1.33rem}
+  .nav-logo.claim-type{font-size:1.33rem}
   .merch-card-copy h3{font-size:1.3rem}
 }
 
