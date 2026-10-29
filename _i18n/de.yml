@@ -5,11 +5,11 @@
       "menu": "Menü öffnen",
       "navigation": "Hauptnavigation",
       "language": "Sprache",
-      "kula": "DIE KULA",
+      "kula": "KITESNKULA",
       "trips": "REISEN",
       "crew": "TEAM",
       "stories": "GALERIE",
-      "join": "ZUR KULA",
+      "join": "JOIN KITESNKULA",
       "home": "HOME"
     },
     "hero": {
@@ -18,7 +18,7 @@
       "title_line2": "ANDERE KÖPFE.",
       "hand": "Fahr auf deine Art.",
       "description": "Eine Community von Kitern, die ihren Sport auf ihre Art leben. Reisen, Leute, Geschichten. Und vieles mehr.",
-      "cta": "ENTDECKE DIE KULA",
+      "cta": "ENTDECKE KITESNKULA",
       "sticker": "STAY SALTY\nOR STAY A CASA.",
       "image_alt": "Kiter treffen sich gemeinsam am Strand",
       "first": "DEIN KITE.",
@@ -30,11 +30,11 @@
       "note": "ANDERE RIDER. GLEICHER WIND."
     },
     "manifesto": {
-      "kicker": "THE KULA",
+      "kicker": "KITESNKULA",
       "heading_line1": "GLEICHER WIND.",
       "heading_line2": "ANDERE KÖPFE.",
       "body": "Wie hoch du springst, welchen Kite du fährst oder wie lange du schon dabei bist, spielt keine Rolle. Den Wind teilen, einander helfen und gemeinsam Spaß haben schon.",
-      "cta": "ENTDECKE DIE KULA",
+      "cta": "ENTDECKE KITESNKULA",
       "first": "GLEICHER WIND.",
       "second": "ANDERE KÖPFE.",
       "mascot_alt": "KITESNKULA Opossum mit Kitesurfbar"
@@ -103,7 +103,7 @@
       "sticker": "NO EGO, JUST KITE.",
       "statement_line1": "KEINE STARS.",
       "statement_line2": "EINFACH MENSCHEN.",
-      "statement": "Die Kula entsteht durch alle, die mitreisen. Unterschiedliche Menschen, gemeinsame Erlebnisse.",
+      "statement": "KITESNKULA entsteht durch alle, die mitreisen. Unterschiedliche Menschen, gemeinsame Erlebnisse.",
       "first": "MEET",
       "second": "THE CREW.",
       "filippo_alt": "Filippo aus dem KITESNKULA Team",
@@ -117,14 +117,14 @@
       "alt2": "Landschaft an einem Kitespot",
       "alt3": "Gemeinsame Zeit beim Kitesurfen",
       "alt4": "Kiter mit Ausrüstung",
-      "sticker": "KULA LIFE",
+      "sticker": "KITESNKULA LIFE",
       "first": "REAL PEOPLE.",
       "second": "REAL SESSIONS.",
       "third": "REAL STORIES.",
       "alt5": "Strand in Jericoacoara, Brasilien"
     },
     "values": {
-      "kicker": "THE KULA RULES",
+      "kicker": "KITESNKULA RULES",
       "heading": "FAHR DEINEN STIL.",
       "items": [
         {
@@ -159,17 +159,17 @@
       "body": "Du willst von unseren nächsten Reisen hören oder uns kennenlernen? Schreib uns. Ohne Mitgliedskarte oder Angeberei.",
       "cta": "SCHREIB UNS",
       "first": "JOIN",
-      "second": "THE KULA.",
+      "second": "KITESNKULA.",
       "aside": "SEE YOU WHEN IT'S WINDY."
     },
     "footer": {
       "line": "GLEICHER WIND. ANDERE KÖPFE.",
-      "join_title": "JOIN THE KULA",
+      "join_title": "JOIN KITESNKULA",
       "join_body": "Für kommende Reisen, Geschichten und alles Weitere.",
       "legal": "Datenschutz",
       "ending": "FAHR DEINEN STIL.",
       "links_label": "Footer-Navigation",
-      "about": "DIE KULA",
+      "about": "KITESNKULA",
       "rules": "Die Regeln",
       "trips": "REISEN",
       "upcoming": "Nächste Reisen",

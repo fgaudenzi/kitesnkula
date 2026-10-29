@@ -58,7 +58,7 @@ GitHub Pages URL is displayed in the successful deployment job; it will usually 
 ## Instagram and WhatsApp contact links
 
 - The official Instagram link is stored once in `_config.yml` under `social.instagram_url`, currently `https://www.instagram.com/kitesnkula/`. Its displayed handle is `social.instagram_handle`.
-- The home-page **Join the Kula** panel contains an Instagram CTA and an email fallback. The footer includes Instagram and, once enabled, WhatsApp.
+- The home-page **Join KITESNKULA** panel contains an Instagram CTA and an email fallback. The footer includes Instagram and, once enabled, WhatsApp.
 - WhatsApp is intentionally **not published** until KITESNKULA confirms which number may be displayed publicly. To activate it, edit `_config.yml`:
 
 ```yaml
