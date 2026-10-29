@@ -13,19 +13,20 @@ pages:
     - bundle install --jobs 4 --retry 3
   script:
     - |
-      export SITE_BASEURL="$(ruby -ruri -e 'u=ENV["CI_PAGES_URL"]; puts(u && !u.empty? ? (URI(u).path.sub(%r{/$}, "")) : "")')"
+      set -eu
+      export SITE_BASEURL="$(ruby -ruri -e 'u=ENV["CI_PAGES_URL"]; puts(u && !u.empty? ? URI(u).path.sub(%r{/$}, "") : "")')"
       export SITE_ORIGIN="$(ruby -ruri -e 'u=ENV["CI_PAGES_URL"]; puts(u && !u.empty? ? "#{URI(u).scheme}://#{URI(u).host}" : "")')"
-      echo "Building Jekyll site with baseurl: ${SITE_BASEURL}"
-      bundle exec jekyll build --destination public --baseurl "${SITE_BASEURL}" --url "${SITE_ORIGIN}"
-    - test -f public/index.html
-    - test -f public/en/index.html
-    - test -f public/de/index.html
-    - test -f public/fr/index.html
+      bundle exec jekyll build --destination public --baseurl "$SITE_BASEURL" --url "$SITE_ORIGIN"
+    - test -s public/index.html
+    - test -s public/en/index.html
+    - test -s public/de/index.html
+    - test -s public/fr/index.html
+    - test -s public/assets/css/kula.css
   artifacts:
     paths:
       - public
   rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    - if: '$CI_COMMIT_BRANCH == "master"'
   environment:
     name: production
     url: $CI_PAGES_URL

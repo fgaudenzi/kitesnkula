@@ -5,56 +5,73 @@
       "menu": "Ouvrir le menu",
       "navigation": "Navigation principale",
       "language": "Langue",
-      "kula": "La Kula",
-      "trips": "Voyages",
-      "crew": "L'équipe",
-      "stories": "Histoires",
-      "join": "Rejoins la Kula"
+      "kula": "LA KULA",
+      "trips": "VOYAGES",
+      "crew": "ÉQUIPE",
+      "stories": "GALERIE",
+      "join": "REJOINS LA KULA",
+      "home": "ACCUEIL"
     },
     "hero": {
-      "eyebrow": "UNE COMMUNAUTÉ, PAS UN CLASSEMENT.",
+      "eyebrow": "",
       "title_line1": "MÊME VENT.",
       "title_line2": "TÊTES DIFFÉRENTES.",
       "hand": "Ride à ta façon.",
-      "description": "Certains sautent haut. D'autres apprennent encore à remonter au vent. Ce qui compte, c'est avec qui tu partages la session.",
+      "description": "Une communauté de riders qui vivent le kite à leur manière. Voyages, rencontres, histoires et bien plus.",
       "cta": "DÉCOUVRE LA KULA",
       "sticker": "STAY SALTY\nOR STAY A CASA.",
-      "image_alt": "Kitesurfeurs et amis sur la plage après une session"
+      "image_alt": "Des kitesurfeurs réunis sur la plage",
+      "first": "TON KITE.",
+      "second": "TON STYLE.",
+      "third": "TES RÈGLES.",
+      "side_line1": "STAY SALTY",
+      "side_line2": "OR STAY",
+      "side_line3": "A CASA.",
+      "note": "RIDERS DIFFÉRENTS. MÊME VENT."
     },
     "manifesto": {
       "kicker": "THE KULA",
       "heading_line1": "MÊME VENT.",
       "heading_line2": "TÊTES DIFFÉRENTES.",
-      "body": "Peu importe la hauteur de tes sauts, ton aile ou tes années de pratique. Ce qui compte, c'est partager le vent, s'entraider et passer du bon temps ensemble.",
-      "cta": "NOTRE ÉTAT D'ESPRIT"
+      "body": "Peu importe tes sauts, ton aile ou tes années de pratique. Ce qui compte, c'est de partager le vent, de s'entraider et d'être bien ensemble.",
+      "cta": "DÉCOUVRE LA KULA",
+      "first": "MÊME VENT.",
+      "second": "TÊTES DIFFÉRENTES.",
+      "mascot_alt": "Opossum KITESNKULA avec une barre de kitesurf"
     },
     "trips": {
-      "kicker": "NOS PROCHAINS VOYAGES",
+      "kicker": "PROCHAINS VOYAGES",
       "heading_line1": "QUELQUE PART.",
       "heading_line2": "ENSEMBLE.",
-      "intro": "Quelques voyages par an, pas pour cocher des destinations, mais pour partager des sessions, des repas et de nouvelles amitiés.",
-      "all": "TOUTES LES DESTINATIONS",
-      "featured": "EN PROJET",
-      "type": "KITE TRIP · KULA STYLE",
+      "intro": "Peu de voyages, des gens formidables. Des destinations choisies, du vent (on l'espère) et tout pour partager une aventure mémorable.",
+      "all": "TOUS LES VOYAGES",
+      "featured": "NEXT TRIP",
+      "type": "KITE TRIP",
       "dates_soon": "Dates à venir",
-      "discover": "DÉCOUVRIR LE VOYAGE",
-      "ask": "NOUS CONTACTER",
-      "disclaimer": "Ces destinations sont envisagées ; dates, prix et disponibilités restent à confirmer."
+      "discover": "VOIR LE VOYAGE",
+      "ask": "POSER UNE QUESTION",
+      "disclaimer": "Ces destinations sont des idées. Les dates, tailles des groupes et disponibilités seront annoncées après confirmation.",
+      "first": "QUELQUE PART.",
+      "second": "ENSEMBLE."
     },
     "destinations": {
       "sicily": {
         "title": "SICILE — LO STAGNONE",
-        "description": "Eau plate, premiers bords et longs couchers de soleil.",
-        "long_description": "Un lieu pour apprendre, progresser et rencontrer du monde, sans pression. Le vent n'est qu'une partie du voyage.",
-        "level": "Débutants bienvenus",
+        "subtitle": "Kitecamp & good vibes",
+        "when": "Dates à confirmer",
+        "group": "Petits groupes",
+        "level": "Beginner / Intermediate",
+        "long_description": "Une lagune, les premiers bords, de nouveaux amis et de longs couchers de soleil. Pas besoin d'être pro pour se sentir chez soi.",
         "image_alt": "Lagune de Lo Stagnone en Sicile"
       },
       "brazil": {
         "title": "BRÉSIL — JERICOACOARA",
-        "description": "Vent, downwinds et journées sans montre.",
-        "long_description": "Basés à Jeri, nous naviguons vers Preá, Guriú et d'autres spots selon les conditions. Pour les riders autonomes qui aiment partager l'aventure.",
-        "level": "Riders autonomes",
-        "image_alt": "Plage de kitesurf au Brésil"
+        "subtitle": "Kite trip & communauté",
+        "when": "Dates à confirmer",
+        "group": "Petits groupes",
+        "level": "Intermediate / Advanced",
+        "long_description": "Vent, downwinds et moments ensemble à Jeri et près des autres spots, selon les conditions. Pour les riders autonomes.",
+        "image_alt": "Plage tropicale au Brésil"
       },
       "sardinia": {
         "title": "SARDAIGNE — SUD",
@@ -62,68 +79,103 @@
         "long_description": "Différents spots et paysages à découvrir ensemble. Une idée de voyage pour profiter du kite à sa manière.",
         "level": "Niveaux à préciser",
         "image_alt": "Côte de Sardaigne"
+      },
+      "oman": {
+        "title": "OMAN — MASIRAH",
+        "subtitle": "Kite trip · idée à explorer",
+        "when": "À définir",
+        "group": "À définir",
+        "level": "Niveaux à définir",
+        "long_description": "Une destination sur notre radar, mais pas encore un voyage à réserver. Écris-nous pour en parler.",
+        "image_alt": "Illustration conceptuelle de mer, dunes, véhicule et kites à Oman"
       }
     },
     "crew": {
-      "kicker": "MEET THE CREW",
+      "kicker": "CEUX QUI ORGANISENT LES VOYAGES",
       "title": "LES SUSPECTS HABITUELS.",
-      "intro": "Pas une équipe en costume-cravate. Les gens avec qui tu voyages, prépares ton aile et attends le vent.",
+      "intro": "Ceux qui organisent les voyages, regardent le vent toutes les cinq minutes et ont parfois raison.",
       "filippo_note": "WIND CHECK ↗",
-      "filippo_role": "Cofondateur · Kiter",
-      "filippo_bio": "Consulte la météo plus souvent que ses messages.",
+      "filippo_role": "Idées, organisation & kite",
+      "filippo_bio": "Persuadé que le dernier bord n'est jamais le dernier.",
       "simone_note": "ENCORE UN BORD ↗",
-      "simone_role": "Cofondateur · Kiter",
-      "simone_bio": "Persuadé que le dernier bord est toujours le suivant.",
+      "simone_role": "Voyages, logistique & kite",
+      "simone_bio": "Toujours à la recherche d'un autre spot et d'une autre session.",
       "sticker": "NO EGO, JUST KITE.",
       "statement_line1": "PAS DE STARS.",
       "statement_line2": "JUSTE DES GENS.",
-      "statement": "La Kula se construit avec celles et ceux qui nous rejoignent. Différents, mais ensemble."
+      "statement": "La Kula se construit avec celles et ceux qui nous rejoignent. Différents, mais ensemble.",
+      "first": "MEET",
+      "second": "THE CREW.",
+      "filippo_alt": "Filippo de l'équipe KITESNKULA",
+      "simone_alt": "Simone de l'équipe KITESNKULA"
     },
     "stories": {
-      "kicker": "LIFE IN THE KULA",
+      "kicker": "LA VIE ENTRE DEUX SESSIONS",
       "heading": "IL N'Y A PAS QUE LE VENT.",
-      "intro": "Les sessions comptent. Tout comme les décollages, les attentes, les repas et les rencontres.",
-      "alt1": "Session de kitesurf",
-      "alt2": "Souvenir d'un voyage en Sicile",
-      "alt3": "Voyage kite au Brésil",
-      "alt4": "Plage de Sardaigne",
-      "sticker": "VRAIES PERSONNES.\nVRAIES HISTOIRES."
+      "intro": "Les gens avant la performance. Les sessions comptent, les attentes, les discussions et les repas aussi.",
+      "alt1": "Riders lors d'un voyage",
+      "alt2": "Paysage de voyage kite",
+      "alt3": "Vie autour du kitesurf",
+      "alt4": "Kitesurfeur avec son matériel",
+      "sticker": "KULA LIFE",
+      "first": "REAL PEOPLE.",
+      "second": "REAL SESSIONS.",
+      "third": "REAL STORIES.",
+      "alt5": "Plage de Jericoacoara au Brésil"
     },
     "values": {
       "kicker": "THE KULA RULES",
       "heading": "RIDE ET LAISSE RIDER.",
       "items": [
         {
-          "title": "Chacun son style.",
-          "description": "Aucune compétition pour être le meilleur."
+          "title": "RIDE ET LAISSE RIDER.",
+          "description": "Chacun avance à son rythme."
         },
         {
-          "title": "On s'entraide.",
-          "description": "À terre et sur l'eau."
+          "title": "ON DONNE TOUJOURS UN COUP DE MAIN.",
+          "description": "Surtout quand quelqu'un en a besoin."
         },
         {
-          "title": "Le vent est à tout le monde.",
-          "description": "Le respect n'est pas négociable."
+          "title": "NE FAIS PAS LA STAR.",
+          "description": "Ou alors aide-nous à retrouver ta planche."
         },
         {
-          "title": "Être ensemble, ça compte.",
-          "description": "Même quand les prévisions se trompent."
+          "title": "LE VENT NE SE COMMANDE PAS.",
+          "description": "La bonne humeur non plus, mais on essaie."
+        },
+        {
+          "title": "LE DERNIER BORD N'EST JAMAIS LE DERNIER.",
+          "description": "On le sait tous."
         }
-      ]
+      ],
+      "first": "PEU DE RÈGLES.",
+      "second": "PAS PARFAITES.",
+      "intro": "Mais elles nous aident à bien vivre ensemble."
     },
     "join": {
-      "kicker": "JOIN THE KULA",
+      "kicker": "TOUT LE MONDE EST BIENVENU",
       "heading_line1": "À BIENTÔT,",
       "heading_line2": "QUAND ÇA SOUFFLE.",
-      "body": "Tu veux connaître nos prochains départs ? Écris-nous. Pas de carte de membre ni de pose. Juste du kite et des gens.",
-      "cta": "ÉCRIS-NOUS"
+      "body": "Envie de connaître nos prochains voyages ou simplement l'équipe ? Écris-nous. Sans carte de membre ni posture.",
+      "cta": "ÉCRIS-NOUS",
+      "first": "JOIN",
+      "second": "THE KULA.",
+      "aside": "SEE YOU WHEN IT'S WINDY."
     },
     "footer": {
-      "line": "Même vent. Têtes différentes.",
+      "line": "MÊME VENT. TÊTES DIFFÉRENTES.",
       "join_title": "JOIN THE KULA",
       "join_body": "Pour les prochains voyages, les histoires et le reste.",
       "legal": "Confidentialité",
-      "ending": "RIDE À TA FAÇON."
+      "ending": "RIDE À TA FAÇON.",
+      "links_label": "Navigation du pied de page",
+      "about": "LA KULA",
+      "rules": "Les règles",
+      "trips": "VOYAGES",
+      "upcoming": "Prochains voyages",
+      "follow": "SUIVEZ-NOUS",
+      "contact": "CONTACT",
+      "write": "Nous écrire"
     },
     "legal": {
       "heading": "Confidentialité et données personnelles",

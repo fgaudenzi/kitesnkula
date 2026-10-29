@@ -1,13 +1,14 @@
 (() => {
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.primary-nav');
-  if (!toggle || !nav) return;
-  const close = () => { toggle.setAttribute('aria-expanded', 'false'); nav.classList.remove('is-open'); };
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') !== 'true';
-    toggle.setAttribute('aria-expanded', String(open));
-    nav.classList.toggle('is-open', open);
+  const button = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (!button || !links) return;
+  const close = () => { button.setAttribute('aria-expanded','false'); links.classList.remove('open'); };
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') !== 'true';
+    button.setAttribute('aria-expanded', String(expanded));
+    links.classList.toggle('open', expanded);
   });
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  links.querySelectorAll('a').forEach(link => link.addEventListener('click', close));
   document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  document.addEventListener('click', e => { if (!button.contains(e.target) && !links.contains(e.target)) close(); });
 })();
