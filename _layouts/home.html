@@ -22,8 +22,19 @@ layout: default
 <section class="kula-band" id="kula" aria-labelledby="kula-heading">
   <div class="kula-band-inner container-wide">
     <div class="kula-animal"><img src="{{ '/assets/img/kula-mascot.svg' | prepend: site.baseurl_root }}" alt="{{ c.manifesto.mascot_alt }}" width="390" height="300"><span class="kula-crown claim-type" aria-hidden="true">✳</span></div>
-    <div class="kula-band-title"><span class="section-label">{{ c.manifesto.kicker }}</span><h2 id="kula-heading" class="claim-type">{{ c.manifesto.first }}<br>{{ c.manifesto.second }}</h2><span class="paint-underline lime-underline" aria-hidden="true"></span></div>
-    <div class="kula-band-message"><p>{{ c.manifesto.body }}</p><a class="brush-button cream-button" href="#rules">{{ c.manifesto.cta }} <span aria-hidden="true">↗</span></a></div>
+    <div class="kula-band-title">
+      <span class="section-label">{{ c.manifesto.kicker }}</span>
+      <h2 id="kula-heading" class="claim-type">{{ c.manifesto.first }}<br>{{ c.manifesto.second }}</h2>
+      <span class="paint-underline lime-underline" aria-hidden="true"></span>
+      <p class="kula-strapline">{{ c.manifesto.strapline }}</p>
+    </div>
+    <div class="kula-band-message">
+      {% for paragraph in c.manifesto.body %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
+      <p class="kula-closing">{{ c.manifesto.closing }}</p>
+      <a class="brush-button cream-button" href="#crew">{{ c.manifesto.cta }} <span aria-hidden="true">↗</span></a>
+    </div>
   </div>
 </section>
 

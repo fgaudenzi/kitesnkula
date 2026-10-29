@@ -32,13 +32,21 @@
     },
     "manifesto": {
       "kicker": "KITESNKULA",
-      "heading_line1": "MÊME VENT.",
-      "heading_line2": "TÊTES DIFFÉRENTES.",
-      "body": "Peu importe tes sauts, ton aile ou tes années de pratique. Ce qui compte, c'est de partager le vent, de s'entraider et d'être bien ensemble.",
-      "cta": "DÉCOUVRE KITESNKULA",
-      "first": "MÊME VENT.",
-      "second": "TÊTES DIFFÉRENTES.",
-      "mascot_alt": "Opossum KITESNKULA avec une barre de kitesurf"
+      "heading_line1": "NO HEROES.",
+      "heading_line2": "JUST KITERS.",
+      "body": [
+        "On aime le kite. Et tout ce qui se passe avant, après, ou quand le vent ne souffle pas.",
+        "Les sessions improvisées, les conseils échangés sur la plage, les voyages décidés à la dernière minute en suivant les prévisions. Même faire 200 km pour accompagner un pote voir une aile d'occasion. Oui, c'est arrivé.",
+        "On est moniteurs certifiés, avec des années de kite derrière nous. Le kite, on le prend au sérieux. Nous-mêmes, beaucoup moins.",
+        "Que tu apprennes à remonter au vent ou que tu poses des megaloops, tu as ta place ici. Pas besoin d'impressionner qui que ce soit.",
+        "On s'entraide, on voyage, on rigole. Et si tu débarques à l'apéro en poncho, encore couvert de sable, tu es au bon endroit."
+      ],
+      "cta": "RENCONTRE L'ÉQUIPE",
+      "first": "NO HEROES.",
+      "second": "JUST KITERS.",
+      "mascot_alt": "Opossum KITESNKULA avec une barre de kitesurf",
+      "strapline": "Rien à prouver. Personne à juger.",
+      "closing": "SAME WIND. DIFFERENT WEIRDOS."
     },
     "trips": {
       "kicker": "PROCHAINS VOYAGES",

@@ -32,13 +32,21 @@
     },
     "manifesto": {
       "kicker": "KITESNKULA",
-      "heading_line1": "SAME WIND.",
-      "heading_line2": "DIFFERENT WEIRDOS.",
-      "body": "How high you jump, what kite you ride or how long you've been at it doesn't matter. Sharing the wind, helping each other and having a good time does.",
-      "cta": "MEET KITESNKULA",
-      "first": "SAME WIND.",
-      "second": "DIFFERENT WEIRDOS.",
-      "mascot_alt": "Rebel KITESNKULA opossum holding a kite bar"
+      "heading_line1": "NO HEROES.",
+      "heading_line2": "JUST KITERS.",
+      "body": [
+        "We love kitesurfing. And everything that happens before, after and when there's no wind.",
+        "Last-minute sessions, tips swapped on the beach, trips planned around the forecast at the very last minute. Even driving 200 km to help a friend check out a second-hand kite. Yes, that happened.",
+        "We're certified instructors, with years on the water. We take kitesurfing seriously. Ourselves? Not so much.",
+        "Whether you're learning to ride upwind or landing megaloops, there's room for you here. No need to impress anyone.",
+        "We help each other out, travel, laugh. And if you show up for aperitivo in a poncho, still covered in sand, you're in good company."
+      ],
+      "cta": "MEET THE CREW",
+      "first": "NO HEROES.",
+      "second": "JUST KITERS.",
+      "mascot_alt": "Rebel KITESNKULA opossum holding a kite bar",
+      "strapline": "Nothing to prove. No one to judge.",
+      "closing": "SAME WIND. DIFFERENT WEIRDOS."
     },
     "trips": {
       "kicker": "UPCOMING TRIPS",
