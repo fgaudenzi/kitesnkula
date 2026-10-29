@@ -672,3 +672,89 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
   .kula-band-inner{padding-top:43px}
   .kula-band-title h2{font-size:clamp(2.65rem,11.4vw,3.2rem)}
 }
+
+
+/* Trips: antihero headline, three spots we actually know, hand-drawn smile. */
+.trip-title-row,.trip-title-row.trip-title-row--inner{
+  display:grid;
+  grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  align-items:start;
+  gap:clamp(28px,4.4vw,72px);
+  margin-bottom:35px;
+}
+.trip-heading-area{min-width:0}
+.trip-antihero-title{
+  margin:17px 0 0;
+  font-family:var(--claim);
+  font-weight:500;
+  font-style:normal;
+  font-size:clamp(3.4rem,5.35vw,5.65rem);
+  line-height:1.04;
+  letter-spacing:0;
+  text-transform:uppercase;
+  max-width:100%;
+}
+.trip-antihero-title > span{display:block}
+.trip-antihero-title .trip-title-ending{
+  display:flex;
+  align-items:center;
+  gap:.15em;
+  white-space:nowrap;
+}
+.trip-smile{
+  flex:0 0 auto;
+  width:clamp(44px,5vw,73px);
+  height:clamp(44px,5vw,73px);
+  color:var(--ink);
+  transform:rotate(9deg);
+  stroke-linecap:round;
+}
+.trip-copy{align-self:start;min-width:0;max-width:590px}
+.trip-copy p{
+  font:400 .89rem/1.7 var(--body);
+  margin:0 0 13px;
+  max-width:570px;
+}
+.trip-copy .trip-copy-closing{
+  color:var(--ink);
+  font-weight:700;
+  margin:18px 0 16px;
+}
+.trip-copy .inline-link{
+  display:inline-flex;
+  margin:4px 0 0;
+  font-weight:700;
+  white-space:normal;
+}
+.trip-spot-tag{
+  position:absolute;
+  left:12px;
+  bottom:14px;
+  padding:7px 10px;
+  background:var(--lime);
+  color:var(--ink);
+  font:700 .7rem/1 var(--body);
+  letter-spacing:0;
+  text-transform:uppercase;
+  transform:rotate(-2deg);
+  pointer-events:none;
+}
+.trip-page-cards .trip-card .trip-content p:not(.trip-subtitle){line-height:1.66}
+.trip-title-row--inner{margin-bottom:42px}
+@media(max-width:1000px){
+  .trip-title-row,.trip-title-row.trip-title-row--inner{grid-template-columns:minmax(0,1fr);gap:24px}
+  .trip-antihero-title{font-size:clamp(3.2rem,8vw,5.1rem)}
+  .trip-copy{max-width:700px}
+  .trip-copy p{max-width:690px}
+}
+@media(max-width:700px){
+  .trip-title-row,.trip-title-row.trip-title-row--inner{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+  .trip-antihero-title{font-size:clamp(2.65rem,10.3vw,4.3rem);line-height:1.065;margin:14px 0 0}
+  .trip-smile{width:clamp(40px,10vw,60px);height:clamp(40px,10vw,60px)}
+  .trip-copy p{font-size:.89rem;line-height:1.68}
+  .trip-spot-tag{font-size:.67rem}
+}
+@media(max-width:390px){
+  .trip-antihero-title{font-size:clamp(2.38rem,9.6vw,2.8rem)}
+  .trip-smile{width:39px;height:39px}
+}
