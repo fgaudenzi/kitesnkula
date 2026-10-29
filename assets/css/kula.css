@@ -216,3 +216,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
 .hero-title span{overflow-wrap:normal}
 @media(max-width:700px){.hero-title{font-size:clamp(2.55rem,9vw,5.3rem)}.hero-title span{width:auto;max-width:100%}.hero-message{min-width:0}.hero-side{right:20px}}
 @media(max-width:420px){.hero-title{font-size:clamp(2.25rem,10.3vw,2.7rem)}}
+
+/* Typography safeguards from desktop/mobile visual QA. */
+@media(min-width:701px){.hero-message{width:60%;max-width:800px}.hero-title{font-size:clamp(3.05rem,5.25vw,6.35rem)}.hero-title span{white-space:nowrap}}
+@media(max-width:700px){.trip-title-row .display-title{font-size:clamp(2.85rem,9vw,4.6rem)}.display-title{overflow-wrap:anywhere}}
+@media(max-width:420px){.hero-title{font-size:clamp(2.15rem,9.3vw,2.6rem)}}
