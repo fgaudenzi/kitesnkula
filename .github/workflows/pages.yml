@@ -59,7 +59,10 @@ jobs:
             _site/trips/index.html \
             _site/assets/css/kula.css \
             _site/assets/js/kula.js \
-            _site/assets/img/kula-mascot.svg; do
+            _site/assets/img/kula-mascot.svg \
+            _site/assets/img/merch/hoodie-black.webp \
+            _site/assets/img/merch/hoodie-purple.webp \
+            _site/assets/img/merch/hoodie-crew.webp; do
             test -s "$page" || { echo "::error::Missing or empty: $page"; exit 1; }
           done
           for lang in '' en de fr; do
@@ -68,6 +71,7 @@ jobs:
             grep -q 'class="trip-card' "$page" || { echo "::error::Missing trips in $page"; exit 1; }
             grep -q 'https://www.instagram.com/kitesnkula/' "$page" || { echo "::error::Official Instagram link missing in $page"; exit 1; }
             grep -q 'class="join-actions"' "$page" || { echo "::error::Contact buttons missing in $page"; exit 1; }
+            grep -q 'id="merch"' "$page" || { echo "::error::Merch section missing in $page"; exit 1; }
             if grep -Eiq '(^|[^[:alnum:]_])((the|la|die|zur)[[:space:]]+kula|kula[[:space:]]+life|vita[[:space:]]+di[[:space:]]+kula)([^[:alnum:]_]|$)' "$page"; then
               echo "::error::Old community naming still found in $page"
               exit 1

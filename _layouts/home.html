@@ -90,6 +90,54 @@ layout: default
   </div>
 </section>
 
+<section id="merch" class="merch-section" aria-labelledby="merch-heading">
+  <div class="container-wide">
+    <div class="merch-heading-row">
+      <div>
+        <span class="section-label purple-mark">{{ c.merch.kicker }}</span>
+        <h2 class="merch-heading" id="merch-heading">{{ c.merch.heading_first }}<br><span>{{ c.merch.heading_second }}</span></h2>
+      </div>
+      <p class="merch-intro">{{ c.merch.intro }}</p>
+    </div>
+    <div class="merch-grid">
+      <article class="merch-card">
+        <div class="merch-image merch-black">
+          <img src="{{ '/assets/img/merch/hoodie-black.webp' | prepend: site.baseurl_root }}" alt="{{ c.merch.black_alt }}" width="640" height="800" loading="lazy">
+          <span class="merch-sticker">{{ c.merch.sticker_one }}</span>
+        </div>
+        <div class="merch-card-copy">
+          <h3>{{ c.merch.black_title }}</h3>
+          <p>{{ c.merch.black_description }}</p>
+        </div>
+      </article>
+      <article class="merch-card">
+        <div class="merch-image merch-purple">
+          <img src="{{ '/assets/img/merch/hoodie-purple.webp' | prepend: site.baseurl_root }}" alt="{{ c.merch.purple_alt }}" width="640" height="800" loading="lazy">
+          <span class="merch-sticker">{{ c.merch.sticker_two }}</span>
+        </div>
+        <div class="merch-card-copy">
+          <h3>{{ c.merch.purple_title }}</h3>
+          <p>{{ c.merch.purple_description }}</p>
+        </div>
+      </article>
+      <article class="merch-card">
+        <div class="merch-image merch-friends">
+          <img src="{{ '/assets/img/merch/hoodie-crew.webp' | prepend: site.baseurl_root }}" alt="{{ c.merch.group_alt }}" width="800" height="600" loading="lazy">
+          <span class="merch-sticker">{{ c.merch.sticker_three }}</span>
+        </div>
+        <div class="merch-card-copy">
+          <h3>{{ c.merch.group_title }}</h3>
+          <p>{{ c.merch.group_description }}</p>
+        </div>
+      </article>
+    </div>
+    <div class="merch-bottom">
+      <p>{{ c.merch.note }}</p>
+      <a class="brush-button purple-button" href="{{ site.social.instagram_url }}" target="_blank" rel="noopener noreferrer">{{ c.merch.cta }} <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
 <section id="rules" class="rules-block paper-block" aria-labelledby="rules-heading">
   <div class="container-wide">
     <div class="rules-heading"><span class="section-label">{{ c.values.kicker }}</span><h2 id="rules-heading" class="display-title">{{ c.values.first }}<br>{{ c.values.second }}</h2><p>{{ c.values.intro }}</p></div>

@@ -83,3 +83,11 @@ social:
 The earlier source remains available in the backup branch `backup/pre-redesign-2026-10-29` at commit `38895ff49b421de3a1c44d0e70ddd207fc5be784`.
 
 See the existing project license.
+
+## Merchandise lookbook
+
+The homepage includes a community-merch section `#merch`, with black crewneck, purple hoodie and group colorways using the approved hoodie references. These are visual concepts, **not confirmed inventory or checkout products**. No prices or availability are implied; the CTA opens the official Instagram profile for questions.
+
+- Product descriptions, labels and alt text are in `_i18n/{it,en,de,fr}.yml` under `kula.merch`.
+- Product pictures live in `assets/img/merch/` (separate raster files; no baked-in website copy).
+- The navbar wordmark uses **Oswald Medium 500**, matching the type of lettering on the sweatshirt print.

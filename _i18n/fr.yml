@@ -10,7 +10,8 @@
       "crew": "ÉQUIPE",
       "stories": "GALERIE",
       "join": "REJOINS KITESNKULA",
-      "home": "ACCUEIL"
+      "home": "ACCUEIL",
+      "merch": "MERCH"
     },
     "hero": {
       "eyebrow": "",
@@ -197,6 +198,26 @@
       "whatsapp_cta": "ÉCRIS-NOUS SUR WHATSAPP",
       "email_cta": "Ou envoie-nous un e-mail",
       "whatsapp_message": "Salut KITESNKULA ! J'aimerais en savoir plus sur les prochains voyages et la communauté."
+    },
+    "merch": {
+      "kicker": "KITESNKULA MERCH",
+      "heading_first": "WEAR YOUR",
+      "heading_second": "OWN RULES.",
+      "intro": "Notre façon de vivre le kite existe aussi sur un sweat. Même esprit, différentes couleurs, aucun uniforme.",
+      "black_title": "BLACK CREWNECK",
+      "black_description": "Noir et imprimé rose vif. My session, my kite, my rules.",
+      "purple_title": "PURPLE HOODIE",
+      "purple_description": "Violet profond et imprimé rose vif. Même attitude, autre couleur.",
+      "group_title": "KITESNKULA TOGETHER",
+      "group_description": "Différentes couleurs, différentes personnes, même vent.",
+      "sticker_one": "INDEPENDENT RIDER",
+      "sticker_two": "MY RULES",
+      "sticker_three": "SAME WIND",
+      "black_alt": "Sweat noir KITESNKULA avec illustration rose au dos, porté au coucher du soleil",
+      "purple_alt": "Hoodie violet KITESNKULA avec illustration rose au dos, porté au coucher du soleil",
+      "group_alt": "Groupe d'amis sur une plage avec des sweats KITESNKULA de différentes couleurs",
+      "note": "Ces images présentent des idées de merchandising de la communauté, sans stocks ni prix confirmés.",
+      "cta": "CONTACTE-NOUS SUR INSTAGRAM"
     }
   }
 }

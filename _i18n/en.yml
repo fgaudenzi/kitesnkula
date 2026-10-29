@@ -10,7 +10,8 @@
       "crew": "CREW",
       "stories": "GALLERY",
       "join": "JOIN KITESNKULA",
-      "home": "HOME"
+      "home": "HOME",
+      "merch": "MERCH"
     },
     "hero": {
       "eyebrow": "",
@@ -197,6 +198,26 @@
       "whatsapp_cta": "CHAT ON WHATSAPP",
       "email_cta": "Or send us an email",
       "whatsapp_message": "Hi KITESNKULA! I'd like to know more about the next trips and the community."
+    },
+    "merch": {
+      "kicker": "KITESNKULA MERCH",
+      "heading_first": "WEAR YOUR",
+      "heading_second": "OWN RULES.",
+      "intro": "Our take on kitesurfing looks good on a sweatshirt too. Same spirit, different colors, no uniform.",
+      "black_title": "BLACK CREWNECK",
+      "black_description": "Black with a hot-pink print. My session, my kite, my rules.",
+      "purple_title": "PURPLE HOODIE",
+      "purple_description": "Deep purple and a hot-pink print. Same attitude, another color.",
+      "group_title": "KITESNKULA TOGETHER",
+      "group_description": "Different colors, different people, same wind.",
+      "sticker_one": "INDEPENDENT RIDER",
+      "sticker_two": "MY RULES",
+      "sticker_three": "SAME WIND",
+      "black_alt": "Black KITESNKULA crewneck with a pink back graphic, worn by the sea at sunset",
+      "purple_alt": "Purple KITESNKULA hoodie with a pink back graphic, worn by the sea at sunset",
+      "group_alt": "Friends on the beach wearing KITESNKULA hoodies in different colors",
+      "note": "These images show community merch concepts, not confirmed stock or retail prices.",
+      "cta": "ASK US ON INSTAGRAM"
     }
   }
 }
