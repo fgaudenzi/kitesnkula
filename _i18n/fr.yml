@@ -212,9 +212,9 @@
     },
     "merch": {
       "kicker": "KITESNKULA MERCH",
-      "heading_first": "WEAR YOUR",
-      "heading_second": "OWN RULES.",
-      "intro": "Notre façon de vivre le kite existe aussi sur un sweat. Même esprit, différentes couleurs, aucun uniforme.",
+      "heading_first": "BE PROUD.",
+      "heading_second": "WEAR KITESNKULA.",
+      "intro": "Des sweats pour les jours de vent. Et tous les autres aussi. Pas d'uniforme, juste KITESNKULA.",
       "black_title": "BLACK CREWNECK",
       "black_description": "Noir et imprimé rose vif. My session, my kite, my rules.",
       "purple_title": "PURPLE HOODIE",
@@ -224,11 +224,17 @@
       "sticker_one": "INDEPENDENT RIDER",
       "sticker_two": "MY RULES",
       "sticker_three": "SAME WIND",
-      "black_alt": "Sweat noir KITESNKULA avec illustration rose au dos, porté au coucher du soleil",
-      "purple_alt": "Hoodie violet KITESNKULA avec illustration rose au dos, porté au coucher du soleil",
-      "group_alt": "Groupe d'amis sur une plage avec des sweats KITESNKULA de différentes couleurs",
+      "black_alt": "Rider en sweat noir KITESNKULA avec imprimé rose au dos",
+      "purple_alt": "Hoodie violet KITESNKULA avec imprimé rose au dos",
+      "group_alt": "Amis à la plage portant des sweats KITESNKULA de différentes couleurs",
       "note": "Ces images présentent des idées de merchandising de la communauté, sans stocks ni prix confirmés.",
-      "cta": "CONTACTE-NOUS SUR INSTAGRAM"
+      "cta": "CONTACTE-NOUS SUR INSTAGRAM",
+      "concept_kicker": "DERRIÈRE LES SWEATS",
+      "concept_heading": "PAS UN UNIFORME.",
+      "concept_paragraphs": [
+        "Ces sweats ne disent rien de la hauteur de tes sauts ni de tes années de kite. Ils sont faits pour celles et ceux qui vivent ce sport comme nous : aider à décoller une aile, partager un conseil sans se la raconter, rider ensemble et prendre une bière quand le vent tombe.",
+        "C'est ce que racontent nos graphismes : des gens différents, le même état d'esprit et aucune envie de jouer les stars. Porte-les à la plage, en ville ou à l'apéro, encore en poncho. Le sable est facultatif."
+      ]
     }
   }
 }

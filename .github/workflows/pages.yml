@@ -79,6 +79,9 @@ jobs:
             grep -q 'https://www.instagram.com/kitesnkula/' "$page" || { echo "::error::Official Instagram link missing in $page"; exit 1; }
             grep -q 'class="join-actions"' "$page" || { echo "::error::Contact buttons missing in $page"; exit 1; }
             grep -q 'id="merch"' "$page" || { echo "::error::Merch section missing in $page"; exit 1; }
+            grep -q 'BE PROUD\.' "$page" || { echo "::error::Merch hero claim absent in $page"; exit 1; }
+            grep -q 'WEAR KITESNKULA\.' "$page" || { echo "::error::Merch secondary claim absent in $page"; exit 1; }
+            grep -q 'class="merch-concept"' "$page" || { echo "::error::Merch concept section absent in $page"; exit 1; }
             grep -q 'NO HEROES\.' "$page" || { echo "::error::Antihero manifesto heading missing in $page"; exit 1; }
             grep -q 'class="kula-strapline"' "$page" || { echo "::error::Manifesto strapline missing in $page"; exit 1; }
             grep -q 'kula-opossum-antihero.avif' "$page" || { echo "::error::Antihero opossum missing in $page"; exit 1; }

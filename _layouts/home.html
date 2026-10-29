@@ -152,6 +152,17 @@ layout: default
         </div>
       </article>
     </div>
+    <div class="merch-concept" aria-labelledby="merch-concept-heading">
+      <div class="merch-concept-title-wrap">
+        <span class="section-label purple-mark">{{ c.merch.concept_kicker }}</span>
+        <h3 id="merch-concept-heading" class="merch-concept-title claim-type">{{ c.merch.concept_heading }}</h3>
+      </div>
+      <div class="merch-concept-copy">
+        {% for paragraph in c.merch.concept_paragraphs %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
     <div class="merch-bottom">
       <p>{{ c.merch.note }}</p>
       <a class="brush-button purple-button" href="{{ site.social.instagram_url }}" target="_blank" rel="noopener noreferrer">{{ c.merch.cta }} <span aria-hidden="true">↗</span></a>
