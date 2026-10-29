@@ -63,13 +63,19 @@ jobs:
             _site/assets/img/kula-opossum-antihero.avif \
             _site/assets/img/merch/hoodie-black.webp \
             _site/assets/img/merch/hoodie-purple.webp \
-            _site/assets/img/merch/hoodie-crew.webp; do
+            _site/assets/img/merch/hoodie-crew.webp \
+            _site/assets/img/camp/sardegna.jpg; do
             test -s "$page" || { echo "::error::Missing or empty: $page"; exit 1; }
           done
           for lang in '' en de fr; do
             if [[ -z "$lang" ]]; then page="_site/index.html"; else page="_site/$lang/index.html"; fi
             grep -q 'class="hero-title' "$page" || { echo "::error::Missing accessible hero text in $page"; exit 1; }
             grep -q 'class="trip-card' "$page" || { echo "::error::Missing trips in $page"; exit 1; }
+            grep -q 'class="trip-antihero-title"' "$page" || { echo "::error::Trip heading missing in $page"; exit 1; }
+            grep -q 'DISCUTIBILE\.' "$page" || { echo "::error::New trip claim missing in $page"; exit 1; }
+            grep -q 'PUNTA TRETTU' "$page" || { echo "::error::Punta Trettu missing in $page"; exit 1; }
+            if grep -q 'MASIRAH' "$page"; then echo "::error::Former Oman card remains in $page"; exit 1; fi
+            [[ "$(grep -c 'class="trip-card"' "$page")" -eq 3 ]] || { echo "::error::Expected 3 trip cards in $page"; exit 1; }
             grep -q 'https://www.instagram.com/kitesnkula/' "$page" || { echo "::error::Official Instagram link missing in $page"; exit 1; }
             grep -q 'class="join-actions"' "$page" || { echo "::error::Contact buttons missing in $page"; exit 1; }
             grep -q 'id="merch"' "$page" || { echo "::error::Merch section missing in $page"; exit 1; }

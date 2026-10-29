@@ -49,54 +49,57 @@
       "closing": "SAME WIND. DIFFERENT WEIRDOS."
     },
     "trips": {
-      "kicker": "UPCOMING TRIPS",
-      "heading_line1": "SOMEWHERE.",
-      "heading_line2": "TOGETHER.",
-      "intro": "A few trips, great people. Carefully chosen places, wind (hopefully) and everything that makes another adventure memorable.",
+      "kicker": "OUR TRIPS",
+      "heading_line1": "SPOT SERI.",
+      "heading_line2": "COMPAGNIA",
+      "intro": [
+        "There are spots we'd happily go back to a hundred times. Instead of telling you about them, we'd rather take you with us.",
+        "We know these places, sort out the trip and are there for lessons, sessions, tips and anything that doesn't go to plan. We also know where to eat, grab a beer and catch the sunset.",
+        "First time on a kite? We've got you. Already riding independently? Let's ride together and work on that next trick.",
+        "Coming solo? You won't stay solo."
+      ],
       "all": "ALL TRIPS",
-      "featured": "NEXT TRIP",
       "type": "KITE TRIP",
       "dates_soon": "Dates to be announced",
-      "discover": "EXPLORE TRIP",
-      "ask": "ASK ABOUT IT",
-      "disclaimer": "Destinations are under consideration. Dates, group sizes and availability will be announced when confirmed.",
-      "first": "SOMEWHERE.",
-      "second": "TOGETHER."
+      "discover": "DISCOVER THE TRIP",
+      "ask": "ASK US ABOUT IT",
+      "disclaimer": "These are places we've ridden and want to share with you. Trip dates, places and details will be announced once confirmed.",
+      "first": "SPOT SERI.",
+      "second": "COMPAGNIA",
+      "heading_line3": "DISCUTIBILE.",
+      "third": "DISCUTIBILE.",
+      "closing": "You focus on the kiting. We've got the beers covered."
     },
     "destinations": {
       "sicily": {
         "title": "SICILY — LO STAGNONE",
-        "subtitle": "Kite camp & good vibes",
+        "subtitle": "FIRST RIDES. LONG SUNSETS.",
         "when": "Dates to be confirmed",
         "group": "Small groups",
-        "level": "Beginner / Intermediate",
-        "long_description": "A lagoon, first rides, new friends and never-ending sunsets. You don't have to be a pro to feel at home.",
-        "image_alt": "Flat-water lagoon at Lo Stagnone in Sicily"
+        "level": "Beginners / Intermediate",
+        "tag": "FIRST RIDES",
+        "long_description": "The lagoon, lessons if you're starting from scratch, tips to level up and sessions together. After the water: sunsets, beers and good food.",
+        "image_alt": "Kitesurfing at the Lo Stagnone lagoon in Sicily"
       },
       "brazil": {
         "title": "BRAZIL — JERICOACOARA",
-        "subtitle": "Kite trip & community",
+        "subtitle": "MORE WIND. LESS SLEEP.",
         "when": "Dates to be confirmed",
         "group": "Small groups",
-        "level": "Intermediate / Advanced",
-        "long_description": "Wind, downwinders and time together around Jeri and nearby spots, depending on conditions. For independent kiters.",
-        "image_alt": "Brazilian tropical beach and kitesurfing destination"
+        "level": "Independent kiters",
+        "tag": "INDEPENDENT RIDERS",
+        "long_description": "Jeri, Preá, Guriú and plenty of time riding together. For independent kiters who want to explore the spots we know, work on new tricks and enjoy life off the water too.",
+        "image_alt": "Beach and kites near Jericoacoara, Brazil"
       },
       "sardinia": {
-        "title": "SARDINIA — SOUTH",
-        "description": "The sea, lagoons and time to connect.",
-        "long_description": "Different spots and places to explore together. A trip idea for people who want to enjoy kitesurfing their own way.",
-        "level": "Levels to be confirmed",
-        "image_alt": "The Sardinian coast"
-      },
-      "oman": {
-        "title": "OMAN — MASIRAH",
-        "subtitle": "Kite trip · exploring the idea",
-        "when": "To be confirmed",
-        "group": "To be confirmed",
-        "level": "Levels to be confirmed",
-        "long_description": "A destination on our radar, not a bookable trip yet. Message us if you'd like to explore it with us.",
-        "image_alt": "Concept illustration of sea, dunes, a vehicle and kites in Oman"
+        "title": "SARDINIA — PUNTA TRETTU",
+        "subtitle": "FLAT WATER. NO DRAMA.",
+        "when": "Dates to be confirmed",
+        "group": "Small groups",
+        "level": "Beginners / Intermediate",
+        "tag": "FLAT WATER",
+        "long_description": "A spot we know, flat water, lessons for first-timers and tips for your next trick. We sort out the logistics, including what happens after the session.",
+        "image_alt": "Kitesurfing in Sardinia"
       }
     },
     "crew": {

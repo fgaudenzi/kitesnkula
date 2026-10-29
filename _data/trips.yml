@@ -1,7 +1,7 @@
-# Destination ideas. No confirmed event dates, prices or availability are claimed.
+# Places the KITESNKULA crew already knows. Trips are not bookable until dates are confirmed.
 - id: sicily
   image: /assets/img/camp/sicilia2.jpg
+- id: sardinia
+  image: /assets/img/camp/sardegna.jpg
 - id: brazil
   image: /assets/img/camp/jericoara.jpg
-- id: oman
-  image: /assets/img/camp/oman-concept.svg
