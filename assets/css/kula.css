@@ -1,6 +1,6 @@
 /* KITESNKULA · hand-made editorial web identity
    All headings, labels and controls are selectable HTML text.  */
-:root{--paper:#f5f0e7;--paper-deep:#e9e3d8;--ink:#171416;--soft:#554c47;--purple:#743df2;--purple-shadow:#5728be;--lime:#dffd61;--marker:"Permanent Marker","Comic Sans MS",cursive;--display:"Barlow Condensed",Impact,sans-serif;--body:"DM Sans",Arial,sans-serif}
+:root{--paper:#f5f0e7;--paper-deep:#e9e3d8;--ink:#171416;--soft:#554c47;--purple:#743df2;--purple-shadow:#5728be;--lime:#dffd61;--marker:"Permanent Marker","Arial Black",Impact,sans-serif;--display:"Barlow Condensed",Impact,sans-serif;--body:"DM Sans",Arial,sans-serif}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:86px}
 body{margin:0;color:var(--ink);background:var(--paper);font:400 15px/1.6 var(--body);-webkit-font-smoothing:antialiased}
@@ -34,8 +34,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
 .nav-toggle{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer}
 .nav-toggle span{display:block;background:var(--ink);height:3px;width:23px;margin:4px auto}
 .hero{height:min(660px,76vw);min-height:540px;position:relative;isolation:isolate;overflow:hidden;background:#c7b19d}
-.hero-image{position:absolute;inset:0;background:url("../img/header.jpg") center 42%/cover no-repeat;z-index:-2}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(245,240,231,.98) 0%,rgba(245,240,231,.93) 24%,rgba(245,240,231,.44) 42%,rgba(245,240,231,.04) 66%),linear-gradient(0deg,rgba(35,22,20,.23),transparent 40%);z-index:-1}
+.hero-image{position:absolute;inset:0;background:url("../img/camp/sicilia1.jpg") center 57%/cover no-repeat;z-index:-2}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(245,240,231,.99) 0%,rgba(245,240,231,.94) 25%,rgba(245,240,231,.38) 44%,rgba(245,240,231,.04) 68%),linear-gradient(0deg,rgba(92,49,39,.18),transparent 47%);z-index:-1}
 .hero-content{height:100%;display:flex;align-items:flex-start;justify-content:space-between;position:relative;padding-top:56px}
 .hero-message{width:56%;max-width:690px}
 .eyebrow{font-size:.72rem;font-weight:900;letter-spacing:.12em}
@@ -164,7 +164,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
  .nav-links.open{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid #e2d8c9}
  .nav-tools{margin-left:auto;order:2}.lang-switch{gap:8px}.lang-switch a{font-size:.61rem}
  .hero{min-height:650px;height:auto}
- .hero-image{background-position:62% center}
+ .hero-image{background-position:62% 55%}
  .hero-shade{background:linear-gradient(90deg,rgba(245,240,231,.97),rgba(245,240,231,.75) 60%,rgba(245,240,231,.02)),linear-gradient(0deg,rgba(22,17,14,.25),transparent 48%)}
  .hero-content{min-height:650px;padding-top:62px}
  .hero-message{width:100%}
@@ -205,9 +205,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
 }
 @media(max-width:420px){
  .nav-logo{font-size:1.22rem}.lang-switch{gap:5px}
- .hero-title{font-size:2.9rem}.hero-side{font-size:.92rem}
+ .hero-title{font-size:2.55rem}.hero-side{font-size:.92rem}
  .kula-band-title h2{font-size:2.55rem}.kula-animal{margin-left:-20px}
  .crew-member{grid-template-columns:43% 1fr;gap:13px}.crew-details h3{font-size:1.9rem}
  .footer-bottom{font-size:.57rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Keep hand lettering inside small screens and preserve a strong accessible fallback. */
+.hero-title span{overflow-wrap:normal}
+@media(max-width:700px){.hero-title{font-size:clamp(2.55rem,9vw,5.3rem)}.hero-title span{width:auto;max-width:100%}.hero-message{min-width:0}.hero-side{right:20px}}
+@media(max-width:420px){.hero-title{font-size:clamp(2.25rem,10.3vw,2.7rem)}}

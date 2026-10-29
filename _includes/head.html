@@ -6,7 +6,7 @@
   <meta name="description" content="{{ copy.meta_description | default: site.description | escape }}">
   <meta name="theme-color" content="#f5f0e7">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ site.title }} — {{ copy.hero.title_line1 | escape }}">
+  <meta property="og:title" content="{{ site.title }} — {{ copy.hero.first | escape }} {{ copy.hero.second | escape }}">
   <meta property="og:description" content="{{ copy.meta_description | escape }}">
   <meta property="og:image" content="{{ '/assets/img/header.jpg' | prepend: site.baseurl_root }}">
   {% if site.url != empty %}<link rel="canonical" href="{{ page.url | absolute_url }}">{% endif %}
