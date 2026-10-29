@@ -583,3 +583,92 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
   .kula-band-title h2{font-size:clamp(1.65rem,7vw,2.5rem)}
   .kula-strapline{font-size:.76rem}
 }
+
+
+/* FIX: the old torn clipping used percentages of the entire manifesto height.
+   On long mobile sections that creates enormous triangles over the hero image.
+   Draw subtle 12px paper edges independently of section height instead. */
+.kula-band {
+  clip-path:none;
+  margin-top:0;
+  overflow:visible;
+  background-color:var(--purple);
+  background-image:
+    repeating-linear-gradient(-19deg,transparent 0 12px,rgba(34,5,82,.075) 13px 14px),
+    radial-gradient(circle at 45% 0%,rgba(255,255,255,.09),transparent 55%);
+}
+.kula-band::before,
+.kula-band::after{
+  content:"";
+  position:absolute;
+  inset:auto;
+  left:0;
+  right:0;
+  height:14px;
+  opacity:1;
+  background:var(--purple);
+  pointer-events:none;
+  z-index:1;
+}
+.kula-band::before{
+  top:-12px;
+  clip-path:polygon(0 63%,6% 32%,13% 48%,20% 17%,28% 62%,36% 30%,44% 48%,52% 20%,62% 55%,72% 24%,82% 60%,90% 30%,100% 49%,100% 100%,0 100%);
+}
+.kula-band::after{
+  bottom:-12px;
+  clip-path:polygon(0 0,100% 0,100% 49%,91% 76%,81% 37%,71% 73%,60% 31%,50% 59%,39% 30%,28% 77%,18% 40%,9% 73%,0 44%);
+}
+/* Isolated transparent illustration: no background box, no rotated clipping. */
+.kula-animal{align-self:center;min-width:0;margin:0}
+.kula-animal img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:520px;
+  filter:drop-shadow(0 9px 0 rgba(41,14,80,.12));
+  transform:none;
+}
+@media(max-width:700px){
+  .kula-band-inner{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    column-gap:0;
+    row-gap:0;
+    padding:49px 0 64px;
+  }
+  .kula-animal{
+    grid-column:1;
+    grid-row:1;
+    width:min(100%,420px);
+    justify-self:center;
+    margin:0 auto 9px;
+  }
+  .kula-animal img{
+    width:100%;
+    max-width:100%;
+    transform:none;
+  }
+  .kula-band-title{
+    grid-column:1;
+    grid-row:2;
+    align-self:start;
+  }
+  .kula-band-title h2{
+    font-size:clamp(2.9rem,11.6vw,4.45rem);
+    line-height:1.06;
+    letter-spacing:.005em;
+    margin:10px 0 12px;
+  }
+  .kula-band-title .paint-underline{max-width:220px}
+  .kula-strapline{font-size:.92rem}
+  .kula-band-message{
+    grid-column:1;
+    grid-row:3;
+    padding:18px 0 0;
+    max-width:100%;
+  }
+}
+@media(max-width:390px){
+  .kula-band-inner{padding-top:43px}
+  .kula-band-title h2{font-size:clamp(2.65rem,11.4vw,3.2rem)}
+}
