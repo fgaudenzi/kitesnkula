@@ -1,6 +1,11 @@
 title: "KITESNKULA"
 description: "Una community di kiter. Stesso vento, teste diverse."
 email: "info@kitesnkula.com"
+# Public community contacts. Leave WhatsApp blank until the team approves a public number.
+social:
+  instagram_url: "https://www.instagram.com/kitesnkula/"
+  instagram_handle: "@kitesnkula"
+  whatsapp_number: ""  # Digits only: country code and number, no + / spaces
 author: "KITESNKULA"
 url: ""
 baseurl: ""

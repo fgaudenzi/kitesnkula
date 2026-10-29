@@ -183,12 +183,20 @@
       "owner": "Contact",
       "owner_text": "For questions about personal data, email",
       "data": "Data we receive",
-      "data_text": "The website has no registration or newsletter forms and does not enable its own analytics tools. If you email us, we receive the information you choose to send. The hosting provider may process technical data and access logs under its own terms.",
+      "data_text": "The website has no registration or newsletter forms and does not enable its own analytics tools. If you contact us via email, Instagram or WhatsApp, we receive the information you choose to send. Conversations on Instagram and WhatsApp are also subject to those services' terms and privacy notices. Our hosting provider may process technical data and access logs under its own terms.",
       "purpose": "Why we use it",
-      "purpose_text": "We use messages only to respond to enquiries and communicate about the community and trips.",
+      "purpose_text": "We use messages received by email, Instagram or WhatsApp to respond to enquiries and communicate about the community and trips.",
       "rights": "Your rights",
       "rights_text": "You can request information, access, correction or deletion by writing to the address above. This text should be reviewed and adapted before launch to reflect the actual hosting service and any tools used.",
       "updated": "Information updated 29 October 2026."
+    },
+    "contact_links": {
+      "group_label": "Contact KITESNKULA",
+      "instagram_cta": "MESSAGE US ON INSTAGRAM",
+      "instagram_label": "KITESNKULA on Instagram, @kitesnkula",
+      "whatsapp_cta": "CHAT ON WHATSAPP",
+      "email_cta": "Or send us an email",
+      "whatsapp_message": "Hi KITESNKULA! I'd like to know more about the next trips and the community."
     }
   }
 }

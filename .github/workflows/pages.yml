@@ -66,6 +66,8 @@ jobs:
             if [[ -z "$lang" ]]; then page="_site/index.html"; else page="_site/$lang/index.html"; fi
             grep -q 'class="hero-title' "$page" || { echo "::error::Missing accessible hero text in $page"; exit 1; }
             grep -q 'class="trip-card' "$page" || { echo "::error::Missing trips in $page"; exit 1; }
+            grep -q 'https://www.instagram.com/kitesnkula/' "$page" || { echo "::error::Official Instagram link missing in $page"; exit 1; }
+            grep -q 'class="join-actions"' "$page" || { echo "::error::Contact buttons missing in $page"; exit 1; }
           done
 
       - name: Mark generated site as static

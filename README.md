@@ -54,6 +54,24 @@ Action run: [GitHub Actions workflows](https://github.com/fgaudenzi/kitesnkula/a
 
 GitHub Pages URL is displayed in the successful deployment job; it will usually be `https://fgaudenzi.github.io/kitesnkula/` when no custom domain is configured.
 
+
+## Instagram and WhatsApp contact links
+
+- The official Instagram link is stored once in `_config.yml` under `social.instagram_url`, currently `https://www.instagram.com/kitesnkula/`. Its displayed handle is `social.instagram_handle`.
+- The home-page **Join the Kula** panel contains an Instagram CTA and an email fallback. The footer includes Instagram and, once enabled, WhatsApp.
+- WhatsApp is intentionally **not published** until KITESNKULA confirms which number may be displayed publicly. To activate it, edit `_config.yml`:
+
+```yaml
+social:
+  instagram_url: "https://www.instagram.com/kitesnkula/"
+  instagram_handle: "@kitesnkula"
+  whatsapp_number: ""   # Replace with your approved public WhatsApp number in international digits-only format
+```
+
+- Use full international digits **without the leading +, spaces or dashes**. When configured, the site automatically renders working `https://wa.me/...` contact links with localized, prefilled messages in IT/EN/DE/FR; no JavaScript, tracking script or third-party widget is required.
+- The link is hidden while the number is empty, rather than displaying a non-working button or exposing somebody's personal number.
+- Contact button labels and the prefilled WhatsApp messages are editable in `_i18n/{it,en,de,fr}.yml` under `kula.contact_links`.
+
 ## Before public launch
 
 - Confirm the brand photographs, images permissions and final opossum mark.

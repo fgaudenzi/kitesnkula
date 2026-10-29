@@ -183,12 +183,20 @@
       "owner": "Contatti",
       "owner_text": "Per richieste relative ai dati personali scrivi a",
       "data": "Quali dati",
-      "data_text": "Il sito non contiene moduli di registrazione o newsletter e non attiva strumenti di analisi proprietari. Se ci contatti via email, riceviamo le informazioni che scegli di inviarci. Il servizio di hosting può trattare dati tecnici e log di accesso secondo le proprie condizioni.",
+      "data_text": "Il sito non contiene moduli di registrazione o newsletter e non attiva strumenti di analisi proprietari. Se ci contatti via email, Instagram o WhatsApp, riceviamo le informazioni che scegli di inviarci. Le conversazioni su Instagram e WhatsApp sono inoltre soggette alle condizioni e alle informative privacy dei rispettivi servizi. Il servizio di hosting può trattare dati tecnici e log di accesso secondo le proprie condizioni.",
       "purpose": "Perché li usiamo",
-      "purpose_text": "Utilizziamo i messaggi ricevuti esclusivamente per rispondere alle richieste e organizzare le comunicazioni relative alla community e ai viaggi.",
+      "purpose_text": "Utilizziamo i messaggi ricevuti via email, Instagram o WhatsApp per rispondere alle richieste e comunicare informazioni sulla community e sui viaggi.",
       "rights": "I tuoi diritti",
       "rights_text": "Puoi richiedere informazioni, accesso, correzione o cancellazione dei dati scrivendo al contatto indicato. Il testo va verificato e adattato prima della pubblicazione definitiva in base al servizio di hosting e agli strumenti effettivamente usati.",
       "updated": "Informazioni aggiornate al 29 ottobre 2026."
+    },
+    "contact_links": {
+      "group_label": "Contatta KITESNKULA",
+      "instagram_cta": "SCRIVICI SU INSTAGRAM",
+      "instagram_label": "Instagram KITESNKULA, @kitesnkula",
+      "whatsapp_cta": "SCRIVICI SU WHATSAPP",
+      "email_cta": "Oppure mandaci una mail",
+      "whatsapp_message": "Ciao KITESNKULA! Vorrei avere informazioni sui prossimi viaggi e sulla community."
     }
   }
 }

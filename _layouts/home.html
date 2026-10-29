@@ -115,7 +115,21 @@ layout: default
 <section id="join" class="join-banner" aria-labelledby="join-heading">
   <div class="container-wide join-banner-inner">
     <div><span class="section-label">{{ c.join.kicker }}</span><h2 id="join-heading" class="marker">{{ c.join.first }}<br>{{ c.join.second }}</h2><p>{{ c.join.body }}</p></div>
-    <a href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20Join%20the%20Kula" class="brush-button purple-button">{{ c.join.cta }} <span aria-hidden="true">↗</span></a>
+    <div class="join-actions" aria-label="{{ c.contact_links.group_label }}">
+      {% if site.social.whatsapp_number != blank %}
+        <a class="brush-button lime-button join-social-button" href="https://wa.me/{{ site.social.whatsapp_number }}?text={{ c.contact_links.whatsapp_message | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="{{ c.contact_links.whatsapp_cta }}">
+          {% include social-icon.html kind="whatsapp" %}
+          <span>{{ c.contact_links.whatsapp_cta }}</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      {% endif %}
+      <a class="brush-button purple-button join-social-button" href="{{ site.social.instagram_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ c.contact_links.instagram_cta }}">
+        {% include social-icon.html kind="instagram" %}
+        <span>{{ c.contact_links.instagram_cta }}</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+      <a class="join-email-link" href="mailto:{{ site.email }}?subject=KITESNKULA%20-%20Join%20the%20Kula">{{ c.contact_links.email_cta }} <span aria-hidden="true">↗</span></a>
+    </div>
     <p class="marker join-aside">{{ c.join.aside }}</p>
   </div>
 </section>
