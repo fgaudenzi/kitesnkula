@@ -91,6 +91,15 @@ jobs:
               exit 1
             fi
           done
+          # Italian-only hero copy; avoid leaking the dialect wordplay to other languages.
+          grep -q 'KITE SPIEGA\.' _site/index.html || { echo "::error::Italian hero wordplay missing"; exit 1; }
+          grep -q 'KITE PORTA IN VACANZA\.' _site/index.html || { echo "::error::Italian travel claim missing"; exit 1; }
+          grep -q 'KITE FA DIVERTÌ\.' _site/index.html || { echo "::error::Italian fun claim missing"; exit 1; }
+          grep -q 'Siamo istruttori di kite' _site/index.html || { echo "::error::Italian hero explanation missing"; exit 1; }
+          for page in _site/en/index.html _site/de/index.html _site/fr/index.html; do
+            grep -q 'YOUR KITE\.' "$page" || { echo "::error::Non-Italian hero altered in $page"; exit 1; }
+            if grep -q 'KITE SPIEGA' "$page"; then echo "::error::Italian hero leaked into $page"; exit 1; fi
+          done
           # Ensure the retired handwritten fonts are absent from published assets.
           if grep -Eiq 'Permanent Marker|Kalam|Comic Neue|Comic Sans' _site/assets/css/kula.css _site/index.html; then
             echo "::error::Deprecated handwritten font still referenced"

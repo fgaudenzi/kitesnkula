@@ -798,3 +798,55 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
   .merch-card-copy p{font-size:.84rem;line-height:1.65}
   .merch-bottom{margin-top:30px}
 }
+
+/* Italian homepage only: three intentionally long "kite / chi te" lines.
+   Other language heroes retain their original typography and copy. */
+.hero--italian .hero-message{width:min(72%,920px);max-width:920px}
+.hero--italian .hero-title{
+  font-size:clamp(2.55rem,4.35vw,5.15rem);
+  line-height:1.12;
+  max-width:100%;
+  margin:14px 0 26px;
+}
+.hero--italian .hero-title span{
+  display:block;
+  width:auto;
+  max-width:100%;
+  white-space:normal;
+  overflow-wrap:normal;
+  text-wrap:balance;
+}
+.hero--italian .hero-title span:nth-child(2){font-size:.79em;line-height:1.2}
+.hero--italian .hero-copy{max-width:455px;font-size:.94rem;line-height:1.7}
+.hero--italian .hero-side{right:0;max-width:170px}
+@media(max-width:1000px){
+  .hero--italian .hero-message{width:76%}
+  .hero--italian .hero-title{font-size:clamp(2.4rem,4.9vw,4rem)}
+  .hero--italian .hero-side{font-size:1.08rem}
+}
+@media(max-width:700px){
+  .hero--italian{min-height:660px;height:auto}
+  .hero--italian .hero-content{min-height:660px;padding-top:55px}
+  .hero--italian .hero-message{width:100%;max-width:100%}
+  .hero--italian .hero-title{
+    font-size:clamp(2.05rem,8.7vw,3.7rem);
+    line-height:1.11;
+    margin:10px 0 22px;
+    max-width:100%;
+  }
+  .hero--italian .hero-title span:nth-child(2){
+    font-size:.84em;
+    line-height:1.2;
+  }
+  .hero--italian .hero-copy{
+    max-width:310px;
+    font-size:.83rem;
+    line-height:1.65;
+    margin-bottom:22px;
+  }
+  .hero--italian .hero-side{right:15px;bottom:38px}
+}
+@media(max-width:390px){
+  .hero--italian .hero-title{font-size:clamp(1.9rem,8.25vw,2.55rem)}
+  .hero--italian .hero-copy{font-size:.8rem;max-width:280px}
+}

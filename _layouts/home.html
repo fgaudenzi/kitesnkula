@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign c = site.translations[site.lang].kula %}
-<section class="hero" aria-labelledby="hero-heading">
+<section class="hero{% if site.lang == 'it' %} hero--italian{% endif %}" aria-labelledby="hero-heading">
   <div class="hero-image" role="img" aria-label="{{ c.hero.image_alt }}"></div>
   <div class="hero-shade" aria-hidden="true"></div>
   <div class="hero-content container-wide">
