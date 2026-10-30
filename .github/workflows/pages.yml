@@ -96,8 +96,11 @@ jobs:
           grep -q 'KITE PORTA IN VACANZA\.' _site/index.html || { echo "::error::Italian travel claim missing"; exit 1; }
           grep -q 'KITE FA DIVERTÌ\.' _site/index.html || { echo "::error::Italian fun claim missing"; exit 1; }
           grep -q 'Siamo istruttori di kite' _site/index.html || { echo "::error::Italian hero explanation missing"; exit 1; }
+          # Existing international hero copy is localized, not identical.
+          grep -q 'YOUR KITE\.' _site/en/index.html || { echo "::error::English hero altered"; exit 1; }
+          grep -q 'DEIN KITE\.' _site/de/index.html || { echo "::error::German hero altered"; exit 1; }
+          grep -q 'TON KITE\.' _site/fr/index.html || { echo "::error::French hero altered"; exit 1; }
           for page in _site/en/index.html _site/de/index.html _site/fr/index.html; do
-            grep -q 'YOUR KITE\.' "$page" || { echo "::error::Non-Italian hero altered in $page"; exit 1; }
             if grep -q 'KITE SPIEGA' "$page"; then echo "::error::Italian hero leaked into $page"; exit 1; fi
           done
           # Ensure the retired handwritten fonts are absent from published assets.
