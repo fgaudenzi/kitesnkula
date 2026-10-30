@@ -771,23 +771,6 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
 .merch-purple{background:#3c2953}
 .merch-friends{background:#c7c0b7}
 .merch-friends img{object-fit:contain;background:transparent}
-.merch-concept{
-  border-top:2px solid var(--ink);
-  display:grid;
-  grid-template-columns:minmax(0,36%) minmax(0,1fr);
-  gap:clamp(22px,5vw,82px);
-  padding:31px 0 24px;
-  margin-top:48px;
-}
-.merch-concept-title{
-  font-size:clamp(2.3rem,3.5vw,4.1rem);
-  line-height:1.05;
-  letter-spacing:.01em;
-  margin:11px 0 0;
-  color:var(--ink);
-}
-.merch-concept-copy{max-width:650px}
-.merch-concept-copy p{font:400 .91rem/1.73 var(--body);margin:0 0 14px}
 .merch-bottom{margin-top:8px}
 @media(max-width:1250px){
   .merch-heading{font-size:clamp(2.9rem,4.8vw,5.2rem)}
@@ -802,10 +785,16 @@ body{font-family:var(--body);font-size:14px;line-height:1.65}
   .merch-image{aspect-ratio:4/5}
   .merch-card:last-child .merch-image{aspect-ratio:4/3}
   .merch-friends img{object-fit:contain;background:transparent}
-  .merch-concept{grid-template-columns:minmax(0,1fr);gap:15px;margin-top:39px;padding-top:26px}
-  .merch-concept-title{font-size:clamp(2.3rem,8vw,3.7rem)}
-  .merch-concept-copy p{font-size:.88rem;line-height:1.72}
 }
 @media(max-width:390px){
   .merch-heading{font-size:clamp(2.1rem,8.2vw,3rem)}
+}
+
+/* Each merch card carries its own story, rather than a shared manifesto. */
+.merch-card-copy h3{margin-bottom:11px}
+.merch-card-copy p{font:400 .88rem/1.72 var(--body);max-width:100%;margin:0}
+.merch-bottom{margin-top:38px}
+@media(max-width:700px){
+  .merch-card-copy p{font-size:.84rem;line-height:1.65}
+  .merch-bottom{margin-top:30px}
 }

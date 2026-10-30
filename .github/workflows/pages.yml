@@ -81,7 +81,8 @@ jobs:
             grep -q 'id="merch"' "$page" || { echo "::error::Merch section missing in $page"; exit 1; }
             grep -q 'BE PROUD\.' "$page" || { echo "::error::Merch hero claim absent in $page"; exit 1; }
             grep -q 'WEAR KITESNKULA\.' "$page" || { echo "::error::Merch secondary claim absent in $page"; exit 1; }
-            grep -q 'class="merch-concept"' "$page" || { echo "::error::Merch concept section absent in $page"; exit 1; }
+            [[ "$(grep -c 'class="merch-card-copy"' "$page")" -eq 3 ]] || { echo "::error::Expected 3 merch card stories in $page"; exit 1; }
+            if grep -q 'class="merch-concept"' "$page"; then echo "::error::Old shared merch concept still present in $page"; exit 1; fi
             grep -q 'NO HEROES\.' "$page" || { echo "::error::Antihero manifesto heading missing in $page"; exit 1; }
             grep -q 'class="kula-strapline"' "$page" || { echo "::error::Manifesto strapline missing in $page"; exit 1; }
             grep -q 'kula-opossum-antihero.avif' "$page" || { echo "::error::Antihero opossum missing in $page"; exit 1; }
